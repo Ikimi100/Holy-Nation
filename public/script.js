@@ -5,10 +5,27 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    /* ===== PRELOADER ===== */
+    /* ===== PRELOADER =====
+       Splash only on the first page of the session. On every navigation after
+       that it is skipped instantly — a 1.4s curtain between every page made
+       the site feel broken on phones. */
     const preloader = document.getElementById('preloader');
     if (preloader) {
-        setTimeout(() => preloader.classList.add('hidden'), 1400);
+        if (sessionStorage.getItem('hn-preloaded')) {
+            preloader.style.transition = 'none';
+            preloader.classList.add('hidden');
+        } else {
+            sessionStorage.setItem('hn-preloaded', '1');
+            const hide = () => preloader.classList.add('hidden');
+            // Hide as soon as the page is actually ready (min 600ms for the
+            // crest animation, max 2.5s even if something is slow).
+            if (document.readyState === 'complete') {
+                setTimeout(hide, 600);
+            } else {
+                window.addEventListener('load', () => setTimeout(hide, 400));
+                setTimeout(hide, 2500);
+            }
+        }
     }
 
     /* ===== NAVBAR SCROLL EFFECT ===== */

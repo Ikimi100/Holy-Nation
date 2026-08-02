@@ -76,8 +76,11 @@ img { max-width: 100%; display: block; }
     position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
     padding: 0.8rem 0; transition: var(--transition); background: transparent;
 }
+/* NOTE: no backdrop-filter here — a filter on #navbar makes it the containing
+   block for the fixed .nav-links overlay, clipping the mobile menu to the
+   bar's height (only "Home" was visible on phones). */
 #navbar.scrolled {
-    background: rgba(10, 22, 40, 0.96); backdrop-filter: blur(20px);
+    background: rgba(10, 22, 40, 0.98);
     padding: 0.5rem 0; box-shadow: 0 4px 30px rgba(0,0,0,0.3);
 }
 .nav-container {
@@ -736,7 +739,7 @@ img { max-width: 100%; display: block; }
 /* ============================================
    INNER PAGE SHELL (used by all sub-pages)
    ============================================ */
-#navbar.nav-solid { background: rgba(10,22,40,0.97); backdrop-filter: blur(20px); box-shadow: 0 4px 30px rgba(0,0,0,0.3); }
+#navbar.nav-solid { background: rgba(10,22,40,0.98); box-shadow: 0 4px 30px rgba(0,0,0,0.3); }
 .page-hero {
     position: relative; padding: 11rem 0 6rem; background: var(--navy);
     color: var(--white); overflow: hidden;
