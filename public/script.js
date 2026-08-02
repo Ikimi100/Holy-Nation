@@ -559,6 +559,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 const freqBtn = document.querySelector('[data-freq].active');
                 const freq = freqBtn ? freqBtn.textContent.trim() : 'One-off';
+
+                /* Record the giving intent so the team can follow up, even
+                   before the payment gateway goes live. Fire-and-forget. */
+                fetch('/api/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        kind: 'giving',
+                        page: location.pathname,
+                        payload: {
+                            currency: cur,
+                            frequency: freq,
+                            total_usd: +basket.reduce((s, i) => s + i.usd, 0).toFixed(2),
+                            items: basket.map(b => ({ fund: b.name, usd: +b.usd.toFixed(2) }))
+                        }
+                    })
+                }).catch(() => {});
+
                 const lines = basket.map(b => `${b.name} &mdash; ${fmt(b.usd)}`).join('<br>');
                 openModal('fas fa-hand-holding-heart', 'Your Giving Summary',
                     `<strong>${freq}</strong><br><br>${lines}<br><br><strong>Total: ${fmt(basket.reduce((s, i) => s + i.usd, 0))}</strong>`,
@@ -643,14 +661,90 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    /* ===== FORMS (no backend yet) ===== */
+    /* ===== FORMS → SUPABASE (via /api/submit) =====
+       Fields are serialized by their visible label, so no form markup had to
+       change. A hidden honeypot field quietly filters bots. */
+    const serializeForm = (form) => {
+        const data = {};
+        form.querySelectorAll('input, select, textarea').forEach(el => {
+            if (el.name === 'website') return; // honeypot
+            const field = el.closest('.form-field');
+            const label = field ? field.querySelector('label') : null;
+            const key = (label ? label.textContent : (el.name || el.placeholder || el.type) || 'field')
+                .trim().slice(0, 80);
+            const val = (el.value || '').trim().slice(0, 4000);
+            if (key && val) data[key] = val;
+        });
+        return data;
+    };
+
+    const formTitle = (form) => {
+        const scope = form.closest('section, aside, .side-panel') || document.body;
+        const head = scope.querySelector('h1, h2, h3, h4');
+        return (head ? head.textContent : document.title).trim().slice(0, 140);
+    };
+
     document.querySelectorAll('form[data-demo]').forEach(form => {
-        form.addEventListener('submit', (e) => {
+        const hp = document.createElement('input');
+        hp.type = 'text'; hp.name = 'website'; hp.tabIndex = -1;
+        hp.autocomplete = 'off'; hp.setAttribute('aria-hidden', 'true');
+        hp.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;opacity:0;';
+        form.appendChild(hp);
+
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            openModal('fas fa-paper-plane', 'Thank You',
-                'Your submission has been received. A member of our team will be in touch shortly.',
-                'Form delivery integration coming soon.');
-            form.reset();
+            const btn = form.querySelector('button[type="submit"], button.btn, .btn');
+            const isNews = form.classList.contains('newsletter-form');
+            const emailEl = form.querySelector('input[type="email"]');
+            const nameEl = form.querySelector('input[type="text"]:not([name="website"])');
+
+            if (emailEl && emailEl.value && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(emailEl.value.trim())) {
+                openModal('fas fa-envelope', 'Check Your Email Address',
+                    'That email address does not look right — please correct it and try again.', '');
+                return;
+            }
+
+            const body = isNews ?
+            {
+                kind: 'newsletter',
+                page: location.pathname,
+                email: emailEl ? emailEl.value.trim() : '',
+                website: hp.value
+            } :
+            {
+                kind: 'form',
+                form: formTitle(form),
+                page: location.pathname,
+                name: nameEl ? nameEl.value.trim() : '',
+                email: emailEl ? emailEl.value.trim() : '',
+                payload: serializeForm(form),
+                website: hp.value
+            };
+
+            if (btn) { btn.disabled = true; btn.style.opacity = '0.6'; }
+            try {
+                const res = await fetch('/api/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(body)
+                });
+                const out = await res.json().catch(() => ({}));
+                if (!res.ok || !out.ok) throw new Error(out.error || 'Request failed');
+                openModal('fas fa-paper-plane',
+                    isNews ? 'You Are on the List' : 'Thank You',
+                    isNews ?
+                        'Welcome aboard — you will hear from us with news, teachings and gathering dates.' :
+                        'Your submission has been received. A member of our team will be in touch shortly.',
+                    '');
+                form.reset();
+            } catch (err) {
+                openModal('fas fa-exclamation-triangle', 'Not Sent',
+                    (err && err.message && err.message !== 'Request failed' ? err.message + ' ' : '') +
+                    'Your submission could not be delivered. Please check your connection and try again.',
+                    '');
+            } finally {
+                if (btn) { btn.disabled = false; btn.style.opacity = ''; }
+            }
         });
     });
 
