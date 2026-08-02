@@ -239,6 +239,7 @@ const socialItems: SocialItem[] = [
 
 export default function HomePage() {
   const [hoveredLogo, setHoveredLogo] = useState<number | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const heroRef = useRef<HTMLElement | null>(null);
   const pastorRef = useRef<HTMLDivElement | null>(null);
@@ -253,6 +254,21 @@ export default function HomePage() {
   const setItemRef = useCallback((el: HTMLDivElement | null, i: number) => {
     itemRefs.current[i] = el;
   }, []);
+
+  /* Close the mobile menu on Escape, and stop the page scrolling behind it. */
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setMenuOpen(false);
+    };
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', onKey);
+    return () => {
+      document.body.style.overflow = prev;
+      window.removeEventListener('keydown', onKey);
+    };
+  }, [menuOpen]);
 
   /* ===== CURSOR PARALLAX =====
      A single rAF loop lerps toward the pointer and writes CSS custom properties
@@ -1001,6 +1017,107 @@ export default function HomePage() {
         }
 
         /* ===== RESPONSIVE ===== */
+        /* ===== MOBILE MENU (phones only) ===== */
+        .nav-toggle {
+          display: none;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 130;
+          height: 56px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          background: linear-gradient(to bottom, rgba(7, 39, 66, 0.92), rgba(4, 24, 43, 0.96));
+          border: none;
+          border-top: 1px solid rgba(240, 192, 0, 0.3);
+          color: var(--hn-gold-soft);
+          font-family: 'Cinzel', Baskerville, serif;
+          font-size: 12px;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+
+        .burger {
+          position: relative;
+          width: 20px;
+          height: 14px;
+          display: inline-block;
+        }
+
+        .burger i {
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: currentColor;
+          border-radius: 2px;
+          transition: transform 0.3s ease, opacity 0.2s ease, top 0.3s ease;
+        }
+
+        .burger i:nth-child(1) { top: 0; }
+        .burger i:nth-child(2) { top: 6px; }
+        .burger i:nth-child(3) { top: 12px; }
+
+        .burger.is-open i:nth-child(1) { top: 6px; transform: rotate(45deg); }
+        .burger.is-open i:nth-child(2) { opacity: 0; }
+        .burger.is-open i:nth-child(3) { top: 6px; transform: rotate(-45deg); }
+
+        .mobile-menu {
+          display: none;
+          position: fixed;
+          inset: 0;
+          z-index: 200;
+          background:
+            radial-gradient(ellipse 120% 80% at 50% 20%,
+              var(--hn-blue-700) 0%, var(--hn-blue-800) 55%, var(--hn-blue-900) 100%);
+          overflow-y: auto;
+          -webkit-overflow-scrolling: touch;
+          padding: 24px 20px 96px;
+        }
+
+        .mobile-menu nav {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          max-width: 460px;
+          margin: 0 auto;
+        }
+
+        .mm-link {
+          display: flex;
+          align-items: center;
+          min-height: 52px;
+          padding: 0 18px;
+          border-radius: 8px;
+          color: var(--hn-cream);
+          text-decoration: none;
+          font-family: 'Cinzel', Baskerville, serif;
+          font-size: 15px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          background: rgba(255, 255, 255, 0.03);
+          box-shadow: inset 0 0 0 1px rgba(120, 200, 240, 0.16);
+        }
+
+        .mm-link:active {
+          background: rgba(0, 144, 216, 0.16);
+        }
+
+        .mm-home {
+          color: var(--hn-gold-soft);
+          box-shadow: inset 0 0 0 1px rgba(240, 192, 0, 0.4);
+        }
+
+        .mm-give {
+          background: linear-gradient(135deg, rgba(184, 29, 42, 0.9), rgba(140, 18, 30, 0.94));
+          color: var(--hn-gold-pale);
+          box-shadow: inset 0 0 0 1px rgba(240, 192, 0, 0.6);
+        }
+
         /* Below this, ten entries can't hold a single line — wrap to two rows
            rather than letting the ends clip off-screen. */
         @media (max-width: 1180px) {
@@ -1031,40 +1148,109 @@ export default function HomePage() {
           }
         }
 
+        /* ===== PHONES =====
+           The scattered constellation is positioned in % of a 2.25:1 desktop
+           canvas. On a ~0.5:1 phone those percentages collapse the badges to
+           ~55px and pile 8 of 11 onto the portrait. So below 768px the whole
+           field stops being absolutely positioned and becomes a normal grid. */
         @media (max-width: 768px) {
-          .pastor-container {
-            width: 55%;
-            min-width: 200px;
+          .hero-section {
+            height: auto;
+            min-height: 0;
+            padding-bottom: 56px;
           }
-          .hn-nav a {
-            font-size: 9px;
-            padding: 3px 8px;
-            letter-spacing: 0.09em;
+
+          /* Portrait becomes the hero, in normal flow. */
+          .pastor-container {
+            position: relative;
+            bottom: auto;
+            left: auto;
+            transform: none !important;
+            width: 78%;
+            max-width: 340px;
+            min-width: 0;
+            margin: 8px auto 4px;
+          }
+
+          .pastor-container img {
+            transform: none;
+          }
+
+          /* Field reflows: no absolute positioning, no perspective. */
+          .logos-section {
+            position: static;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            padding: 4px 16px 24px;
+            perspective: none;
+          }
+
+          .logo-item {
+            position: static !important;
+            width: auto !important;
+            height: auto !important;
+            aspect-ratio: 1 / 1;
+            transform: none !important;
+            z-index: auto !important;
+          }
+
+          /* The crest spans both columns as the lead item. */
+          .logo-item:nth-child(9) {
+            grid-column: 1 / -1;
+            justify-self: center;
+            width: 62% !important;
+          }
+
+          /* Idle float and 3D tilt are desktop affordances — off on touch. */
+          .logo-float { animation: none !important; }
+          .logo-link { transform: none !important; scale: 1 !important; }
+          .logo-arc { animation: none !important; opacity: 0.6; }
+
+          .gold-line { display: none; }
+
+          /* Swap the cramped bar for the menu button. */
+          .hn-nav { display: none; }
+          .nav-toggle { display: flex; }
+          .mobile-menu { display: none; }
+          .mobile-menu.is-open { display: block; }
+
+          .hn-footer {
+            height: 64px;
           }
           .social-list {
-            gap: 12px;
+            gap: 14px;
+          }
+          .social-link {
+            width: 46px;
+            height: 46px;
           }
         }
 
         @media (max-width: 480px) {
           :root, .hn-page {
-            --nav-h: 96px;
+            --nav-h: 56px;
           }
-          .hn-nav a {
-            font-size: 8px;
-            padding: 3px 6px;
-            letter-spacing: 0.07em;
+          .logos-section {
+            gap: 12px;
+            padding: 4px 12px 20px;
           }
-          .hn-footer {
-            height: 58px;
-            padding: 8px 16px;
+          .pastor-container {
+            width: 84%;
           }
-          .social-list {
-            gap: 10px;
+          .mm-link {
+            font-size: 14px;
+            min-height: 50px;
           }
-          .social-link {
-            width: 34px;
-            height: 34px;
+        }
+
+        /* Very narrow phones — one badge per row so the wordmarks stay legible. */
+        @media (max-width: 340px) {
+          .logos-section {
+            grid-template-columns: 1fr;
+          }
+          .logo-item:nth-child(9) {
+            width: 100% !important;
           }
         }
       `}</style>
@@ -1135,6 +1321,21 @@ export default function HomePage() {
             <div className="gold-line" />
 
             {/* Navigation */}
+            {/* Phone-only trigger; the bar itself is hidden below 768px. */}
+            <button
+              type="button"
+              className="nav-toggle"
+              aria-expanded={menuOpen}
+              aria-controls="hn-mobile-menu"
+              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+              onClick={() => setMenuOpen((v) => !v)}>
+
+              <span className={`burger${menuOpen ? ' is-open' : ''}`} aria-hidden="true">
+                <i /><i /><i />
+              </span>
+              <span className="nav-toggle-text">{menuOpen ? 'Close' : 'Menu'}</span>
+            </button>
+
             <nav className="hn-nav" role="navigation" aria-label="Main navigation">
               {navItems.map((item, i) =>
               <React.Fragment key={item.id}>
@@ -1149,6 +1350,33 @@ export default function HomePage() {
                 </React.Fragment>
               )}
             </nav>
+
+            {/* Full-screen menu panel — phones only */}
+            <div
+              className={`mobile-menu${menuOpen ? ' is-open' : ''}`}
+              id="hn-mobile-menu"
+              hidden={!menuOpen}>
+
+              <nav aria-label="Site menu">
+                <a
+                  className="mm-link mm-home"
+                  href={ROUTES.holyNation}
+                  onClick={() => setMenuOpen(false)}>
+
+                  The Holy Nation
+                </a>
+                {navItems.map((item) =>
+                <a
+                  key={item.id}
+                  className={`mm-link${item.short === 'Give' ? ' mm-give' : ''}`}
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}>
+
+                    {item.short}
+                  </a>
+                )}
+              </nav>
+            </div>
           </section>
 
           {/* Footer — social channels */}
