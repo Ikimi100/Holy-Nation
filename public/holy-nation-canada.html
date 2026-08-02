@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Nation Canada | Holy Nation Global</title>
+    <meta name="description" content="Holy Nation Canada — city groups in Toronto, Montréal and Vancouver. Sunday gatherings, the Watch of Government, Global College cohorts and newcomer support.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Holy Nation Global" class="preloader-logo">
+            <p>Holy Nation Global</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-solid">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Holy Nation Global">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Holy Nation Global</span>
+                    <span class="logo-sub">Thy Kingdom Come</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/apostolic-house" class="nav-link">Apostolic House</a>
+                <a href="/global-college" class="nav-link">Global College</a>
+                <a href="/prayers-mission" class="nav-link">Prayers &amp; Mission</a>
+                <a href="/networks" class="nav-link">Networks</a>
+                <a href="/kingdom-operations" class="nav-link">Operations</a>
+                <a href="/compassion" class="nav-link">Compassion</a>
+                <a href="/country-development" class="nav-link">Nation Building</a>
+                <a href="/thykingdomcome" class="nav-link">ThyKingdomCome</a>
+                <a href="/give" class="nav-link nav-give">Give</a>
+                <a href="/connect" class="nav-link nav-cta active">Connect</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search teachings, events, ministries..." id="searchInput">
+            <button class="search-submit" aria-label="Submit search"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1517935706615-2717063c2225?w=1920&q=80');"></div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="/connect">Connect</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="connect.html#nations">Nations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Holy Nation Canada</span>
+            </nav>
+            <span class="page-hero-tag">Canada</span>
+            <h1>Holy Nation Canada</h1>
+            <p class="page-hero-lead">Three city groups across four and a half time zones, in two official languages, holding the Watch of Government for the whole movement. Based in Toronto.</p>
+            <div class="page-hero-actions">
+                <a href="#" class="btn btn-primary js-whatsapp" data-nation="Holy Nation Canada"><i class="fab fa-whatsapp"></i> Join the WhatsApp Community</a>
+                <a href="#cities" class="btn btn-outline">Find Your City</a>
+            </div>
+            <div class="page-hero-facts">
+                <div>
+                    <span class="page-fact-num nation-clock" data-tz="America/Toronto">--:--</span>
+                    <span class="page-fact-label">Toronto Time Now</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="3">0</span>
+                    <span class="page-fact-label">City Groups</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="2">0</span>
+                    <span class="page-fact-label">Languages</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="3">0</span>
+                    <span class="page-fact-label">Years Established</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Nav -->
+    <div class="page-nav" id="pageNav">
+        <div class="page-nav-inner">
+            <a href="#overview">Overview</a>
+            <a href="#gatherings">Gatherings</a>
+            <a href="#cities">City Groups</a>
+            <a href="#active">What's Active Here</a>
+            <a href="#newcomers">Newcomers</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#events">Events</a>
+            <a href="#connect">Get Connected</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
+
+    <!-- Next gathering strip -->
+    <section class="page-section page-section-light" style="padding-bottom:0;">
+        <div class="container">
+            <div class="next-strip" data-aos="fade-up">
+                <div>
+                    <span class="next-strip-label">Next National Gathering</span>
+                    <h3>Sunday Assembly &mdash; Online &amp; In Person</h3>
+                    <p>10:30 AM Eastern &middot; 7:30 AM Pacific &middot; Bilingual EN / FR</p>
+                </div>
+                <div style="text-align:right;">
+                    <span class="next-countdown" data-countdown data-tz="America/Toronto" data-day="Sun" data-time="10:30">&mdash;</span>
+                    <span class="next-countdown-label">Until we gather</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="page-section page-section-light" id="overview">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Who We Are</span>
+                    <h2 class="section-title section-title-left">A House for People Far From Home</h2>
+                    <p>Holy Nation Canada began among West African families in Scarborough who wanted apostolic teaching in a country where they had arrived recently, knew almost nobody, and were working two jobs to make the first year survivable.</p>
+                    <p>That origin still shapes us. This community is unusually good at receiving people who have just landed &mdash; and unusually aware that belonging somewhere matters most in the season when you belong nowhere.</p>
+
+                    <div class="scripture">
+                        &ldquo;When a stranger dwells among you in your land, you shall not mistreat him. The stranger who dwells among you shall be to you as one born among you, and you shall love him as yourself.&rdquo;
+                        <cite>Leviticus 19:33&ndash;34</cite>
+                    </div>
+
+                    <h3>Two languages, one house</h3>
+                    <p>The Sunday assembly runs in English with live French interpretation, and the Montr&eacute;al city group meets primarily in French. Teaching materials from the Global College are issued in both languages. This is not a courtesy &mdash; roughly a fifth of our members are more comfortable praying in French than in English, and a house that only hears half its family is not a house.</p>
+
+                    <h3>What we are, and what we are not</h3>
+                    <ul>
+                        <li><strong>You keep your church.</strong> Our gathering is timed to sit alongside a local Sunday service, not replace it</li>
+                        <li><strong>You get known.</strong> Every member is placed in a city group or a virtual fellowship</li>
+                        <li><strong>You get trained.</strong> The Global College ladder runs online in English and French</li>
+                        <li><strong>You carry something.</strong> Canada holds Watch 07 on the global roster</li>
+                        <li><strong>You are never asked for money to belong.</strong> Ever</li>
+                    </ul>
+
+                    <h3>Our place in the movement</h3>
+                    <p>Canada sits inside the TKC-North America region, currently in year three of the five-year establishment cycle. Our council is constituted and funding is transitioning to local sources, with full autonomy due in year five. We work closely with Holy Nation US, and joint gatherings across the border are a regular feature &mdash; but Canada is not a US branch, and never has been.</p>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>At a Glance</h3>
+                    <dl class="fact-list">
+                        <div><dt>National hub</dt><dd>Toronto, Ontario</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="America/Toronto">--:--</span> ET</dd></div>
+                        <div><dt>Main gathering</dt><dd>Sundays, 10:30 AM ET</dd></div>
+                        <div><dt>Languages</dt><dd>English &amp; French</dd></div>
+                        <div><dt>City groups</dt><dd>3</dd></div>
+                        <div><dt>Global watch</dt><dd>Watch 07 &mdash; Government</dd></div>
+                        <div><dt>TKC stage</dt><dd>North America &middot; Year 3 of 5</dd></div>
+                    </dl>
+                    <a href="#connect" class="btn btn-primary btn-sm">Get Connected <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gatherings -->
+    <section class="page-section page-section-cream" id="gatherings">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Rhythm</span>
+                <h2 class="section-title">When We Gather</h2>
+                <p class="section-desc">All times Eastern unless stated. Everything is available online, and recordings go out to the community the same week.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-day">Sunday</div>
+                    <h3>National Assembly</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 10:30 AM ET</p>
+                    <p class="service-desc">The whole Canadian community online, with in-person gatherings in Toronto and Montr&eacute;al. English with live French interpretation. Runs 90 minutes.</p>
+                    <a href="#connect" class="service-link">Get the link <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-day">Tuesday</div>
+                    <h3>Global College Cohort</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 8:00 PM ET</p>
+                    <p class="service-desc">Live seminar for enrolled students, shared with the US cohort. French-language study groups meet separately on Wednesdays.</p>
+                    <a href="global-college.html#admissions" class="service-link">Admissions <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-day">Thursday</div>
+                    <h3>City Group Night</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> Local, 7:00 PM</p>
+                    <p class="service-desc">Homes and community rooms &mdash; discussion of Sunday's teaching, prayer for one another, and practical help for anyone in a hard season.</p>
+                    <a href="#cities" class="service-link">Find your city <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card service-card-accent" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-day">Daily</div>
+                    <h3>The Morning Altar</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 6:00 AM ET</p>
+                    <p class="service-desc">The global daily altar, re-broadcast for Canadian mornings. Thirty minutes of the Word and prayer before the day starts.</p>
+                    <a href="prayers-mission.html#watches" class="service-link">About the watches <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div class="prose" data-aos="fade-up">
+                    <h3>Our watch on the global roster</h3>
+                    <p>Canada holds <strong>Watch 07 &mdash; The Watch of Government</strong>, from 12:00 to 3:00 PM Eastern. Its standing burden is rulers, courts, policy and national affairs, prayed for every day of the year.</p>
+                    <p>There is a certain fitness to it. Canada is a country where public institutions still largely work, and where it is therefore easy to assume they will keep working without anyone praying for them. Holding this watch is a weekly argument against that assumption.</p>
+                    <ul>
+                        <li>One three-hour window, one day a week &mdash; most people share a slot</li>
+                        <li>You receive the watch guide, the current burden list and a reporting template</li>
+                        <li>Pray alone, with your family, or in the live audio room</li>
+                    </ul>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>First Time Joining?</h3>
+                    <ul class="check-list">
+                        <li>The Sunday link is posted in the community group each Saturday</li>
+                        <li>French interpretation runs on a parallel audio channel</li>
+                        <li>Cameras optional &mdash; nobody will put you on the spot</li>
+                        <li>Kids are welcome; the first 20 minutes is family-friendly</li>
+                        <li>Stay after for the open floor if you want to meet people</li>
+                        <li>You will never be asked to give as a visitor</li>
+                    </ul>
+                    <a href="#connect" class="btn btn-primary btn-sm">Say You're Coming <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Groups -->
+    <section class="page-section page-section-light" id="cities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Near You</span>
+                <h2 class="section-title">City Groups</h2>
+                <p class="section-desc">Three cities, each with a named host and its own WhatsApp thread. Local times below are live.</p>
+            </div>
+
+            <div data-filter data-aos="fade-up">
+                <div class="filter-bar">
+                    <div class="filter-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" data-filter-input placeholder="Search city or province..." aria-label="Search city groups">
+                    </div>
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter-chip="all">All</button>
+                        <button class="filter-chip" data-filter-chip="ontario">Ontario</button>
+                        <button class="filter-chip" data-filter-chip="quebec">Qu&eacute;bec</button>
+                        <button class="filter-chip" data-filter-chip="west">West</button>
+                    </div>
+                </div>
+
+                <div class="city-grid">
+                    <article class="city-card" data-filter-item data-tags="ontario toronto on scarborough gta">
+                        <h3>Toronto</h3>
+                        <span class="city-state">Ontario &middot; National Hub</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="America/Toronto">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-language"></i> English</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Toronto City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="quebec montreal montréal qc french francais">
+                        <h3>Montr&eacute;al</h3>
+                        <span class="city-state">Qu&eacute;bec</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="America/Toronto">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-language"></i> Fran&ccedil;ais</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Montréal City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="west vancouver british columbia bc">
+                        <h3>Vancouver</h3>
+                        <span class="city-state">British Columbia</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="America/Vancouver">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-language"></i> English</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Vancouver City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="filter-empty" data-filter-empty>
+                    <i class="fas fa-map-location-dot"></i>
+                    <p>No group in that city yet.<br>Calgary, Edmonton, Ottawa and Winnipeg all have members meeting online &mdash; several of them are one host short of a group.</p>
+                    <a href="#connect" class="btn btn-primary btn-sm" style="margin-top:1.25rem;">Start One Where You Are <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="notice-box mt-4" data-aos="fade-up">
+                <i class="fas fa-location-crosshairs"></i>
+                <div>
+                    <h4>Prairies, Atlantic Canada or the North?</h4>
+                    <p>We have members in Calgary, Edmonton, Ottawa, Winnipeg and Halifax who gather in the virtual house fellowship and hold watches from home. Distance is a logistics problem here, not a membership one.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Active Here -->
+    <section class="page-section page-section-cream" id="active">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Honest Status</span>
+                <h2 class="section-title">What's Actually Running Here</h2>
+                <p class="section-desc">All eight pillars exist globally. Not all eight are running in Canada yet, and we would rather tell you that than let you find out.</p>
+            </div>
+
+            <div class="status-grid" data-aos="fade-up">
+                <div class="status-row">
+                    <span class="status-num">01</span>
+                    <div class="status-body">
+                        <h4>The Apostolic House</h4>
+                        <p>Bilingual national assembly, three city groups, Thursday fellowships and pastoral care.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">02</span>
+                    <div class="status-body">
+                        <h4>Global College</h4>
+                        <p>Christ and Kingdom Institutes online, shared with the US cohort. French study groups on Wednesdays.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">03</span>
+                    <div class="status-body">
+                        <h4>Prayers &amp; Mission</h4>
+                        <p>Watch 07 held from Canada. One city prayer tower in Toronto, a second forming in Montr&eacute;al.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">04</span>
+                    <div class="status-body">
+                        <h4>Networks</h4>
+                        <p>AWF circles running in all three cities. IFAM affiliation open. KBLN forming; SANI and TANI not yet.</p>
+                        <span class="badge badge-live">Partly running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">05</span>
+                    <div class="status-body">
+                        <h4>Kingdom Operations</h4>
+                        <p>Sphere working groups forming in Health, Education and Family. Others are waiting on people.</p>
+                        <span class="badge badge-forming">Forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">06</span>
+                    <div class="status-body">
+                        <h4>Compassion</h4>
+                        <p>Newcomer and settlement support is our main field work, alongside CES sponsorships funding students abroad.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">07</span>
+                    <div class="status-body">
+                        <h4>Country Development</h4>
+                        <p>No Canadian programme. Rebuild-Nigeria was built for a different context and we will not rebrand it.</p>
+                        <span class="badge badge-soon">Not running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">08</span>
+                    <div class="status-body">
+                        <h4>ThyKingdomCome</h4>
+                        <p>Part of the North America region, year 3 of 5. Sending teams and funding early-stage regions.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="table-note" data-aos="fade-up">If a pillar above says "forming" and it is the thing you care about most, that is not a warning &mdash; it is an opening. Forming groups are looking for the people who will shape them.</p>
+        </div>
+    </section>
+
+    <!-- Newcomers -->
+    <section class="page-section page-section-dark" id="newcomers">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">If You Have Just Arrived</span>
+                    <h2 class="section-title section-title-left">Newcomer &amp; Settlement Support</h2>
+                    <p>The first eighteen months in a new country are brutal in ways that are hard to explain to people who have not done it. Credentials do not transfer. References mean nothing. You are simultaneously overqualified and unemployable, and everyone at home assumes you are doing well.</p>
+                    <p>Our compassion work in Canada is built almost entirely around that reality. It is practical, unsentimental, and offered to anyone &mdash; member or not, Christian or not.</p>
+                    <ul>
+                        <li><strong>Arrival practicalities</strong> &mdash; SIN, banking, phone plans, transit, school registration</li>
+                        <li><strong>Housing help</strong> &mdash; navigating the rental market without Canadian credit history</li>
+                        <li><strong>Employment</strong> &mdash; r&eacute;sum&eacute; conversion, interview practice, credential recognition pathways</li>
+                        <li><strong>Winter</strong> &mdash; a genuinely serious coat drive, because the first one catches people out</li>
+                        <li><strong>Isolation</strong> &mdash; a named person who checks in weekly for the first three months</li>
+                        <li><strong>Referral</strong> &mdash; to proper settlement agencies and legal advice, because we are not one</li>
+                    </ul>
+                    <p>We do not ask about your immigration status, and we do not give immigration advice &mdash; we refer you to people licensed to give it.</p>
+                </div>
+
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>How to Ask</h3>
+                    <ul class="check-list">
+                        <li>Message the community group, or write to the coordinator directly</li>
+                        <li>No form, no assessment, no waiting list for the practical stuff</li>
+                        <li>Nothing you share goes further than the person helping you</li>
+                        <li>You will not be asked to attend anything in return</li>
+                        <li>If we cannot help, we will tell you who can</li>
+                    </ul>
+                    <p class="side-note">If you are in crisis, please also contact local emergency or crisis services. We will walk with you, and we will not pretend to be a substitute for professional help.</p>
+                    <a href="#connect" class="btn btn-primary btn-sm">Reach Out <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="page-section page-section-light" id="leadership">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Council</span>
+                <h2 class="section-title">Who Carries This Region</h2>
+                <p class="section-desc">A constituted regional council, accountable to the Canadian community first and to the global commonwealth second.</p>
+            </div>
+            <div class="leader-grid">
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="National Coordinator">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">National Coordinator</span>
+                        <p>Carries the Canadian region, chairs the council, and is the first point of contact for anyone joining.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Francophone Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Francophone Lead, Qu&eacute;bec</span>
+                        <p>Leads the Montr&eacute;al group, oversees French translation and the Wednesday study groups.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&q=80" alt="Compassion and Settlement Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Compassion &amp; Settlement Lead</span>
+                        <p>Runs the newcomer support work and holds the referral relationships with settlement agencies.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="notice-box mt-5" data-aos="fade-up">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                    <h4>Accountability, plainly</h4>
+                    <p>Every leader here is under the same annual character and doctrine review as everyone else in the movement, and each sits under a mentor outside their own chain of command. Concerns go to <strong>theholynationglobal@gmail.com</strong> and are handled by the same process that applies to any member.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section class="page-section page-section-cream" id="events">
+        <div class="container">
+            <div class="section-header-split" data-aos="fade-up">
+                <div>
+                    <span class="section-tag section-tag-left">Canadian Calendar</span>
+                    <h2 class="section-title section-title-left">What's Coming Up</h2>
+                </div>
+                <a href="prayers-mission.html#conferences" class="btn btn-ghost">Global Calendar <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="events-grid mt-4">
+                <article class="event-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Feb</span>
+                            <span class="event-day">12&ndash;16</span>
+                        </div>
+                        <div>
+                            <h3>Global Apostolic Summit</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Lagos &amp; streamed for Canadian times</p>
+                            <p>Canada sends a delegation and reports to the assembly, with watch parties in Toronto and Montr&eacute;al.</p>
+                            <a href="prayers-mission.html#conferences" class="event-link">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">May</span>
+                            <span class="event-day">23</span>
+                        </div>
+                        <div>
+                            <h3>Canada &amp; US Joint Gathering</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Toronto, Ontario</p>
+                            <p>One day, both nations, one room. Teaching, communion and the two regional councils reporting side by side.</p>
+                            <a href="/holy-nation-us" class="event-link">Holy Nation US <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Sep</span>
+                            <span class="event-day">15</span>
+                        </div>
+                        <div>
+                            <h3>Autumn Intake Opens</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Global College, Online</p>
+                            <p>Christ and Kingdom Institute cohorts begin, with French-language study groups running in parallel.</p>
+                            <a href="global-college.html#admissions" class="event-link">Apply <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Oct</span>
+                            <span class="event-day">18</span>
+                        </div>
+                        <div>
+                            <h3>Winter Coat Drive</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> All three cities</p>
+                            <p>Collection, sorting and distribution before the first freeze, for newcomers arriving into a Canadian winter unprepared.</p>
+                            <a href="#newcomers" class="event-link">Newcomer support <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Qtr</span>
+                            <span class="event-day">1&ndash;4</span>
+                        </div>
+                        <div>
+                            <h3>AWF Season Circles</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Rotating, all cities</p>
+                            <p>Quarterly women's gatherings arranged by life stage, with enterprise and skills clinics attached.</p>
+                            <a href="networks.html#awf" class="event-link">About AWF <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Jan</span>
+                            <span class="event-day">01&ndash;21</span>
+                        </div>
+                        <div>
+                            <h3>The Twenty-One Days</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Everywhere</p>
+                            <p>The movement opens the year with 21 days of corporate fasting and prayer. Watch 07 runs extended hours throughout.</p>
+                            <a href="prayers-mission.html#watches" class="event-link">Join a watch <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Connected -->
+    <section class="page-section page-section-light" id="connect">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get Connected</span>
+                <h2 class="section-title">Four Ways to Start</h2>
+            </div>
+
+            <div class="steps-grid" data-aos="fade-up">
+                <a href="#" class="step-card js-whatsapp" data-nation="Holy Nation Canada">
+                    <span class="step-num">01</span>
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Join the Community</h3>
+                    <p>The national WhatsApp group: Sunday links, prayer requests and a direct line to the coordinator.</p>
+                    <span class="step-link">Join <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#connect" class="step-card">
+                    <span class="step-num">02</span>
+                    <i class="fas fa-video"></i>
+                    <h3>Come on Sunday</h3>
+                    <p>Join the bilingual national assembly online, or in person in Toronto or Montr&eacute;al. No commitment.</p>
+                    <span class="step-link">Get the link <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="prayers-mission.html#watches" class="step-card">
+                    <span class="step-num">03</span>
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Take a Watch</h3>
+                    <p>Join Watch 07 &mdash; three hours a week praying for rulers, courts and national affairs.</p>
+                    <span class="step-link">Enrol <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#newcomers" class="step-card">
+                    <span class="step-num">04</span>
+                    <i class="fas fa-suitcase-rolling"></i>
+                    <h3>Just Landed?</h3>
+                    <p>Practical settlement help with no conditions attached, whether or not you ever come to a gathering.</p>
+                    <span class="step-link">Ask for help <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div data-aos="fade-up">
+                    <h3 class="sub-heading">Tell Us Where You Are</h3>
+                    <p class="sub-lead">The coordinator's office replies within two working days, and a real person will be assigned to you &mdash; not a mailing list.</p>
+                    <form class="form-grid" data-demo>
+                        <div class="form-field">
+                            <label for="ca-name">Full name</label>
+                            <input type="text" id="ca-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ca-email">Email</label>
+                            <input type="email" id="ca-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ca-city">City</label>
+                            <input type="text" id="ca-city" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ca-province">Province</label>
+                            <input type="text" id="ca-province">
+                        </div>
+                        <div class="form-field">
+                            <label for="ca-lang">Preferred language</label>
+                            <select id="ca-lang">
+                                <option>English</option>
+                                <option>Fran&ccedil;ais</option>
+                                <option>Either</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="ca-intent">I'd like to</label>
+                            <select id="ca-intent">
+                                <option>Join the national WhatsApp community</option>
+                                <option>Attend the Sunday assembly</option>
+                                <option>Join my nearest city group</option>
+                                <option>Start a city group where I live</option>
+                                <option>Take a watch on the prayer roster</option>
+                                <option>Enrol in the Global College</option>
+                                <option>Ask for newcomer or settlement help</option>
+                                <option>Volunteer with the settlement team</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="ca-message">Anything you'd like us to know</label>
+                            <textarea id="ca-message"></textarea>
+                        </div>
+                        <div class="form-field full">
+                            <button type="submit" class="btn btn-primary">Send <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>Canada Office</h3>
+                    <dl class="fact-list">
+                        <div><dt>Coordinator</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Hub</dt><dd>Toronto, Ontario</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="America/Toronto">--:--</span> ET</dd></div>
+                        <div><dt>Reply target</dt><dd>2 working days</dd></div>
+                        <div><dt>Safeguarding</dt><dd>theholynationglobal@gmail.com</dd></div>
+                    </dl>
+                    <p class="side-note">Nobody from Holy Nation will ever direct-message you asking for money, bank details or documents. If that happens, it is a scam &mdash; please report it.</p>
+                    <a href="/connect" class="btn btn-primary btn-sm">All Nations <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="page-section page-section-cream" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked</h2>
+            </div>
+            <div class="accordion faq-accordion" data-aos="fade-up">
+                <div class="accordion-item open">
+                    <div class="accordion-head">Do I have to leave my church to join Holy Nation Canada?</div>
+                    <div class="accordion-body">
+                        <p>No. Most of our members belong to a local congregation with no relationship to us. The assembly is at 10:30 AM Eastern partly so it rarely clashes with a local service, and city groups meet midweek.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is the Sunday gathering really bilingual?</div>
+                    <div class="accordion-body">
+                        <p>Yes. Teaching is delivered in English with live French interpretation on a parallel audio channel, Global College materials are issued in both languages, and the Montr&eacute;al city group operates primarily in French.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Do you help with immigration applications?</div>
+                    <div class="accordion-body">
+                        <p>No, and we will not pretend otherwise. Immigration advice in Canada is regulated, and giving it without a licence causes real harm. We help with the practical side of arriving and refer you to licensed consultants and legal clinics for anything to do with status.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Do I have to be a member to get settlement help?</div>
+                    <div class="accordion-body">
+                        <p>No. Help is offered on the basis of need alone, with no requirement to attend anything, believe anything or join anything. Charity with conditions attached is not charity.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is Canada just a branch of Holy Nation US?</div>
+                    <div class="accordion-body">
+                        <p>No. Canada has its own constituted council and its own coordinator. We sit within the TKC-North America region and work closely with the US, including annual joint gatherings, but decisions about Canada are made in Canada.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">There's no city group near me. Am I stuck?</div>
+                    <div class="accordion-body">
+                        <p>Not at all. We have members across the Prairies, Ottawa and Atlantic Canada who join the assembly online, sit in a virtual house fellowship and hold a watch from home. If you would like to start something local, three people and a willing host is the whole requirement.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is there a membership fee?</div>
+                    <div class="accordion-body">
+                        <p>None. Community, gatherings, watches and the Foundations Class are free. Global College tuition is set regionally with instalment plans and bursaries, and nobody has been turned away for inability to pay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Nations -->
+    <section class="page-section page-section-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Elsewhere</span>
+                <h2 class="section-title">Other Nations</h2>
+            </div>
+            <div class="feature-grid feature-grid-4" data-aos="fade-up">
+                <a href="/holy-nation-us" class="feature-card">
+                    <i class="fas fa-earth-americas"></i>
+                    <h3>Holy Nation US</h3>
+                    <p>Houston hub, six city groups. Our nearest neighbour and joint gathering partner each May.</p>
+                </a>
+                <a href="/holy-nation-uk" class="feature-card">
+                    <i class="fas fa-earth-europe"></i>
+                    <h3>Holy Nation UK</h3>
+                    <p>London hub, four city groups, and the Europe liaison office for the movement.</p>
+                </a>
+                <a href="/apostolic-house" class="feature-card">
+                    <i class="fas fa-church"></i>
+                    <h3>The Base House</h3>
+                    <p>Christhouse Apostolic Fellowship in Lagos &mdash; where the teaching and the calendar originate.</p>
+                </a>
+                <a href="connect.html#nations" class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>All Twelve Nations</h3>
+                    <p>The full directory with live local times, WhatsApp communities and national coordinators.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Vous &Ecirc;tes les Bienvenus. You Are Welcome Here.</h2>
+                <p>Come to one Sunday. Stay if it is home. Either way you will be received the way family receives family.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large js-whatsapp" data-nation="Holy Nation Canada">Join the Community</a>
+                    <a href="#connect" class="btn btn-outline btn-large">Get the Sunday Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">
+                            <img src="logo.png" alt="Holy Nation Global">
+                            <div>
+                                <span class="footer-logo-main">HOLY NATION CANADA</span>
+                                <span class="footer-logo-sub">Holy Nation Global</span>
+                            </div>
+                        </a>
+                        <p>Raising Apostolic Leaders, Transforming Nations, Establishing the Reign of Christ on Earth.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/1davidabraham" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/1DavidAbraham" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/1davidabraham/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@1davidabraham" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Holy Nation Canada</h4>
+                        <ul>
+                            <li><a href="#gatherings">Gatherings</a></li>
+                            <li><a href="#cities">City Groups</a></li>
+                            <li><a href="#newcomers">Newcomer Support</a></li>
+                            <li><a href="#connect">Get Connected</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ministries</h4>
+                        <ul>
+                            <li><a href="/apostolic-house">The Apostolic House</a></li>
+                            <li><a href="/global-college">Global College</a></li>
+                            <li><a href="/prayers-mission">Prayers &amp; Mission</a></li>
+                            <li><a href="/networks">Apostolic Networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="connect.html#nations">All Nations</a></li>
+                            <li><a href="connect.html#prayer">Prayer Request</a></li>
+                            <li><a href="/give">Give Online</a></li>
+                            <li><a href="connect.html#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 The Holy Nation Global. All rights reserved. | Thy Kingdom Come.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
+</html>

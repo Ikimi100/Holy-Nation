@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4028 --max-time 5)",
+      "Bash(powershell -Command \"Get-Process -Name node -ErrorAction SilentlyContinue | Select-Object Id,ProcessName,StartTime\")",
+      "Bash(timeout 25 npm run dev)"
+    ]
+  }
+}

@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Nation Uganda | Holy Nation Global</title>
+    <meta name="description" content="Holy Nation Uganda — city groups in Kampala, Gulu and Mbarara. The Breaking Watch, reconciliation work in the north, a young-leaders pipeline and a regional cohort of the East Africa Training Centre.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Holy Nation Global" class="preloader-logo">
+            <p>Holy Nation Global</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-solid">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Holy Nation Global">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Holy Nation Global</span>
+                    <span class="logo-sub">Thy Kingdom Come</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/apostolic-house" class="nav-link">Apostolic House</a>
+                <a href="/global-college" class="nav-link">Global College</a>
+                <a href="/prayers-mission" class="nav-link">Prayers &amp; Mission</a>
+                <a href="/networks" class="nav-link">Networks</a>
+                <a href="/kingdom-operations" class="nav-link">Operations</a>
+                <a href="/compassion" class="nav-link">Compassion</a>
+                <a href="/country-development" class="nav-link">Nation Building</a>
+                <a href="/thykingdomcome" class="nav-link">ThyKingdomCome</a>
+                <a href="/give" class="nav-link nav-give">Give</a>
+                <a href="/connect" class="nav-link nav-cta active">Connect</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search teachings, events, ministries..." id="searchInput">
+            <button class="search-submit" aria-label="Submit search"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1920&q=80');"></div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="/connect">Connect</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="connect.html#nations">Nations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Holy Nation Uganda</span>
+            </nav>
+            <span class="page-hero-tag">Uganda</span>
+            <h1>Holy Nation Uganda</h1>
+            <p class="page-hero-lead">Three city groups, the Breaking Watch, reconciliation work in the north, and a deliberate bet on the youngest population in the movement.</p>
+            <div class="page-hero-actions">
+                <a href="#" class="btn btn-primary js-whatsapp" data-nation="Holy Nation Uganda"><i class="fab fa-whatsapp"></i> Join the WhatsApp Community</a>
+                <a href="#young" class="btn btn-outline">Young Leaders</a>
+            </div>
+            <div class="page-hero-facts">
+                <div>
+                    <span class="page-fact-num nation-clock" data-tz="Africa/Kampala">--:--</span>
+                    <span class="page-fact-label">Kampala Time Now</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="3">0</span>
+                    <span class="page-fact-label">City Groups</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="4">0</span>
+                    <span class="page-fact-label">Teen Chapters</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="1">0</span>
+                    <span class="page-fact-label">Regional Cohort</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Nav -->
+    <div class="page-nav" id="pageNav">
+        <div class="page-nav-inner">
+            <a href="#overview">Overview</a>
+            <a href="#gatherings">Gatherings</a>
+            <a href="#cities">City Groups</a>
+            <a href="#north">The North</a>
+            <a href="#young">Young Leaders</a>
+            <a href="#active">What's Active Here</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#connect">Get Connected</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
+
+    <!-- Next gathering strip -->
+    <section class="page-section page-section-light" style="padding-bottom:0;">
+        <div class="container">
+            <div class="next-strip" data-aos="fade-up">
+                <div>
+                    <span class="next-strip-label">Next National Gathering</span>
+                    <h3>Sunday Assembly &mdash; Kampala &amp; Online</h3>
+                    <p>9:00 AM East Africa Time &middot; English &amp; Luganda</p>
+                </div>
+                <div style="text-align:right;">
+                    <span class="next-countdown" data-countdown data-tz="Africa/Kampala" data-day="Sun" data-time="09:00">&mdash;</span>
+                    <span class="next-countdown-label">Until we gather</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="page-section page-section-light" id="overview">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Who We Are</span>
+                    <h2 class="section-title section-title-left">A House Betting on the Young</h2>
+                    <p>Uganda has one of the youngest populations on earth. The median age is under twenty. That single fact should reorganise how any serious church here spends its time and money &mdash; and for most it does not.</p>
+                    <p>Holy Nation Uganda is built the other way round. Our teen and student work is not a department that reports to the real ministry; it is a substantial share of what we actually do, staffed by our best people rather than whoever was available.</p>
+
+                    <div class="scripture">
+                        &ldquo;Let no one despise your youth, but be an example to the believers in word, in conduct, in love, in spirit, in faith, in purity.&rdquo;
+                        <cite>1 Timothy 4:12</cite>
+                    </div>
+
+                    <h3>Two languages, one house</h3>
+                    <p>The Sunday assembly runs in English with Luganda through worship and prayer. In Gulu, sessions run substantially in Acholi, and in Mbarara in Runyankole. We do not ask people to pray in a second language when a first one is available.</p>
+
+                    <h3>What we are, and what we are not</h3>
+                    <ul>
+                        <li><strong>You keep your church.</strong> Most of our members belong to a Ugandan congregation already</li>
+                        <li><strong>You get known.</strong> Every member is placed in a city group, teen chapter or campus fellowship</li>
+                        <li><strong>You get trained.</strong> A regional cohort of the East Africa Training Centre runs in Kampala</li>
+                        <li><strong>You carry something.</strong> Uganda holds Watch 03 on the global roster</li>
+                        <li><strong>You are never asked for money to belong.</strong> Ever</li>
+                    </ul>
+
+                    <h3>Our place in the movement</h3>
+                    <p>Uganda sits in the East Africa sub-region of TKC-Africa, in year three of the five-year cycle, served by the training centre in Nairobi. Our council is forming with a Ugandan chair, and full autonomy is due in year five. Several of our members now facilitate cohorts themselves.</p>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>At a Glance</h3>
+                    <dl class="fact-list">
+                        <div><dt>National hub</dt><dd>Kampala</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Africa/Kampala">--:--</span> EAT</dd></div>
+                        <div><dt>Main gathering</dt><dd>Sundays, 9:00 AM</dd></div>
+                        <div><dt>Languages</dt><dd>English, Luganda, Acholi, Runyankole</dd></div>
+                        <div><dt>City groups</dt><dd>3</dd></div>
+                        <div><dt>Global watch</dt><dd>Watch 03 &mdash; Breaking</dd></div>
+                        <div><dt>Training</dt><dd>Regional cohort, Kampala</dd></div>
+                        <div><dt>TKC stage</dt><dd>Africa &middot; Year 3 of 5</dd></div>
+                    </dl>
+                    <a href="#connect" class="btn btn-primary btn-sm">Get Connected <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gatherings -->
+    <section class="page-section page-section-cream" id="gatherings">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Rhythm</span>
+                <h2 class="section-title">When We Gather</h2>
+                <p class="section-desc">All times East Africa Time. Everything is available online, and recordings go out to the community the same week.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-day">Sunday</div>
+                    <h3>National Assembly</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 9:00 AM EAT</p>
+                    <p class="service-desc">The whole Ugandan community, in person in Kampala and online everywhere else. Worship, apostolic teaching and communion. Runs two hours.</p>
+                    <a href="#connect" class="service-link">Get the link <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-day">Tuesday</div>
+                    <h3>Kampala Cohort</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 6:00 PM EAT</p>
+                    <p class="service-desc">The regional cohort of the East Africa Training Centre, hosted by an affiliate church and led by a licensed facilitator.</p>
+                    <a href="holy-nation-kenya.html#training" class="service-link">Training centre <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-day">Thursday</div>
+                    <h3>City Group Night</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> Local, 6:00 PM</p>
+                    <p class="service-desc">Homes and community halls &mdash; discussion of Sunday's teaching, prayer for one another, and practical care within the group.</p>
+                    <a href="#cities" class="service-link">Find your city <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card service-card-accent" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-day">Daily</div>
+                    <h3>The Breaking Watch</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 12:00 &ndash; 3:00 AM EAT</p>
+                    <p class="service-desc">Uganda's watch on the global roster. Strongholds, deliverance and spiritual conflict &mdash; the watch nobody volunteers for lightly.</p>
+                    <a href="prayers-mission.html#watches" class="service-link">Take a slot <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div class="prose" data-aos="fade-up">
+                    <h3>Why Uganda holds the Breaking Watch</h3>
+                    <p>Watch 03 runs from midnight to 3:00 AM. Its standing burden is strongholds, deliverance and spiritual conflict, and it is the slot with the highest turnover on the whole roster &mdash; people take it, find it costly, and hand it on.</p>
+                    <p>We asked for it deliberately. Uganda's recent history includes things that a nation does not simply move past by ignoring them, and a watch that faces conflict directly seemed the honest one for us to hold.</p>
+                    <ul>
+                        <li>One three-hour window, one day a week &mdash; almost always shared between three or four people</li>
+                        <li>New intercessors are paired with an experienced watchman for the first two months</li>
+                        <li>Nobody is thought less of for standing down from this watch</li>
+                    </ul>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>First Time Joining?</h3>
+                    <ul class="check-list">
+                        <li>The Sunday link is posted in the community group each Saturday</li>
+                        <li>Come as you are &mdash; there is no dress code</li>
+                        <li>Worship runs in English and Luganda together</li>
+                        <li>Children and teens are welcome throughout</li>
+                        <li>Stay after for tea and conversation with a leader</li>
+                        <li>You will never be asked to give as a visitor</li>
+                    </ul>
+                    <a href="#connect" class="btn btn-primary btn-sm">Say You're Coming <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Groups -->
+    <section class="page-section page-section-light" id="cities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Near You</span>
+                <h2 class="section-title">City Groups</h2>
+                <p class="section-desc">Three cities, each with a named host and its own WhatsApp thread. All on East Africa Time.</p>
+            </div>
+
+            <div data-filter data-aos="fade-up">
+                <div class="filter-bar">
+                    <div class="filter-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" data-filter-input placeholder="Search city or district..." aria-label="Search city groups">
+                    </div>
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter-chip="all">All</button>
+                        <button class="filter-chip" data-filter-chip="central">Central</button>
+                        <button class="filter-chip" data-filter-chip="north">Northern</button>
+                        <button class="filter-chip" data-filter-chip="west">Western</button>
+                    </div>
+                </div>
+
+                <div class="city-grid">
+                    <article class="city-card" data-filter-item data-tags="central kampala wakiso entebbe luganda">
+                        <h3>Kampala</h3>
+                        <span class="city-state">Central &middot; National Hub</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Kampala">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-book"></i> Regional cohort here</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Kampala City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="north gulu acholi northern">
+                        <h3>Gulu</h3>
+                        <span class="city-state">Northern Region</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Kampala">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-dove"></i> Reconciliation work</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Gulu City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#north" class="btn-nation">Read more <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="west mbarara runyankole ankole western">
+                        <h3>Mbarara</h3>
+                        <span class="city-state">Western Region</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Kampala">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-users"></i> 20+ members</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Mbarara City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="filter-empty" data-filter-empty>
+                    <i class="fas fa-map-location-dot"></i>
+                    <p>No group in that town yet.<br>We have members in Jinja, Mbale, Lira, Fort Portal and Arua meeting online &mdash; several are one host short of a group.</p>
+                    <a href="#connect" class="btn btn-primary btn-sm" style="margin-top:1.25rem;">Start One Where You Are <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The North -->
+    <section class="ministry-section ministry-dark" id="north">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="ministry-grid">
+                <div class="ministry-visual" data-aos="fade-right">
+                    <div class="visual-frame">
+                        <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=900&q=80" alt="Community gathering in northern Uganda">
+                        <div class="visual-accent"></div>
+                    </div>
+                    <div class="visual-float-card">
+                        <i class="fas fa-dove"></i>
+                        <span>Gulu &amp; the North</span>
+                    </div>
+                </div>
+                <div class="ministry-content" data-aos="fade-left">
+                    <span class="ministry-tag">IPSD Uganda</span>
+                    <h2>Reconciliation Work in the North</h2>
+                    <p class="ministry-lead">Northern Uganda carries the memory of two decades of armed conflict. A generation grew up displaced, and a great many families are still carrying losses that were never formally acknowledged by anyone.</p>
+                    <p class="ministry-lead">Our work there is led by Acholi members, moves slowly, and is deliberately unspectacular. We are not a peace agency and we do not describe ourselves as one &mdash; we are a house whose northern members are doing patient, local work among their own people.</p>
+                    <div class="ministry-list">
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-handshake-simple"></i></div>
+                            <div class="item-text">
+                                <h4>Community Mediation</h4>
+                                <p>Trained local mediators working land disputes, family conflict and inter-clan tension</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-heart-pulse"></i></div>
+                            <div class="item-text">
+                                <h4>Trauma Care &amp; Referral</h4>
+                                <p>Trained listeners who sit with people and refer onward &mdash; never a substitute for clinical care</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-house-chimney-user"></i></div>
+                            <div class="item-text">
+                                <h4>Reintegration Support</h4>
+                                <p>Practical help for families receiving members home, working alongside statutory and NGO programmes</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-seedling"></i></div>
+                            <div class="item-text">
+                                <h4>Land &amp; Livelihood</h4>
+                                <p>Because most local conflict here has material causes, addressed with CIEL skills and enterprise work</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-book-open-reader"></i></div>
+                            <div class="item-text">
+                                <h4>Education Support</h4>
+                                <p>CES fees and materials for children whose schooling was interrupted or never began</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="country-development.html#bodies" class="btn btn-outline">About IPSD <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section page-section-light">
+        <div class="container">
+            <div class="notice-box" data-aos="fade-up">
+                <i class="fas fa-circle-info"></i>
+                <div>
+                    <h4>How we talk about the north</h4>
+                    <p>We do not use the suffering of northern Uganda in fundraising appeals, and we do not publish photographs or stories of identifiable people without their informed, freely given consent. Visitors are welcome to serve; visitors are not welcome to document. If you are here to take pictures for a newsletter, please go somewhere else.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Young Leaders -->
+    <section class="page-section page-section-cream" id="young">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">TANI &amp; SANI Uganda</span>
+                    <h2 class="section-title section-title-left">Four Teen Chapters, Three Campus Fellowships</h2>
+                    <p>In a country where most people are under twenty, treating youth work as a warm-up act is a strategic error as much as a spiritual one. Our teen chapters are led by trained adults and increasingly by older teens themselves, and they teach real doctrine rather than diluted encouragement.</p>
+                    <ul>
+                        <li><strong>Four teen chapters</strong> &mdash; Kampala (two), Gulu and Mbarara, meeting fortnightly</li>
+                        <li><strong>Three campus fellowships</strong> &mdash; student-led with a licensed adult adviser</li>
+                        <li><strong>Foundations taught properly</strong> &mdash; who Christ is, who they are, and how to think</li>
+                        <li><strong>Unfiltered question time</strong> at every meeting, with nothing ruled out of bounds</li>
+                        <li><strong>Annual leadership camp</strong> where teens run the sessions and deliver a service project</li>
+                        <li><strong>A deliberate bridge at 19</strong> from TANI into SANI, so nobody falls through the gap</li>
+                    </ul>
+                    <p>Several of our teen chapter leaders came through the chapters themselves. That is the whole design working.</p>
+                </div>
+
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>Safeguarding, Without Exception</h3>
+                    <ul class="check-list">
+                        <li>Every adult is screened, referenced and trained annually</li>
+                        <li>Two cleared adults present at all times &mdash; never one alone with a minor</li>
+                        <li>Meetings happen in visible, public-facing spaces</li>
+                        <li>No private messaging between an adult and a minor, ever</li>
+                        <li>Parents receive the schedule and can attend any session</li>
+                        <li>Any concern is escalated the same day, including about our own leaders</li>
+                    </ul>
+                    <p class="side-note">A parent or guardian should make first contact for anyone under 18. Our full safeguarding policy is available on request.</p>
+                    <a href="networks.html#tani" class="btn btn-primary btn-sm">About TANI <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Active Here -->
+    <section class="page-section page-section-light" id="active">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Honest Status</span>
+                <h2 class="section-title">What's Actually Running Here</h2>
+                <p class="section-desc">All eight pillars exist globally. Here is exactly where each one stands in Uganda.</p>
+            </div>
+
+            <div class="status-grid" data-aos="fade-up">
+                <div class="status-row">
+                    <span class="status-num">01</span>
+                    <div class="status-body">
+                        <h4>The Apostolic House</h4>
+                        <p>National assembly in Kampala, three city groups, Thursday fellowships and pastoral care.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">02</span>
+                    <div class="status-body">
+                        <h4>Global College</h4>
+                        <p>A regional cohort in Kampala served by the East Africa Training Centre in Nairobi. A second cohort is planned for Gulu.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">03</span>
+                    <div class="status-body">
+                        <h4>Prayers &amp; Mission</h4>
+                        <p>Watch 03 held from Uganda. Prayer towers in Kampala and Gulu.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">04</span>
+                    <div class="status-body">
+                        <h4>Networks</h4>
+                        <p>TANI on four chapters and SANI on three campuses &mdash; our strongest networks. AWF running; IFAM open; KBLN forming.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">05</span>
+                    <div class="status-body">
+                        <h4>Kingdom Operations</h4>
+                        <p>Working groups forming in Education and Agriculture. CIEL skills work runs alongside the northern programme.</p>
+                        <span class="badge badge-forming">Forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">06</span>
+                    <div class="status-body">
+                        <h4>Compassion</h4>
+                        <p>CES school support and AFER feeding, concentrated in the north alongside the reconciliation work.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">07</span>
+                    <div class="status-body">
+                        <h4>Country Development</h4>
+                        <p>IPSD mediation and trauma work in the north is active. The wider Rebuild template is not being adapted here yet.</p>
+                        <span class="badge badge-forming">Partly forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">08</span>
+                    <div class="status-body">
+                        <h4>ThyKingdomCome</h4>
+                        <p>Part of the East Africa sub-region, year 3 of 5. Council forming with a Ugandan chair.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="page-section page-section-cream" id="leadership">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Council</span>
+                <h2 class="section-title">Who Carries This Region</h2>
+                <p class="section-desc">A Ugandan council, chaired by a Ugandan, accountable to the Ugandan community first and to the global commonwealth second.</p>
+            </div>
+            <div class="leader-grid">
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="National Coordinator">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">National Coordinator</span>
+                        <p>Carries the Ugandan community, chairs the council, and is the first point of contact for anyone joining.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Northern Region Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Northern Region Lead, Gulu</span>
+                        <p>Acholi, and leads the mediation, trauma referral and reintegration work across the north.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Young Leaders Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Young Leaders Lead</span>
+                        <p>Oversees the four teen chapters and three campus fellowships, and holds the safeguarding standard for all of them.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="notice-box mt-5" data-aos="fade-up">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                    <h4>Accountability, plainly</h4>
+                    <p>Every leader here is under the same annual character and doctrine review as everyone else, and each sits under a mentor outside their own chain of command. Concerns go to <strong>theholynationglobal@gmail.com</strong> and are handled by the same process that applies to any member.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Connected -->
+    <section class="page-section page-section-light" id="connect">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get Connected</span>
+                <h2 class="section-title">Four Ways to Start</h2>
+            </div>
+
+            <div class="steps-grid" data-aos="fade-up">
+                <a href="#" class="step-card js-whatsapp" data-nation="Holy Nation Uganda">
+                    <span class="step-num">01</span>
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Join the Community</h3>
+                    <p>The national WhatsApp group: Sunday links, prayer requests and a direct line to the coordinator.</p>
+                    <span class="step-link">Join <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#connect" class="step-card">
+                    <span class="step-num">02</span>
+                    <i class="fas fa-people-group"></i>
+                    <h3>Come on Sunday</h3>
+                    <p>In person in Kampala or online anywhere. No commitment, and no offering asked of visitors.</p>
+                    <span class="step-link">Get the link <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#young" class="step-card">
+                    <span class="step-num">03</span>
+                    <i class="fas fa-child"></i>
+                    <h3>Teen or Student?</h3>
+                    <p>Four teen chapters and three campus fellowships. Parents make first contact for under-18s.</p>
+                    <span class="step-link">Find a chapter <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="prayers-mission.html#watches" class="step-card">
+                    <span class="step-num">04</span>
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Take the Breaking Watch</h3>
+                    <p>Midnight to 3:00 AM, one day a week, shared with others. New intercessors are always paired.</p>
+                    <span class="step-link">Enrol <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div data-aos="fade-up">
+                    <h3 class="sub-heading">Tell Us Where You Are</h3>
+                    <p class="sub-lead">The coordinator's office replies within two working days, and a real person will be assigned to you &mdash; not a mailing list.</p>
+                    <form class="form-grid" data-demo>
+                        <div class="form-field">
+                            <label for="ug-name">Full name</label>
+                            <input type="text" id="ug-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ug-email">Email</label>
+                            <input type="email" id="ug-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ug-city">Town or city</label>
+                            <input type="text" id="ug-city" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ug-district">District</label>
+                            <input type="text" id="ug-district">
+                        </div>
+                        <div class="form-field full">
+                            <label for="ug-intent">I'd like to</label>
+                            <select id="ug-intent">
+                                <option>Join the national WhatsApp community</option>
+                                <option>Attend the Sunday assembly</option>
+                                <option>Join my nearest city group</option>
+                                <option>Start a city group where I live</option>
+                                <option>Join the Kampala training cohort</option>
+                                <option>Join or start a teen chapter</option>
+                                <option>Join a campus fellowship</option>
+                                <option>Take a watch on the prayer roster</option>
+                                <option>Serve with the northern programme</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="ug-message">Anything you'd like us to know</label>
+                            <textarea id="ug-message"></textarea>
+                        </div>
+                        <div class="form-field full">
+                            <button type="submit" class="btn btn-primary">Send <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>Uganda Office</h3>
+                    <dl class="fact-list">
+                        <div><dt>Coordinator</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Northern region</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Hub</dt><dd>Kampala</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Africa/Kampala">--:--</span> EAT</dd></div>
+                        <div><dt>Reply target</dt><dd>2 working days</dd></div>
+                        <div><dt>Safeguarding</dt><dd>theholynationglobal@gmail.com</dd></div>
+                    </dl>
+                    <p class="side-note">Nobody from Holy Nation will ever direct-message you asking for money, mobile money transfers, bank details or documents. If that happens, it is a scam &mdash; please report it.</p>
+                    <a href="/connect" class="btn btn-primary btn-sm">All Nations <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="page-section page-section-cream" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked</h2>
+            </div>
+            <div class="accordion faq-accordion" data-aos="fade-up">
+                <div class="accordion-item open">
+                    <div class="accordion-head">Do I have to leave my church to join Holy Nation Uganda?</div>
+                    <div class="accordion-body">
+                        <p>No. Most of our members belong to a Ugandan congregation already, and we would discourage anyone from leaving. City groups meet midweek and the training is designed to strengthen you wherever you serve.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Where do I study if I'm in Uganda?</div>
+                    <div class="accordion-body">
+                        <p>A regional cohort runs in Kampala, hosted by an affiliate church and led by a licensed facilitator, served by the East Africa Training Centre in Nairobi. Same curriculum, same examinations, same award. A second cohort is planned for Gulu.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Can my teenager join?</div>
+                    <div class="accordion-body">
+                        <p>Yes, through TANI. A parent or guardian should make first contact. Every adult is screened and trained annually, two cleared adults are present at all times, meetings happen in visible spaces, and there is no private messaging between adults and minors.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Can I visit the work in the north?</div>
+                    <div class="accordion-body">
+                        <p>You are welcome to serve, with notice and under local leadership. You are not welcome to document. We do not host trips where the primary purpose is the visitor's experience, and we do not permit photography of identifiable people without informed consent.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Do I have to be a Christian to receive help?</div>
+                    <div class="accordion-body">
+                        <p>No. Eligibility is based on need alone. Nobody is asked about their faith, required to attend anything, or treated differently for declining. Charity with conditions attached is not charity.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Are you politically affiliated?</div>
+                    <div class="accordion-body">
+                        <p>No. Holy Nation Global endorses no party and no candidate in any nation, and our groups do not permit campaigning. The full policy is published on the Country Development page and applies here without exception.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is there a membership fee?</div>
+                    <div class="accordion-body">
+                        <p>None. Community, gatherings, watches and the Foundations Class are free. Global College tuition is set regionally with instalment plans and bursaries, and nobody has been turned away for inability to pay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Nations -->
+    <section class="page-section page-section-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Elsewhere</span>
+                <h2 class="section-title">Other Nations</h2>
+            </div>
+            <div class="feature-grid feature-grid-4" data-aos="fade-up">
+                <a href="/holy-nation-kenya" class="feature-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Holy Nation Kenya</h3>
+                    <p>Nairobi hub and the East Africa Training Centre, which serves our Kampala cohort.</p>
+                </a>
+                <a href="/holy-nation-rwanda" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation Rwanda</h3>
+                    <p>Kigali hub, trilingual, and a fellow member of the East Africa sub-region.</p>
+                </a>
+                <a href="/holy-nation-ghana" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation Ghana</h3>
+                    <p>Accra hub, nine trade workshops and the movement's apprenticeship pathway.</p>
+                </a>
+                <a href="connect.html#nations" class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>All Twelve Nations</h3>
+                    <p>The full directory with live local times, WhatsApp communities and national coordinators.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>You Are Welcome Here</h2>
+                <p>Come to one Sunday. Stay if it is home. Either way you will be received the way family receives family.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large js-whatsapp" data-nation="Holy Nation Uganda">Join the Community</a>
+                    <a href="#connect" class="btn btn-outline btn-large">Get the Sunday Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">
+                            <img src="logo.png" alt="Holy Nation Global">
+                            <div>
+                                <span class="footer-logo-main">HOLY NATION UGANDA</span>
+                                <span class="footer-logo-sub">Holy Nation Global</span>
+                            </div>
+                        </a>
+                        <p>Raising Apostolic Leaders, Transforming Nations, Establishing the Reign of Christ on Earth.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/1davidabraham" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/1DavidAbraham" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/1davidabraham/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@1davidabraham" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Holy Nation Uganda</h4>
+                        <ul>
+                            <li><a href="#gatherings">Gatherings</a></li>
+                            <li><a href="#cities">City Groups</a></li>
+                            <li><a href="#north">The North</a></li>
+                            <li><a href="#young">Young Leaders</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ministries</h4>
+                        <ul>
+                            <li><a href="/apostolic-house">The Apostolic House</a></li>
+                            <li><a href="/global-college">Global College</a></li>
+                            <li><a href="/prayers-mission">Prayers &amp; Mission</a></li>
+                            <li><a href="/networks">Apostolic Networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="connect.html#nations">All Nations</a></li>
+                            <li><a href="connect.html#prayer">Prayer Request</a></li>
+                            <li><a href="/give">Give Online</a></li>
+                            <li><a href="connect.html#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 The Holy Nation Global. All rights reserved. | Thy Kingdom Come.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
+</html>

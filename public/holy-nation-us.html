@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Nation US | Holy Nation Global</title>
+    <meta name="description" content="Holy Nation US — city groups in Houston, Dallas, Atlanta, New York, Chicago and Los Angeles. Sunday gatherings, prayer watches, Global College cohorts and the KBLN roundtables.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Holy Nation Global" class="preloader-logo">
+            <p>Holy Nation Global</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-solid">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Holy Nation Global">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Holy Nation Global</span>
+                    <span class="logo-sub">Thy Kingdom Come</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/apostolic-house" class="nav-link">Apostolic House</a>
+                <a href="/global-college" class="nav-link">Global College</a>
+                <a href="/prayers-mission" class="nav-link">Prayers &amp; Mission</a>
+                <a href="/networks" class="nav-link">Networks</a>
+                <a href="/kingdom-operations" class="nav-link">Operations</a>
+                <a href="/compassion" class="nav-link">Compassion</a>
+                <a href="/country-development" class="nav-link">Nation Building</a>
+                <a href="/thykingdomcome" class="nav-link">ThyKingdomCome</a>
+                <a href="/give" class="nav-link nav-give">Give</a>
+                <a href="/connect" class="nav-link nav-cta active">Connect</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search teachings, events, ministries..." id="searchInput">
+            <button class="search-submit" aria-label="Submit search"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=1920&q=80');"></div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="/connect">Connect</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="connect.html#nations">Nations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Holy Nation US</span>
+            </nav>
+            <span class="page-hero-tag">United States</span>
+            <h1>Holy Nation US</h1>
+            <p class="page-hero-lead">Six city groups, one national gathering, and a growing company of believers carrying the apostolic mandate across American time zones. Based in Houston, present from coast to coast.</p>
+            <div class="page-hero-actions">
+                <a href="#" class="btn btn-primary js-whatsapp" data-nation="Holy Nation US"><i class="fab fa-whatsapp"></i> Join the WhatsApp Community</a>
+                <a href="#cities" class="btn btn-outline">Find Your City</a>
+            </div>
+            <div class="page-hero-facts">
+                <div>
+                    <span class="page-fact-num nation-clock" data-tz="America/Chicago">--:--</span>
+                    <span class="page-fact-label">Houston Time Now</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="6">0</span>
+                    <span class="page-fact-label">City Groups</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="4">0</span>
+                    <span class="page-fact-label">Time Zones</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="3">0</span>
+                    <span class="page-fact-label">Years Established</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Nav -->
+    <div class="page-nav" id="pageNav">
+        <div class="page-nav-inner">
+            <a href="#overview">Overview</a>
+            <a href="#gatherings">Gatherings</a>
+            <a href="#cities">City Groups</a>
+            <a href="#active">What's Active Here</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#events">Events</a>
+            <a href="#connect">Get Connected</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
+
+    <!-- Next gathering strip -->
+    <section class="page-section page-section-light" style="padding-bottom:0;">
+        <div class="container">
+            <div class="next-strip" data-aos="fade-up">
+                <div>
+                    <span class="next-strip-label">Next National Gathering</span>
+                    <h3>Sunday Assembly &mdash; Online &amp; In Person</h3>
+                    <p>10:00 AM Central &middot; 11:00 AM Eastern &middot; 8:00 AM Pacific</p>
+                </div>
+                <div style="text-align:right;">
+                    <span class="next-countdown" data-countdown data-tz="America/Chicago" data-day="Sun" data-time="10:00">&mdash;</span>
+                    <span class="next-countdown-label">Until we gather</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="page-section page-section-light" id="overview">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Who We Are</span>
+                    <h2 class="section-title section-title-left">An Apostolic House in American Soil</h2>
+                    <p>Holy Nation US began the way most of our national communities began &mdash; a handful of people in Houston who wanted apostolic teaching, honest accountability and somewhere to belong that wasn't built around a personality.</p>
+                    <p>Three years on we are six city groups, a weekly national gathering, a Global College cohort, two prayer watches on the global roster and a set of KBLN roundtables for people working in the marketplace. Still small. Deliberately unhurried.</p>
+
+                    <div class="scripture">
+                        &ldquo;Now therefore, you are no longer strangers and foreigners, but fellow citizens with the saints and members of the household of God.&rdquo;
+                        <cite>Ephesians 2:19</cite>
+                    </div>
+
+                    <h3>What we are, and what we are not</h3>
+                    <p>We are a community, a training pipeline and a prayer altar. We are not trying to be your church, and we are not building a mega-anything. Most people here belong to a local congregation on Sunday morning and gather with us around that.</p>
+                    <ul>
+                        <li><strong>You keep your church.</strong> We sit alongside it &mdash; the national gathering is timed so it rarely clashes</li>
+                        <li><strong>You get known.</strong> Every member is placed in a city group and connected to a real person</li>
+                        <li><strong>You get trained.</strong> The full Global College ladder runs online from here</li>
+                        <li><strong>You carry something.</strong> Every city group holds a watch and a local service assignment</li>
+                        <li><strong>You are never asked for money to belong.</strong> Ever</li>
+                    </ul>
+
+                    <h3>Our relationship to the global house</h3>
+                    <p>Holy Nation US is an establishing region in year three of the five-year ThyKingdomCome cycle. That means our council is constituted, funding is transitioning to local sources, and full autonomy is due in year five &mdash; after which we govern ourselves, license our own ministers and relate to Lagos as peers rather than as a branch.</p>
+                    <p>One thing worth saying plainly, because North America usually gets it the other way round: <em>our giving does not buy us extra votes.</em> This region has one voice in the commonwealth, exactly like Rwanda and exactly like the Philippines.</p>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>At a Glance</h3>
+                    <dl class="fact-list">
+                        <div><dt>National hub</dt><dd>Houston, Texas</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="America/Chicago">--:--</span> CST</dd></div>
+                        <div><dt>Main gathering</dt><dd>Sundays, 10:00 AM CST</dd></div>
+                        <div><dt>City groups</dt><dd>6 across 4 time zones</dd></div>
+                        <div><dt>TKC stage</dt><dd>Establishing &middot; Year 3 of 5</dd></div>
+                        <div><dt>Coordinator</dt><dd>theholynationglobal@gmail.com</dd></div>
+                    </dl>
+                    <a href="#connect" class="btn btn-primary btn-sm">Get Connected <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gatherings -->
+    <section class="page-section page-section-cream" id="gatherings">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Rhythm</span>
+                <h2 class="section-title">When We Gather</h2>
+                <p class="section-desc">All times shown Central. Every gathering is available online, and recordings go out to the community the same week.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-day">Sunday</div>
+                    <h3>National Assembly</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 10:00 AM CST</p>
+                    <p class="service-desc">The whole US community together, online, with in-person watch parties in each city group. Worship, apostolic teaching and communion. Runs 90 minutes.</p>
+                    <a href="#connect" class="service-link">Get the link <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-day">Tuesday</div>
+                    <h3>Global College Cohort</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 7:00 PM CST</p>
+                    <p class="service-desc">Live seminar for enrolled students across the Christ and Kingdom Institutes, plus open sessions once a month for anyone considering enrolment.</p>
+                    <a href="global-college.html#admissions" class="service-link">Admissions <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-day">Thursday</div>
+                    <h3>City Group Night</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> Local, 7:00 PM</p>
+                    <p class="service-desc">Each city meets in homes &mdash; discussion of Sunday's teaching, prayer for one another, and the practical business of actually knowing people.</p>
+                    <a href="#cities" class="service-link">Find your city <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card service-card-accent" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-day">Daily</div>
+                    <h3>The Morning Altar</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 5:30 AM CST</p>
+                    <p class="service-desc">The global daily altar, live from Lagos and re-broadcast for US mornings. Thirty minutes of the Word and prayer to open the day.</p>
+                    <a href="prayers-mission.html#watches" class="service-link">About the watches <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div class="prose" data-aos="fade-up">
+                    <h3>Our watches on the global roster</h3>
+                    <p>Holy Nation US holds two of the eight daily watches for the whole movement. When it is mid-morning here, we are covering the hours when much of Africa and Asia is asleep &mdash; which is exactly the point of a global roster.</p>
+                    <ul>
+                        <li><strong>Watch 05 &mdash; The Morning Altar</strong> (6:00&ndash;9:00 AM CST): the house, its leaders, the day's assignments</li>
+                        <li><strong>Watch 06 &mdash; The Marketplace Watch</strong> (9:00 AM&ndash;12:00 PM CST): work, commerce, enterprise and the economy</li>
+                    </ul>
+                    <p>Taking a watch means one three-hour window, one day a week. Most people share a slot with two or three others. It is the single most useful thing a new member can do.</p>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>First Time Joining?</h3>
+                    <ul class="check-list">
+                        <li>The Sunday link is posted in the community group each Saturday</li>
+                        <li>Cameras optional &mdash; nobody will put you on the spot</li>
+                        <li>Arrive whenever; nobody is counted or called out</li>
+                        <li>Kids are welcome; the first 20 minutes is family-friendly</li>
+                        <li>Stay after for the open floor if you want to meet people</li>
+                        <li>You will never be asked to give as a visitor</li>
+                    </ul>
+                    <a href="#connect" class="btn btn-primary btn-sm">Say You're Coming <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Groups -->
+    <section class="page-section page-section-light" id="cities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Near You</span>
+                <h2 class="section-title">City Groups</h2>
+                <p class="section-desc">Six cities, each with a named host, a fixed meeting night and its own WhatsApp thread. Local times below are live.</p>
+            </div>
+
+            <div data-filter data-aos="fade-up">
+                <div class="filter-bar">
+                    <div class="filter-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" data-filter-input placeholder="Search city or state..." aria-label="Search city groups">
+                    </div>
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter-chip="all">All</button>
+                        <button class="filter-chip" data-filter-chip="south">South</button>
+                        <button class="filter-chip" data-filter-chip="northeast">Northeast</button>
+                        <button class="filter-chip" data-filter-chip="midwest">Midwest</button>
+                        <button class="filter-chip" data-filter-chip="west">West</button>
+                    </div>
+                </div>
+
+                <div class="city-grid">
+                    <article class="city-card" data-filter-item data-tags="south houston texas tx">
+                        <h3>Houston</h3>
+                        <span class="city-state">Texas &middot; National Hub</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="America/Chicago">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-users"></i> 40+ members</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Houston City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="south dallas texas tx fort worth">
+                        <h3>Dallas</h3>
+                        <span class="city-state">Texas</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="America/Chicago">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-users"></i> 20+ members</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Dallas City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="south atlanta georgia ga">
+                        <h3>Atlanta</h3>
+                        <span class="city-state">Georgia</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="America/New_York">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-users"></i> 25+ members</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Atlanta City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="northeast new york ny nyc brooklyn">
+                        <h3>New York</h3>
+                        <span class="city-state">New York</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="America/New_York">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-users"></i> 18+ members</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="New York City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="midwest chicago illinois il">
+                        <h3>Chicago</h3>
+                        <span class="city-state">Illinois</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="America/Chicago">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-users"></i> 15+ members</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Chicago City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="west los angeles california ca la">
+                        <h3>Los Angeles</h3>
+                        <span class="city-state">California</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="America/Los_Angeles">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-users"></i> 12+ members</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Los Angeles City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="filter-empty" data-filter-empty>
+                    <i class="fas fa-map-location-dot"></i>
+                    <p>No group in that city yet.<br>Plenty of our members are the only person in their state &mdash; the online community is built for exactly that.</p>
+                    <a href="#connect" class="btn btn-primary btn-sm" style="margin-top:1.25rem;">Start One Where You Are <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="notice-box mt-4" data-aos="fade-up">
+                <i class="fas fa-location-crosshairs"></i>
+                <div>
+                    <h4>Nowhere near any of these?</h4>
+                    <p>About a third of our US members live nowhere near a city group. They join the national gathering online, sit in a virtual house fellowship, and hold a watch from home. You will not be a second-class member for it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Active Here -->
+    <section class="page-section page-section-cream" id="active">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Honest Status</span>
+                <h2 class="section-title">What's Actually Running Here</h2>
+                <p class="section-desc">All eight pillars exist globally. Not all eight are running in the US yet, and we would rather tell you that than let you find out.</p>
+            </div>
+
+            <div class="status-grid" data-aos="fade-up">
+                <div class="status-row">
+                    <span class="status-num">01</span>
+                    <div class="status-body">
+                        <h4>The Apostolic House</h4>
+                        <p>National Sunday assembly, six city groups, Thursday house fellowships and pastoral care.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">02</span>
+                    <div class="status-body">
+                        <h4>Global College</h4>
+                        <p>Online cohorts through the Christ and Kingdom Institutes. Apostolic Institute opens next intake.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">03</span>
+                    <div class="status-body">
+                        <h4>Prayers &amp; Mission</h4>
+                        <p>Watches 05 and 06 held from the US. Two city prayer towers; four more planned.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">04</span>
+                    <div class="status-body">
+                        <h4>Networks</h4>
+                        <p>KBLN roundtables in eight cities and IFAM affiliation open. AWF and SANI forming; TANI not yet.</p>
+                        <span class="badge badge-live">Partly running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">05</span>
+                    <div class="status-body">
+                        <h4>Kingdom Operations</h4>
+                        <p>Sphere working groups forming in Business, Education, Health and Media. Others need people.</p>
+                        <span class="badge badge-forming">Forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">06</span>
+                    <div class="status-body">
+                        <h4>Compassion</h4>
+                        <p>City groups partner with existing local agencies rather than duplicating them. CES sponsorships fund students abroad.</p>
+                        <span class="badge badge-forming">Forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">07</span>
+                    <div class="status-body">
+                        <h4>Country Development</h4>
+                        <p>No US programme. The Rebuild model was built for a different context and we will not pretend otherwise.</p>
+                        <span class="badge badge-soon">Not running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">08</span>
+                    <div class="status-body">
+                        <h4>ThyKingdomCome</h4>
+                        <p>Establishing region, year 3 of 5. Sending teams and funding early-stage regions without conditions.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="table-note" data-aos="fade-up">If a pillar above says "forming" and it is the thing you care about most, that is not a warning &mdash; it is an opening. Forming groups are looking for the people who will shape them.</p>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="page-section page-section-light" id="leadership">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Council</span>
+                <h2 class="section-title">Who Carries This Region</h2>
+                <p class="section-desc">A constituted regional council, accountable to the US community first and to the global commonwealth second.</p>
+            </div>
+            <div class="leader-grid">
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="National Coordinator">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">National Coordinator</span>
+                        <p>Carries the US region, chairs the regional council, and is the first point of contact for anyone joining.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="Director of Training">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Director of Training</span>
+                        <p>Runs the US Global College cohorts and coordinates mentoring placements across the city groups.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&q=80" alt="Prayer and Missions Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Prayer &amp; Missions Lead</span>
+                        <p>Holds the US watch roster, coordinates the city prayer towers and organises sending for mission teams.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="notice-box mt-5" data-aos="fade-up">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                    <h4>Accountability, plainly</h4>
+                    <p>Every leader listed here is under the same annual character and doctrine review as everyone else in the movement, and each one sits under a mentor outside their own chain of command. Concerns about any of them go to <strong>theholynationglobal@gmail.com</strong> and are handled by the same process that applies to any member.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section class="page-section page-section-cream" id="events">
+        <div class="container">
+            <div class="section-header-split" data-aos="fade-up">
+                <div>
+                    <span class="section-tag section-tag-left">US Calendar</span>
+                    <h2 class="section-title section-title-left">What's Coming Up</h2>
+                </div>
+                <a href="prayers-mission.html#conferences" class="btn btn-ghost">Global Calendar <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="events-grid mt-4">
+                <article class="event-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Feb</span>
+                            <span class="event-day">12&ndash;16</span>
+                        </div>
+                        <div>
+                            <h3>Global Apostolic Summit</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Lagos &amp; streamed for US times</p>
+                            <p>The US region sends a delegation and reports to the assembly. Full stream available with a watch party in every city group.</p>
+                            <a href="prayers-mission.html#conferences" class="event-link">Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Apr</span>
+                            <span class="event-day">25</span>
+                        </div>
+                        <div>
+                            <h3>US Regional Gathering</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Houston, Texas</p>
+                            <p>Our one in-person day of the year: all six city groups in one room for teaching, communion and the regional council report.</p>
+                            <a href="#connect" class="event-link">Register interest <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Jun</span>
+                            <span class="event-day">14</span>
+                        </div>
+                        <div>
+                            <h3>KBLN Marketplace Forum</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Dallas &amp; Online</p>
+                            <p>A working day on ethics, capital and scale for founders and professionals, with case studies presented by members.</p>
+                            <a href="networks.html#kbln" class="event-link">About KBLN <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Sep</span>
+                            <span class="event-day">15</span>
+                        </div>
+                        <div>
+                            <h3>Autumn Intake Opens</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Global College, Online</p>
+                            <p>Christ Institute and Kingdom Institute cohorts begin, with the Tuesday night live seminar running on Central time.</p>
+                            <a href="global-college.html#admissions" class="event-link">Apply <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Qtr</span>
+                            <span class="event-day">1&ndash;4</span>
+                        </div>
+                        <div>
+                            <h3>City Host Training</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Online</p>
+                            <p>Quarterly training for anyone hosting or starting a city group, including safeguarding certification.</p>
+                            <a href="#connect" class="event-link">Enquire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="event-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Jan</span>
+                            <span class="event-day">01&ndash;21</span>
+                        </div>
+                        <div>
+                            <h3>The Twenty-One Days</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Everywhere</p>
+                            <p>The movement opens the year with 21 days of corporate fasting and prayer. US watches run extended hours throughout.</p>
+                            <a href="prayers-mission.html#watches" class="event-link">Join a watch <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Connected -->
+    <section class="page-section page-section-light" id="connect">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get Connected</span>
+                <h2 class="section-title">Four Ways to Start</h2>
+            </div>
+
+            <div class="steps-grid" data-aos="fade-up">
+                <a href="#" class="step-card js-whatsapp" data-nation="Holy Nation US">
+                    <span class="step-num">01</span>
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Join the Community</h3>
+                    <p>The national WhatsApp group: Sunday links, prayer requests and a direct line to the coordinator.</p>
+                    <span class="step-link">Join <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#connect" class="step-card">
+                    <span class="step-num">02</span>
+                    <i class="fas fa-video"></i>
+                    <h3>Come on Sunday</h3>
+                    <p>Join the national assembly online, or find the watch party in your city. No commitment of any kind.</p>
+                    <span class="step-link">Get the link <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="prayers-mission.html#watches" class="step-card">
+                    <span class="step-num">03</span>
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Take a Watch</h3>
+                    <p>One three-hour window a week on the global roster. The most useful thing a new member can do.</p>
+                    <span class="step-link">Enrol <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#connect" class="step-card">
+                    <span class="step-num">04</span>
+                    <i class="fas fa-seedling"></i>
+                    <h3>Start a City Group</h3>
+                    <p>Three people and a willing host is enough. Training, materials and safeguarding provided.</p>
+                    <span class="step-link">Enquire <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div data-aos="fade-up">
+                    <h3 class="sub-heading">Tell Us Where You Are</h3>
+                    <p class="sub-lead">The coordinator's office replies within two working days, and a real person will be assigned to you &mdash; not a mailing list.</p>
+                    <form class="form-grid" data-demo>
+                        <div class="form-field">
+                            <label for="us-name">Full name</label>
+                            <input type="text" id="us-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="us-email">Email</label>
+                            <input type="email" id="us-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="us-city">City</label>
+                            <input type="text" id="us-city" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="us-state">State</label>
+                            <input type="text" id="us-state">
+                        </div>
+                        <div class="form-field full">
+                            <label for="us-intent">I'd like to</label>
+                            <select id="us-intent">
+                                <option>Join the national WhatsApp community</option>
+                                <option>Attend the Sunday assembly online</option>
+                                <option>Join my nearest city group</option>
+                                <option>Start a city group where I live</option>
+                                <option>Take a watch on the prayer roster</option>
+                                <option>Enrol in the Global College</option>
+                                <option>Join a KBLN roundtable</option>
+                                <option>Something else</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="us-message">Anything you'd like us to know</label>
+                            <textarea id="us-message"></textarea>
+                        </div>
+                        <div class="form-field full">
+                            <button type="submit" class="btn btn-primary">Send <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>US Office</h3>
+                    <dl class="fact-list">
+                        <div><dt>Coordinator</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Hub</dt><dd>Houston, Texas</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="America/Chicago">--:--</span> CST</dd></div>
+                        <div><dt>Reply target</dt><dd>2 working days</dd></div>
+                        <div><dt>Safeguarding</dt><dd>theholynationglobal@gmail.com</dd></div>
+                    </dl>
+                    <p class="side-note">Nobody from Holy Nation will ever direct-message you asking for money, bank details or documents. If that happens, it is a scam &mdash; please report it.</p>
+                    <a href="/connect" class="btn btn-primary btn-sm">All Nations <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="page-section page-section-cream" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked</h2>
+            </div>
+            <div class="accordion faq-accordion" data-aos="fade-up">
+                <div class="accordion-item open">
+                    <div class="accordion-head">Do I have to leave my church to join Holy Nation US?</div>
+                    <div class="accordion-body">
+                        <p>No. Most of our members belong to a local congregation with no relationship to us at all. The national assembly is timed at 10:00 AM Central partly so that it rarely clashes with a local Sunday service, and city groups meet midweek.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is there a membership fee or a giving requirement?</div>
+                    <div class="accordion-body">
+                        <p>None. Joining the community, attending gatherings, taking a watch and doing the Foundations Class are all free. Global College tuition is set regionally with instalment plans and bursaries, and no one has been turned away for inability to pay.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">There's no city group near me. Am I stuck?</div>
+                    <div class="accordion-body">
+                        <p>Not at all &mdash; roughly a third of US members are the only person in their area. You join the Sunday assembly online, sit in a virtual house fellowship, and hold a watch from home. If you would like to start something local, three people and a willing host is the whole requirement.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Why isn't the Country Development pillar running here?</div>
+                    <div class="accordion-body">
+                        <p>Because Rebuild-Nigeria was designed for a specific national context and does not transfer cleanly. Rather than rebrand it and pretend, we have left it off. If a US-appropriate expression emerges, it will come from members working in those spheres here &mdash; not from a template shipped in.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is this politically affiliated?</div>
+                    <div class="accordion-body">
+                        <p>No. Holy Nation Global endorses no party and no candidate in any nation, and community groups do not permit campaigning or party politics. That policy is published in full on the Country Development page and applies here without exception.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">What happens when the US region reaches year five?</div>
+                    <div class="accordion-body">
+                        <p>Full autonomy. The regional council governs itself, funds itself, licenses its own ministers and relates to the other regions as a peer. It can decline requests from any region including Lagos, and it can leave the commonwealth entirely and keep everything it has built.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Can my teenager be part of this?</div>
+                    <div class="accordion-body">
+                        <p>TANI is not yet running in the US. When it launches it will follow the global safeguarding standard: two cleared adult admins per group, no private messaging with minors, and a parent or guardian making the first contact. Until then, teens are welcome at the Sunday assembly with their family.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Nations -->
+    <section class="page-section page-section-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Elsewhere</span>
+                <h2 class="section-title">Other Nations</h2>
+            </div>
+            <div class="feature-grid feature-grid-4" data-aos="fade-up">
+                <a href="/holy-nation-canada" class="feature-card">
+                    <i class="fas fa-earth-americas"></i>
+                    <h3>Holy Nation Canada</h3>
+                    <p>Toronto hub, three city groups. Our closest neighbour and a frequent joint gathering partner.</p>
+                </a>
+                <a href="/holy-nation-uk" class="feature-card">
+                    <i class="fas fa-earth-europe"></i>
+                    <h3>Holy Nation UK</h3>
+                    <p>London hub, four city groups, and the Europe liaison office for the movement.</p>
+                </a>
+                <a href="/apostolic-house" class="feature-card">
+                    <i class="fas fa-church"></i>
+                    <h3>The Base House</h3>
+                    <p>Christhouse Apostolic Fellowship in Lagos &mdash; where the teaching and the calendar originate.</p>
+                </a>
+                <a href="connect.html#nations" class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>All Twelve Nations</h3>
+                    <p>The full directory with live local times, WhatsApp communities and national coordinators.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>There Is Room for You Here</h2>
+                <p>Come to one Sunday. Stay if it is home. Either way you will be received the way family receives family.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large js-whatsapp" data-nation="Holy Nation US">Join the Community</a>
+                    <a href="#connect" class="btn btn-outline btn-large">Get the Sunday Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">
+                            <img src="logo.png" alt="Holy Nation Global">
+                            <div>
+                                <span class="footer-logo-main">HOLY NATION US</span>
+                                <span class="footer-logo-sub">Holy Nation Global</span>
+                            </div>
+                        </a>
+                        <p>Raising Apostolic Leaders, Transforming Nations, Establishing the Reign of Christ on Earth.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/1davidabraham" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/1DavidAbraham" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/1davidabraham/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@1davidabraham" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Holy Nation US</h4>
+                        <ul>
+                            <li><a href="#gatherings">Gatherings</a></li>
+                            <li><a href="#cities">City Groups</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#connect">Get Connected</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ministries</h4>
+                        <ul>
+                            <li><a href="/apostolic-house">The Apostolic House</a></li>
+                            <li><a href="/global-college">Global College</a></li>
+                            <li><a href="/prayers-mission">Prayers &amp; Mission</a></li>
+                            <li><a href="/networks">Apostolic Networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="connect.html#nations">All Nations</a></li>
+                            <li><a href="connect.html#prayer">Prayer Request</a></li>
+                            <li><a href="/give">Give Online</a></li>
+                            <li><a href="connect.html#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 The Holy Nation Global. All rights reserved. | Thy Kingdom Come.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Nation Philippines | Holy Nation Global</title>
+    <meta name="description" content="Holy Nation Philippines — groups in Metro Manila, Cebu and Davao. The Evening Watch for families, and dedicated support for overseas workers and the families they leave behind.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Holy Nation Global" class="preloader-logo">
+            <p>Holy Nation Global</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-solid">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Holy Nation Global">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Holy Nation Global</span>
+                    <span class="logo-sub">Thy Kingdom Come</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/apostolic-house" class="nav-link">Apostolic House</a>
+                <a href="/global-college" class="nav-link">Global College</a>
+                <a href="/prayers-mission" class="nav-link">Prayers &amp; Mission</a>
+                <a href="/networks" class="nav-link">Networks</a>
+                <a href="/kingdom-operations" class="nav-link">Operations</a>
+                <a href="/compassion" class="nav-link">Compassion</a>
+                <a href="/country-development" class="nav-link">Nation Building</a>
+                <a href="/thykingdomcome" class="nav-link">ThyKingdomCome</a>
+                <a href="/give" class="nav-link nav-give">Give</a>
+                <a href="/connect" class="nav-link nav-cta active">Connect</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search teachings, events, ministries..." id="searchInput">
+            <button class="search-submit" aria-label="Submit search"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=1920&q=80');"></div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="/connect">Connect</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="connect.html#nations">Nations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Holy Nation Philippines</span>
+            </nav>
+            <span class="page-hero-tag">Pilipinas</span>
+            <h1>Holy Nation Philippines</h1>
+            <p class="page-hero-lead">Three groups across three islands, and the Evening Watch &mdash; held for families, by a nation that knows better than most what it costs to be apart from them.</p>
+            <div class="page-hero-actions">
+                <a href="#" class="btn btn-primary js-whatsapp" data-nation="Holy Nation Philippines"><i class="fab fa-whatsapp"></i> Join the WhatsApp Community</a>
+                <a href="#ofw" class="btn btn-outline">For OFWs &amp; Families</a>
+            </div>
+            <div class="page-hero-facts">
+                <div>
+                    <span class="page-fact-num nation-clock" data-tz="Asia/Manila">--:--</span>
+                    <span class="page-fact-label">Manila Time Now</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="3">0</span>
+                    <span class="page-fact-label">City Groups</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="9">0</span>
+                    <span class="page-fact-label">Countries With Members</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="3">0</span>
+                    <span class="page-fact-label">Years Established</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Nav -->
+    <div class="page-nav" id="pageNav">
+        <div class="page-nav-inner">
+            <a href="#overview">Overview</a>
+            <a href="#ofw">OFWs &amp; Families</a>
+            <a href="#gatherings">Gatherings</a>
+            <a href="#cities">City Groups</a>
+            <a href="#active">What's Active Here</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#connect">Get Connected</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
+
+    <!-- Next gathering strip -->
+    <section class="page-section page-section-light" style="padding-bottom:0;">
+        <div class="container">
+            <div class="next-strip" data-aos="fade-up">
+                <div>
+                    <span class="next-strip-label">Next National Gathering</span>
+                    <h3>Sunday Assembly &mdash; Manila &amp; Online</h3>
+                    <p>9:00 AM Philippine Time &middot; English &amp; Tagalog &middot; streamed for members abroad</p>
+                </div>
+                <div style="text-align:right;">
+                    <span class="next-countdown" data-countdown data-tz="Asia/Manila" data-day="Sun" data-time="09:00">&mdash;</span>
+                    <span class="next-countdown-label">Until we gather</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="page-section page-section-light" id="overview">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Who We Are</span>
+                    <h2 class="section-title section-title-left">A House Stretched Across the World</h2>
+                    <p>Holy Nation Philippines has three city groups &mdash; and members in nine countries. That is not unusual here. It is simply what a Filipino community looks like.</p>
+                    <p>Millions of Filipinos work overseas, and the money they send home holds up households, schooling and small businesses across this country. What is discussed less often is the cost: marriages conducted over video calls, children raised by grandparents, and a parent who returns after six years to a teenager they no longer know.</p>
+
+                    <div class="scripture">
+                        &ldquo;God sets the solitary in families.&rdquo;
+                        <cite>Psalm 68:6</cite>
+                    </div>
+
+                    <h3>What that means for how we are built</h3>
+                    <p>This community was designed from the start to work across time zones, because a large share of our members were never going to be in the room. A wife in Cebu and a husband in Riyadh belong to the same house here, sit in the same city group thread, and are prayed for by name together.</p>
+                    <ul>
+                        <li><strong>You keep your church.</strong> Most members belong to a Filipino congregation already</li>
+                        <li><strong>You get known.</strong> Members abroad are placed in their home city group, not sidelined</li>
+                        <li><strong>You get trained.</strong> Global College cohorts run at hours that work for the Gulf and Asia</li>
+                        <li><strong>You carry something.</strong> The Philippines holds Watch 01 on the global roster</li>
+                        <li><strong>You are never asked for money to belong.</strong> Ever</li>
+                    </ul>
+
+                    <h3>Our place in the movement</h3>
+                    <p>The Philippines sits within TKC-Asia, which is our earliest-stage region &mdash; year two, seeding. Unlike much of that region, our community here operates openly, and this page exists because Filipino members chose that it should.</p>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>At a Glance</h3>
+                    <dl class="fact-list">
+                        <div><dt>National hub</dt><dd>Metro Manila</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Asia/Manila">--:--</span> PHT</dd></div>
+                        <div><dt>Main gathering</dt><dd>Sundays, 9:00 AM</dd></div>
+                        <div><dt>Languages</dt><dd>English, Tagalog, Cebuano</dd></div>
+                        <div><dt>City groups</dt><dd>3</dd></div>
+                        <div><dt>Members abroad</dt><dd>9 countries</dd></div>
+                        <div><dt>Global watch</dt><dd>Watch 01 &mdash; Evening</dd></div>
+                        <div><dt>TKC stage</dt><dd>Asia &middot; Year 2, seeding</dd></div>
+                    </dl>
+                    <a href="#connect" class="btn btn-primary btn-sm">Get Connected <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFWs -->
+    <section class="page-section page-section-dark" id="ofw">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Main Work</span>
+                <h2 class="section-title">Overseas Workers &amp; the Families at Home</h2>
+                <p class="section-desc">Two groups of people, one situation, usually supported by nobody as a single unit. We try to hold both ends.</p>
+            </div>
+
+            <div class="feature-grid feature-grid-2" data-aos="fade-up">
+                <div class="feature-card">
+                    <i class="fas fa-plane-departure"></i>
+                    <h3>If You Are Working Abroad</h3>
+                    <p>You stay in your home city group, in the same thread as your family. You are not moved to a generic "overseas" list, and you are not treated as a former member who left.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-house-user"></i>
+                    <h3>If You Are the Family at Home</h3>
+                    <p>Spouses raising children largely alone, and grandparents raising grandchildren, carry a load that is rarely named. The city groups are built around supporting exactly that.</p>
+                </div>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div class="prose" data-aos="fade-up">
+                    <h3>What we actually do</h3>
+                    <ul>
+                        <li><strong>Time-shifted everything</strong> &mdash; the assembly is recorded and reposted for Gulf, European and North American hours</li>
+                        <li><strong>Paired households</strong> &mdash; a family at home is paired with another family, so nobody is carrying a hard week alone</li>
+                        <li><strong>Marriage support across distance</strong> &mdash; mentoring for couples separated by work, run with the AWF marriage track</li>
+                        <li><strong>Parenting from far away</strong> &mdash; practical help for parents trying to stay a real presence in a child's life by phone</li>
+                        <li><strong>Reintegration</strong> &mdash; the return home is often harder than the leaving; we prepare families for it deliberately</li>
+                        <li><strong>Connection abroad</strong> &mdash; where a member lands in a country with a Holy Nation community, we introduce them personally</li>
+                    </ul>
+                    <p>That last one is quietly one of the most useful things this global movement does. A Filipino nurse arriving in Toronto, Manchester or Sydney can be met by name in the first week rather than the first year.</p>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>Where Our Members Are</h3>
+                    <ul class="check-list">
+                        <li>Saudi Arabia, UAE and Qatar</li>
+                        <li>Hong Kong and Singapore</li>
+                        <li>Canada &mdash; introduced to Holy Nation Canada</li>
+                        <li>United Kingdom &mdash; introduced to Holy Nation UK</li>
+                        <li>Australia &mdash; introduced to Holy Nation Australia</li>
+                        <li>United States &mdash; introduced to Holy Nation US</li>
+                    </ul>
+                    <p class="side-note">In Gulf countries we are careful about what is published and follow members' own judgement about visibility. Nothing is posted without their agreement.</p>
+                    <a href="connect.html#nations" class="btn btn-primary btn-sm">All Nations <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+
+            <div class="notice-box mt-5" data-aos="fade-up">
+                <i class="fas fa-triangle-exclamation"></i>
+                <div>
+                    <h4>On recruitment and employment scams</h4>
+                    <p>Nobody from Holy Nation will ever offer you a job abroad, charge a placement fee, arrange a visa, or ask for money or documents. We are not a recruitment agency and never will be. If anyone contacts you claiming otherwise in our name, it is a scam &mdash; please report it to <strong>theholynationglobal@gmail.com</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gatherings -->
+    <section class="page-section page-section-cream" id="gatherings">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Rhythm</span>
+                <h2 class="section-title">When We Gather</h2>
+                <p class="section-desc">All times Philippine Time. Everything is recorded and reposted at hours that work for members in the Gulf, Europe and North America.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-day">Sunday</div>
+                    <h3>National Assembly</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 9:00 AM PHT</p>
+                    <p class="service-desc">The whole Filipino community, in person in Manila and online everywhere else. English and Tagalog. Runs 90 minutes, then reposted for overseas hours.</p>
+                    <a href="#connect" class="service-link">Get the link <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-day">Wednesday</div>
+                    <h3>Global College Cohort</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 8:00 PM PHT</p>
+                    <p class="service-desc">Live seminar timed so members in the Gulf can join after work. Recordings and written assignments for everyone else.</p>
+                    <a href="global-college.html#admissions" class="service-link">Admissions <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-day">Friday</div>
+                    <h3>City Group Night</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> Local, 7:00 PM</p>
+                    <p class="service-desc">Homes across three islands, with overseas members joining the same call from wherever they are.</p>
+                    <a href="#cities" class="service-link">Find your city <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card service-card-accent" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-day">Daily</div>
+                    <h3>The Evening Watch</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 6:00 &ndash; 9:00 PM PHT</p>
+                    <p class="service-desc">The Philippines' watch on the global roster. Families, homes and the closing of the day &mdash; prayed at the hour families call each other.</p>
+                    <a href="prayers-mission.html#watches" class="service-link">Take a slot <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div class="prose" data-aos="fade-up">
+                    <h3>Why the Philippines holds the Evening Watch</h3>
+                    <p>Watches run in each region's local time, so several nations hold the same watch number in their own zone. The Philippines holds <strong>Watch 01 &mdash; The Evening Watch</strong>, 6:00 to 9:00 PM, whose standing burden is families, homes and the closing of the day.</p>
+                    <p>We asked for this one, and the reason is not subtle. Filipino families are split across time zones more than almost any other nation's, and evening is the hour when the calls home happen. Praying for families at exactly the moment families are trying to reach each other seemed like the right assignment for this house.</p>
+                    <ul>
+                        <li>One three-hour window, one day a week &mdash; often prayed by a whole household</li>
+                        <li>Overseas members hold the same watch in their own local evening</li>
+                        <li>You receive the watch guide, the burden list and a reporting template</li>
+                    </ul>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>First Time Joining?</h3>
+                    <ul class="check-list">
+                        <li>The Sunday link is posted in the community group each Saturday</li>
+                        <li>The recording goes up within hours for overseas members</li>
+                        <li>Come as you are &mdash; there is no dress code</li>
+                        <li>Ask your question in English or Tagalog</li>
+                        <li>Children are welcome throughout</li>
+                        <li>You will never be asked to give as a visitor</li>
+                    </ul>
+                    <a href="#connect" class="btn btn-primary btn-sm">Say You're Coming <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Groups -->
+    <section class="page-section page-section-light" id="cities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Near You</span>
+                <h2 class="section-title">City Groups</h2>
+                <p class="section-desc">Three groups across Luzon, the Visayas and Mindanao. Overseas members belong to their home city group.</p>
+            </div>
+
+            <div data-filter data-aos="fade-up">
+                <div class="filter-bar">
+                    <div class="filter-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" data-filter-input placeholder="Search city or region..." aria-label="Search city groups">
+                    </div>
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter-chip="all">All</button>
+                        <button class="filter-chip" data-filter-chip="luzon">Luzon</button>
+                        <button class="filter-chip" data-filter-chip="visayas">Visayas</button>
+                        <button class="filter-chip" data-filter-chip="mindanao">Mindanao</button>
+                        <button class="filter-chip" data-filter-chip="abroad">Abroad</button>
+                    </div>
+                </div>
+
+                <div class="city-grid">
+                    <article class="city-card" data-filter-item data-tags="luzon manila metro quezon makati tagalog">
+                        <h3>Metro Manila</h3>
+                        <span class="city-state">Luzon &middot; National Hub</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Asia/Manila">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Fridays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-tower-observation"></i> Prayer tower</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Metro Manila City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="visayas cebu cebuano bisaya">
+                        <h3>Cebu</h3>
+                        <span class="city-state">Visayas</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Asia/Manila">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Fridays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-language"></i> Cebuano-led</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Cebu City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="mindanao davao">
+                        <h3>Davao</h3>
+                        <span class="city-state">Mindanao</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Asia/Manila">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Fridays, 7:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-users"></i> 15+ members</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Davao City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="abroad ofw overseas gulf riyadh dubai hong kong singapore">
+                        <h3>Members Abroad</h3>
+                        <span class="city-state">Nine Countries</span>
+                        <div class="city-meta">
+                            <div><i class="fas fa-globe"></i> Gulf, Asia, Europe, North America</div>
+                            <div><i class="fas fa-calendar-day"></i> Same call, your evening</div>
+                            <div><i class="fas fa-user"></i> Stay in your home group</div>
+                            <div><i class="fas fa-handshake"></i> Introduced locally where we exist</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Philippines Overseas Members"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#ofw" class="btn-nation">Read more <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="filter-empty" data-filter-empty>
+                    <i class="fas fa-map-location-dot"></i>
+                    <p>No group in that city yet.<br>We have members in Baguio, Iloilo, Bacolod, Cagayan de Oro and Zamboanga meeting online.</p>
+                    <a href="#connect" class="btn btn-primary btn-sm" style="margin-top:1.25rem;">Start One Where You Are <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Active Here -->
+    <section class="page-section page-section-cream" id="active">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Honest Status</span>
+                <h2 class="section-title">What's Actually Running Here</h2>
+                <p class="section-desc">The Philippines sits inside our earliest-stage region. Here is exactly where each pillar stands.</p>
+            </div>
+
+            <div class="status-grid" data-aos="fade-up">
+                <div class="status-row">
+                    <span class="status-num">01</span>
+                    <div class="status-body">
+                        <h4>The Apostolic House</h4>
+                        <p>National assembly in Manila, three city groups plus overseas members, Friday fellowships.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">02</span>
+                    <div class="status-body">
+                        <h4>Global College</h4>
+                        <p>Christ and Kingdom Institutes on a Wednesday cohort timed for Gulf-based members.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">03</span>
+                    <div class="status-body">
+                        <h4>Prayers &amp; Mission</h4>
+                        <p>Watch 01 held from the Philippines, and by overseas members in their own evenings. One prayer tower, in Manila.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">04</span>
+                    <div class="status-body">
+                        <h4>Networks</h4>
+                        <p>AWF circles running in all three cities, including the marriage-across-distance track. IFAM open; KBLN, SANI and TANI not yet.</p>
+                        <span class="badge badge-live">Partly running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">05</span>
+                    <div class="status-body">
+                        <h4>Kingdom Operations</h4>
+                        <p>No working groups yet. Financial literacy sessions for remittance-receiving households are being piloted.</p>
+                        <span class="badge badge-forming">Forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">06</span>
+                    <div class="status-body">
+                        <h4>Compassion</h4>
+                        <p>CES school support and paired-household care for families with a parent working overseas.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">07</span>
+                    <div class="status-body">
+                        <h4>Country Development</h4>
+                        <p>Not running. We do not comment on Philippine politics or run programmes in this space.</p>
+                        <span class="badge badge-soon">Not running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">08</span>
+                    <div class="status-body">
+                        <h4>ThyKingdomCome</h4>
+                        <p>Part of TKC-Asia, year 2, seeding. Unlike much of that region we operate openly, by our members' own choice.</p>
+                        <span class="badge badge-forming">Seeding</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="page-section page-section-light" id="leadership">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Team</span>
+                <h2 class="section-title">Who Carries This Community</h2>
+                <p class="section-desc">Filipino-led, accountable to the Filipino community first and to the global commonwealth second.</p>
+            </div>
+            <div class="leader-grid">
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="National Coordinator">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">National Coordinator</span>
+                        <p>Carries the Filipino community, leads the Manila group, and is the first point of contact for anyone joining.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Overseas Members Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Overseas Members Lead</span>
+                        <p>Holds the connection to members in nine countries and makes the introductions when someone lands somewhere new.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="Family Support Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Family Support Lead</span>
+                        <p>Runs the paired-household system, the marriage-across-distance track and the reintegration preparation.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="notice-box mt-5" data-aos="fade-up">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                    <h4>Accountability, plainly</h4>
+                    <p>Every leader here is under the same annual character and doctrine review as everyone else, and each sits under a mentor outside their own chain of command. Concerns go to <strong>theholynationglobal@gmail.com</strong> and are handled by the same process that applies to any member.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Connected -->
+    <section class="page-section page-section-cream" id="connect">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get Connected</span>
+                <h2 class="section-title">Four Ways to Start</h2>
+            </div>
+
+            <div class="steps-grid" data-aos="fade-up">
+                <a href="#" class="step-card js-whatsapp" data-nation="Holy Nation Philippines">
+                    <span class="step-num">01</span>
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Join the Community</h3>
+                    <p>The national WhatsApp group: Sunday links, prayer requests and a direct line to the coordinator.</p>
+                    <span class="step-link">Join <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#connect" class="step-card">
+                    <span class="step-num">02</span>
+                    <i class="fas fa-video"></i>
+                    <h3>Come on Sunday</h3>
+                    <p>In person in Manila, live online, or on the recording at whatever hour works where you are.</p>
+                    <span class="step-link">Get the link <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#ofw" class="step-card">
+                    <span class="step-num">03</span>
+                    <i class="fas fa-plane-departure"></i>
+                    <h3>Working Abroad?</h3>
+                    <p>Stay in your home group, and let us introduce you personally wherever you land.</p>
+                    <span class="step-link">Read more <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="prayers-mission.html#watches" class="step-card">
+                    <span class="step-num">04</span>
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Take the Evening Watch</h3>
+                    <p>Three hours a week for families and homes &mdash; at the hour families call each other.</p>
+                    <span class="step-link">Enrol <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div data-aos="fade-up">
+                    <h3 class="sub-heading">Tell Us Where You Are</h3>
+                    <p class="sub-lead">The coordinator's office replies within two working days, and a real person will be assigned to you &mdash; not a mailing list.</p>
+                    <form class="form-grid" data-demo>
+                        <div class="form-field">
+                            <label for="ph-name">Full name</label>
+                            <input type="text" id="ph-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ph-email">Email</label>
+                            <input type="email" id="ph-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ph-home">Home city in the Philippines</label>
+                            <input type="text" id="ph-home" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ph-where">Where are you now?</label>
+                            <input type="text" id="ph-where" placeholder="Country, if working abroad">
+                        </div>
+                        <div class="form-field full">
+                            <label for="ph-intent">I'd like to</label>
+                            <select id="ph-intent">
+                                <option>Join the national WhatsApp community</option>
+                                <option>Attend the Sunday assembly</option>
+                                <option>Join my home city group</option>
+                                <option>Connect while working overseas</option>
+                                <option>Get support as a family at home</option>
+                                <option>Marriage or parenting support across distance</option>
+                                <option>Enrol in the Global College</option>
+                                <option>Take a watch on the prayer roster</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="ph-message">Anything you'd like us to know</label>
+                            <textarea id="ph-message"></textarea>
+                        </div>
+                        <div class="form-field full">
+                            <button type="submit" class="btn btn-primary">Send <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>Philippines Office</h3>
+                    <dl class="fact-list">
+                        <div><dt>Coordinator</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Overseas members</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Hub</dt><dd>Metro Manila</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Asia/Manila">--:--</span> PHT</dd></div>
+                        <div><dt>Reply target</dt><dd>2 working days</dd></div>
+                        <div><dt>Safeguarding</dt><dd>theholynationglobal@gmail.com</dd></div>
+                    </dl>
+                    <p class="side-note">We are not a recruitment agency. Nobody from Holy Nation will ever offer you work abroad, charge a fee, arrange a visa or ask for money or documents.</p>
+                    <a href="/connect" class="btn btn-primary btn-sm">All Nations <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="page-section page-section-light" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked</h2>
+            </div>
+            <div class="accordion faq-accordion" data-aos="fade-up">
+                <div class="accordion-item open">
+                    <div class="accordion-head">Do I have to leave my church to join?</div>
+                    <div class="accordion-body">
+                        <p>No. Most of our members belong to a Filipino congregation already, and we would discourage anyone from leaving. City groups meet on Friday evenings and the training strengthens you wherever you serve.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">I work overseas. Can I really stay part of this?</div>
+                    <div class="accordion-body">
+                        <p>Yes &mdash; the community was built for it. You stay in your home city group with your family, the assembly is reposted at hours that work for you, and the College cohort is timed so Gulf-based members can join live after work.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Do you help people find work abroad?</div>
+                    <div class="accordion-body">
+                        <p>No, and we never will. We are not a recruitment agency, we do not arrange visas, and we will never charge a fee or ask for documents. Anyone contacting you with such an offer in our name is running a scam &mdash; please report it.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">My spouse works abroad. Is there support for me?</div>
+                    <div class="accordion-body">
+                        <p>Yes, and it is one of the main things we do. Households are paired so nobody carries a hard week alone, and the AWF marriage track runs mentoring specifically for couples separated by work. It is confidential.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Will I be introduced to people if I move to another country?</div>
+                    <div class="accordion-body">
+                        <p>Where Holy Nation has a community &mdash; Canada, the UK, Australia, the US and others &mdash; yes, personally and by name, usually within your first week. Where we do not, we will be honest that we cannot.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is there a membership fee?</div>
+                    <div class="accordion-body">
+                        <p>None. Community, gatherings, watches and the Foundations Class are free. Global College tuition is set regionally with instalment plans and bursaries, and nobody has been turned away for inability to pay.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Are you politically affiliated?</div>
+                    <div class="accordion-body">
+                        <p>No. Holy Nation Global endorses no party and no candidate in any nation, and our groups do not permit campaigning. The full policy is published on the Country Development page.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Nations -->
+    <section class="page-section page-section-cream">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Elsewhere</span>
+                <h2 class="section-title">Other Nations</h2>
+            </div>
+            <div class="feature-grid feature-grid-4" data-aos="fade-up">
+                <a href="/holy-nation-australia" class="feature-card">
+                    <i class="fas fa-earth-oceania"></i>
+                    <h3>Holy Nation Australia</h3>
+                    <p>Sydney hub &mdash; where many Filipino members land, and are met by name.</p>
+                </a>
+                <a href="/holy-nation-canada" class="feature-card">
+                    <i class="fas fa-maple-leaf"></i>
+                    <h3>Holy Nation Canada</h3>
+                    <p>Toronto hub, with settlement support built for people who have just arrived.</p>
+                </a>
+                <a href="/holy-nation-uk" class="feature-card">
+                    <i class="fas fa-earth-europe"></i>
+                    <h3>Holy Nation UK</h3>
+                    <p>London hub, four city groups, and a substantial Filipino community.</p>
+                </a>
+                <a href="connect.html#nations" class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>All Twelve Nations</h3>
+                    <p>The full directory with live local times, WhatsApp communities and national coordinators.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Maligayang Pagdating. You Are Welcome Here.</h2>
+                <p>Wherever in the world you are reading this from, there is a group here that already counts you as one of theirs.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large js-whatsapp" data-nation="Holy Nation Philippines">Join the Community</a>
+                    <a href="#ofw" class="btn btn-outline btn-large">For OFWs &amp; Families</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">
+                            <img src="logo.png" alt="Holy Nation Global">
+                            <div>
+                                <span class="footer-logo-main">HOLY NATION PHILIPPINES</span>
+                                <span class="footer-logo-sub">Holy Nation Global</span>
+                            </div>
+                        </a>
+                        <p>Raising Apostolic Leaders, Transforming Nations, Establishing the Reign of Christ on Earth.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/1davidabraham" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/1DavidAbraham" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/1davidabraham/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@1davidabraham" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Holy Nation Philippines</h4>
+                        <ul>
+                            <li><a href="#ofw">OFWs &amp; Families</a></li>
+                            <li><a href="#gatherings">Gatherings</a></li>
+                            <li><a href="#cities">City Groups</a></li>
+                            <li><a href="#connect">Get Connected</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ministries</h4>
+                        <ul>
+                            <li><a href="/apostolic-house">The Apostolic House</a></li>
+                            <li><a href="/global-college">Global College</a></li>
+                            <li><a href="/prayers-mission">Prayers &amp; Mission</a></li>
+                            <li><a href="/networks">Apostolic Networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="connect.html#nations">All Nations</a></li>
+                            <li><a href="connect.html#prayer">Prayer Request</a></li>
+                            <li><a href="/give">Give Online</a></li>
+                            <li><a href="connect.html#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 The Holy Nation Global. All rights reserved. | Thy Kingdom Come.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
+</html>

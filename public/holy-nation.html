@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Nation Global | Raising Apostolic Leaders, Transforming Nations</title>
+    <meta name="description" content="Holy Nation Global is an apostolic movement raising leaders, transforming nations and establishing the reign of Christ on earth through eight Kingdom pillars.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Holy Nation Global" class="preloader-logo">
+            <p>Holy Nation Global</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="/holy-nation" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Holy Nation Global">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Holy Nation Global</span>
+                    <span class="logo-sub">Thy Kingdom Come</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/holy-nation" class="nav-link active">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/apostolic-house" class="nav-link">Apostolic House</a>
+                <a href="/global-college" class="nav-link">Global College</a>
+                <a href="/prayers-mission" class="nav-link">Prayers &amp; Mission</a>
+                <a href="/networks" class="nav-link">Networks</a>
+                <a href="/kingdom-operations" class="nav-link">Operations</a>
+                <a href="/compassion" class="nav-link">Compassion</a>
+                <a href="/country-development" class="nav-link">Nation Building</a>
+                <a href="/thykingdomcome" class="nav-link">ThyKingdomCome</a>
+                <a href="/give" class="nav-link nav-give">Give</a>
+                <a href="/connect" class="nav-link nav-cta">Connect</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search teachings, events, ministries..." id="searchInput">
+            <button class="search-submit" aria-label="Submit search"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-image" style="background-image: url('/asset/photos/congregation-gathered.webp');"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                <i class="fas fa-crown"></i>
+                <span>Est. 2026</span>
+            </div>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                <span class="title-line">Holy Nation</span>
+                <span class="title-line highlight">Global</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                Raising Apostolic Leaders, Transforming Nations,
+                <br>Establishing the Reign of Christ on Earth
+            </p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                <a href="#pillars" class="btn btn-primary">
+                    <span>Explore the Eight Pillars</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#" class="btn btn-play" id="playBtn">
+                    <div class="play-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <span>Watch Live</span>
+                </a>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat-item">
+                    <span class="stat-num" data-count="12">0</span>
+                    <span class="stat-label">Global Networks</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-count="50">0</span>
+                    <span class="stat-label">Nations Reached</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-count="10000">0</span>
+                    <span class="stat-label">Lives Transformed</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="var(--navy)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Live Banner -->
+    <div class="live-banner">
+        <div class="live-pulse"></div>
+        <span class="live-text">LIVE NOW</span>
+        <span class="live-divider">|</span>
+        <span class="live-message">Join us for the Global Apostolic Summit &mdash; February 2026</span>
+        <a href="/prayers-mission" class="live-link">Watch Now <i class="fas fa-external-link-alt"></i></a>
+    </div>
+
+    <!-- Welcome / Who We Are -->
+    <section class="welcome-section" id="welcome">
+        <div class="container">
+            <div class="welcome-grid">
+                <div class="welcome-visual" data-aos="fade-right">
+                    <div class="welcome-image-main">
+                        <img src="/asset/photos/congregation-gathered.webp" alt="Congregation in worship">
+                    </div>
+                    <div class="welcome-image-sub">
+                        <img src="https://images.unsplash.com/photo-1544427920-c49ccfb85579?w=500&q=80" alt="Open Bible">
+                    </div>
+                    <div class="welcome-badge">
+                        <span class="welcome-badge-num">8</span>
+                        <span class="welcome-badge-text">Kingdom<br>Pillars</span>
+                    </div>
+                </div>
+                <div class="welcome-content" data-aos="fade-left">
+                    <span class="section-tag section-tag-left">Welcome Home</span>
+                    <h2 class="section-title section-title-left">One Mandate. Eight Pillars. Every Sphere of Society.</h2>
+                    <p>Holy Nation Global is an apostolic movement called to raise leaders, disciple nations, and demonstrate the reign of Christ in every place where human life is lived &mdash; the church, the classroom, the marketplace, the family, and the seat of government.</p>
+                    <p>We are not a single congregation. We are a house, a college, a prayer army, a network of networks, a compassion arm, and a nation-building movement &mdash; working together as one body under one mandate: <em>Thy Kingdom Come.</em></p>
+                    <div class="welcome-points">
+                        <div class="welcome-point">
+                            <i class="fas fa-fire"></i>
+                            <div>
+                                <h4>Apostolic Foundation</h4>
+                                <p>Built on the doctrine of Christ and the pattern of the apostles.</p>
+                            </div>
+                        </div>
+                        <div class="welcome-point">
+                            <i class="fas fa-seedling"></i>
+                            <div>
+                                <h4>Discipleship That Transforms</h4>
+                                <p>Structured training that produces character, competence and commission.</p>
+                            </div>
+                        </div>
+                        <div class="welcome-point">
+                            <i class="fas fa-globe-africa"></i>
+                            <div>
+                                <h4>Nations, Not Just Individuals</h4>
+                                <p>We disciple cities, states and nations &mdash; not merely gather crowds.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="welcome-actions">
+                        <a href="/apostolic-house" class="btn btn-primary">Visit the Apostolic House <i class="fas fa-arrow-right"></i></a>
+                        <a href="/connect" class="btn btn-ghost">Plan a Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ministry Pillars Grid -->
+    <section class="pillars-section" id="pillars">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Mandate</span>
+                <h2 class="section-title">Eight Pillars of the Kingdom</h2>
+                <p class="section-desc">The comprehensive framework through which we advance God's Kingdom across every sphere of society. Each pillar is a full ministry with its own structure, training and calendar.</p>
+            </div>
+
+            <div class="pillars-grid">
+                <a href="/apostolic-house" class="pillar-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="pillar-number">01</div>
+                    <div class="pillar-icon"><i class="fas fa-church"></i></div>
+                    <h3>The Apostolic House &amp; Ecclesia</h3>
+                    <p>Christhouse Apostolic Fellowship, Media Broadcasts, Friends of God Partners, and Mentorships</p>
+                    <span class="pillar-link">Enter <i class="fas fa-arrow-right"></i></span>
+                    <div class="pillar-glow"></div>
+                </a>
+
+                <a href="/global-college" class="pillar-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pillar-number">02</div>
+                    <div class="pillar-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Global College of Apostolic Studies</h3>
+                    <p>Christ Institute, Kingdom Institute, Apostolic Institute, Ministry Institute, KMTC &amp; Certifications</p>
+                    <span class="pillar-link">Enter <i class="fas fa-arrow-right"></i></span>
+                    <div class="pillar-glow"></div>
+                </a>
+
+                <a href="/prayers-mission" class="pillar-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pillar-number">03</div>
+                    <div class="pillar-icon"><i class="fas fa-praying-hands"></i></div>
+                    <h3>Apostolic Prayers &amp; Mission</h3>
+                    <p>Outreaches, Missions &amp; Conferences. Prayer Watches, City Prayer Towers, Kingdom Army Command</p>
+                    <span class="pillar-link">Enter <i class="fas fa-arrow-right"></i></span>
+                    <div class="pillar-glow"></div>
+                </a>
+
+                <a href="/networks" class="pillar-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pillar-number">04</div>
+                    <div class="pillar-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Apostolic Networks</h3>
+                    <p>IFAM, KBLN, SANI, AWF, TANI &mdash; connecting leaders across every demographic and sphere</p>
+                    <span class="pillar-link">Enter <i class="fas fa-arrow-right"></i></span>
+                    <div class="pillar-glow"></div>
+                </a>
+
+                <a href="/kingdom-operations" class="pillar-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="pillar-number">05</div>
+                    <div class="pillar-icon"><i class="fas fa-chess-king"></i></div>
+                    <h3>Kingdom Operations</h3>
+                    <p>Education, Family &amp; Culture. Governance &amp; Economy. The 12 Spheres of Influence</p>
+                    <span class="pillar-link">Enter <i class="fas fa-arrow-right"></i></span>
+                    <div class="pillar-glow"></div>
+                </a>
+
+                <a href="/compassion" class="pillar-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pillar-number">06</div>
+                    <div class="pillar-icon"><i class="fas fa-hands-holding-heart"></i></div>
+                    <h3>Kingdom Compassion &amp; Social Security</h3>
+                    <p>CSPA, CVSW, MIA, SSF, CYRR, AFER, CES, HACO &mdash; touching lives with the love of Christ</p>
+                    <span class="pillar-link">Enter <i class="fas fa-arrow-right"></i></span>
+                    <div class="pillar-glow"></div>
+                </a>
+
+                <a href="/country-development" class="pillar-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pillar-number">07</div>
+                    <div class="pillar-icon"><i class="fas fa-landmark"></i></div>
+                    <h3>Kingdom Country Development</h3>
+                    <p>Rebuild-Nigeria, CPIG, IGSL, IPSD, CNRC, TJC &mdash; transforming nations through righteous governance</p>
+                    <span class="pillar-link">Enter <i class="fas fa-arrow-right"></i></span>
+                    <div class="pillar-glow"></div>
+                </a>
+
+                <a href="/thykingdomcome" class="pillar-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pillar-number">08</div>
+                    <div class="pillar-icon"><i class="fas fa-globe"></i></div>
+                    <h3>ThyKingdomCome Movement</h3>
+                    <p>TKC Nigeria, Africa, Asia, North America &mdash; a global movement for Kingdom advancement</p>
+                    <span class="pillar-link">Enter <i class="fas fa-arrow-right"></i></span>
+                    <div class="pillar-glow"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Events Marquee -->
+    <section class="events-marquee">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span><i class="fas fa-star"></i> Global Apostolic Summit &mdash; February 2026</span>
+                <span><i class="fas fa-star"></i> Kingdom Congress &mdash; June 2026</span>
+                <span><i class="fas fa-star"></i> Festival of Christ &mdash; October 2026</span>
+                <span><i class="fas fa-star"></i> The 7 Feasts of Christ</span>
+                <span><i class="fas fa-star"></i> The Glory of Christ &mdash; To Cities</span>
+                <span><i class="fas fa-star"></i> Kingdom Advance &mdash; To States</span>
+                <span><i class="fas fa-star"></i> Thy Kingdom Come &mdash; To Nations</span>
+            </div>
+            <div class="marquee-content">
+                <span><i class="fas fa-star"></i> Global Apostolic Summit &mdash; February 2026</span>
+                <span><i class="fas fa-star"></i> Kingdom Congress &mdash; June 2026</span>
+                <span><i class="fas fa-star"></i> Festival of Christ &mdash; October 2026</span>
+                <span><i class="fas fa-star"></i> The 7 Feasts of Christ</span>
+                <span><i class="fas fa-star"></i> The Glory of Christ &mdash; To Cities</span>
+                <span><i class="fas fa-star"></i> Kingdom Advance &mdash; To States</span>
+                <span><i class="fas fa-star"></i> Thy Kingdom Come &mdash; To Nations</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- This Week / Service Times -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Gather With Us</span>
+                <h2 class="section-title">This Week at Holy Nation</h2>
+                <p class="section-desc">Whether you join us in the room or online, there is a place set for you at the table.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-day">Sunday</div>
+                    <h3>Apostolic Assembly</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 8:00 AM &amp; 10:30 AM</p>
+                    <p class="service-desc">Corporate worship, the ministry of the Word, communion and impartation. Children's church runs in both services.</p>
+                    <a href="/apostolic-house" class="service-link">Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-day">Tuesday</div>
+                    <h3>Kingdom Institute Night</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 6:00 PM &ndash; 8:00 PM</p>
+                    <p class="service-desc">Structured teaching from the Global College curriculum. Open to enrolled students and first-time guests alike.</p>
+                    <a href="/global-college" class="service-link">Curriculum <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-day">Friday</div>
+                    <h3>Prayer Watch &amp; Command</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 10:00 PM &ndash; 1:00 AM</p>
+                    <p class="service-desc">Night watch intercession for cities, states and nations, coordinated with our global prayer towers.</p>
+                    <a href="/prayers-mission" class="service-link">Join a Watch <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card service-card-accent" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-day">Daily</div>
+                    <h3>The Morning Altar</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 5:30 AM &ndash; 6:30 AM</p>
+                    <p class="service-desc">A daily online altar of prayer and the Word, streamed to every network across our time zones.</p>
+                    <a href="/prayers-mission" class="service-link">Set a Reminder <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="events-section" id="events">
+        <div class="container">
+            <div class="section-header-split" data-aos="fade-up">
+                <div>
+                    <span class="section-tag section-tag-left">Kingdom Calendar</span>
+                    <h2 class="section-title section-title-left">Upcoming Gatherings</h2>
+                </div>
+                <a href="/prayers-mission" class="btn btn-ghost">Full Calendar <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="events-grid">
+                <article class="event-card event-card-feature" data-aos="fade-up">
+                    <div class="event-image">
+                        <img src="/asset/photos/summit-panel.webp" alt="Global Apostolic Summit">
+                        <span class="event-pill">Flagship</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Feb</span>
+                            <span class="event-day">12&ndash;16</span>
+                        </div>
+                        <div>
+                            <h3>Global Apostolic Summit 2026</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Christhouse Auditorium, Lagos &amp; Online</p>
+                            <p>Five days of apostolic teaching, ordination, network assemblies and the commissioning of leaders into the twelve spheres. Delegates from over thirty nations expected.</p>
+                            <a href="/connect" class="btn btn-primary btn-sm">Register <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Jun</span>
+                            <span class="event-day">04&ndash;07</span>
+                        </div>
+                        <div>
+                            <h3>Kingdom Congress</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Abuja, Nigeria</p>
+                            <p>Governance, economy and the Kingdom mandate for public life.</p>
+                            <a href="/kingdom-operations" class="event-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">Oct</span>
+                            <span class="event-day">22&ndash;25</span>
+                        </div>
+                        <div>
+                            <h3>Festival of Christ</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Multi-city &amp; Online</p>
+                            <p>A city-wide celebration of the person and work of Christ.</p>
+                            <a href="/prayers-mission" class="event-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="event-body">
+                        <div class="event-date">
+                            <span class="event-month">All</span>
+                            <span class="event-day">Year</span>
+                        </div>
+                        <div>
+                            <h3>The 7 Feasts of Christ</h3>
+                            <p class="event-meta"><i class="fas fa-map-marker-alt"></i> Across all networks</p>
+                            <p>Seven appointed seasons observed by the whole house through the year.</p>
+                            <a href="/apostolic-house" class="event-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Teachings / Media -->
+    <section class="media-section" id="media">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Word &amp; Media</span>
+                <h2 class="section-title">Latest Teachings</h2>
+                <p class="section-desc">Messages, broadcasts and written teaching from the apostolic house &mdash; free, and made to be shared.</p>
+            </div>
+            <div class="media-grid">
+                <article class="media-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="media-thumb">
+                        <img src="https://images.unsplash.com/photo-1519452575417-564c1401ecc0?w=600&q=80" alt="Teaching series">
+                        <span class="media-type"><i class="fas fa-play"></i> Video</span>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-tag">Apostolic Foundations</span>
+                        <h3>The Ecclesia: God's Governing Assembly</h3>
+                        <p>Why the church was never designed as an audience, but as a legislative body in the earth.</p>
+                        <span class="media-meta"><i class="far fa-clock"></i> 48 min &middot; Part 1 of 6</span>
+                    </div>
+                </article>
+                <article class="media-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="media-thumb">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80" alt="Audio series">
+                        <span class="media-type"><i class="fas fa-headphones"></i> Audio</span>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-tag">Kingdom Economy</span>
+                        <h3>Stewardship, Wealth and the 12 Spheres</h3>
+                        <p>A Kingdom framework for creativity, investment and economic liberty.</p>
+                        <span class="media-meta"><i class="far fa-clock"></i> 36 min &middot; Part 3 of 8</span>
+                    </div>
+                </article>
+                <article class="media-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="media-thumb">
+                        <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=600&q=80" alt="Written teaching">
+                        <span class="media-type"><i class="fas fa-file-lines"></i> Article</span>
+                    </div>
+                    <div class="media-body">
+                        <span class="media-tag">Prayer &amp; Mission</span>
+                        <h3>How to Build a City Prayer Tower</h3>
+                        <p>A practical field guide for raising sustained intercession over a territory.</p>
+                        <span class="media-meta"><i class="far fa-clock"></i> 9 min read</span>
+                    </div>
+                </article>
+            </div>
+            <div class="media-actions" data-aos="fade-up">
+                <a href="/apostolic-house" class="btn btn-outline-dark">Browse All Teachings <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reach / Impact Numbers -->
+    <section class="reach-section">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="reach-grid">
+                <div class="reach-intro" data-aos="fade-right">
+                    <span class="section-tag section-tag-left">Our Reach</span>
+                    <h2>The Kingdom Is Advancing</h2>
+                    <p>From a single house in Lagos to networks, colleges and prayer towers across four continents &mdash; every number here is a life, a family, or a territory touched by the Gospel of the Kingdom.</p>
+                    <a href="/thykingdomcome" class="btn btn-primary">See the Movement <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="reach-stats" data-aos="fade-left">
+                    <div class="reach-stat">
+                        <span class="stat-num" data-count="50">0</span>
+                        <span class="reach-label">Nations Reached</span>
+                    </div>
+                    <div class="reach-stat">
+                        <span class="stat-num" data-count="12">0</span>
+                        <span class="reach-label">Apostolic Networks</span>
+                    </div>
+                    <div class="reach-stat">
+                        <span class="stat-num" data-count="240">0</span>
+                        <span class="reach-label">Leaders Ordained</span>
+                    </div>
+                    <div class="reach-stat">
+                        <span class="stat-num" data-count="10000">0</span>
+                        <span class="reach-label">Lives Transformed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Testimonies</span>
+                <h2 class="section-title">Lives Transformed</h2>
+            </div>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <div class="testimonial-track">
+                    <div class="testimonial-card active">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Through the Apostolic Institute, I discovered my calling and was launched into ministry with clarity and authority. Christhouse changed my life forever.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="Pastor Emmanuel O.">
+                            <div>
+                                <h4>Pastor Emmanuel O.</h4>
+                                <span>Apostolic Minister, Lagos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>The Kingdom Businessmen Network connected me with like-minded leaders. Together, we are transforming the marketplace for Christ.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Dr. Sarah M.">
+                            <div>
+                                <h4>Dr. Sarah M.</h4>
+                                <span>CEO, Kingdom Ventures</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>My daughter was rescued and educated through CSPA. The compassion arm of this ministry is truly the hands and feet of Jesus.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Mrs. Grace A.">
+                            <div>
+                                <h4>Mrs. Grace A.</h4>
+                                <span>Beneficiary, Abuja</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="test-prev" id="testPrev" aria-label="Previous testimony"><i class="fas fa-arrow-left"></i></button>
+                    <div class="test-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="test-next" id="testNext" aria-label="Next testimony"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="steps-section" id="next-steps">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Start Here</span>
+                <h2 class="section-title">Your Next Step</h2>
+                <p class="section-desc">Four simple doors into the life of the house. Take the one that fits where you are today.</p>
+            </div>
+            <div class="steps-grid">
+                <a href="/connect" class="step-card" data-aos="fade-up" data-aos-delay="0">
+                    <span class="step-num">01</span>
+                    <i class="fas fa-hand-sparkles"></i>
+                    <h3>I'm New Here</h3>
+                    <p>Plan a first visit, meet the team, and find out what to expect on a Sunday.</p>
+                    <span class="step-link">Plan a visit <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="/global-college" class="step-card" data-aos="fade-up" data-aos-delay="100">
+                    <span class="step-num">02</span>
+                    <i class="fas fa-book-open"></i>
+                    <h3>I Want to Be Trained</h3>
+                    <p>Enrol in the Global College of Apostolic Studies and begin structured training.</p>
+                    <span class="step-link">See programmes <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="/networks" class="step-card" data-aos="fade-up" data-aos-delay="200">
+                    <span class="step-num">03</span>
+                    <i class="fas fa-people-group"></i>
+                    <h3>I Want to Belong</h3>
+                    <p>Join the network built for your season &mdash; ministers, business, students, women or teens.</p>
+                    <span class="step-link">Find your network <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="/compassion" class="step-card" data-aos="fade-up" data-aos-delay="300">
+                    <span class="step-num">04</span>
+                    <i class="fas fa-hands-holding-heart"></i>
+                    <h3>I Want to Serve</h3>
+                    <p>Give, volunteer or partner with our compassion and nation-building work.</p>
+                    <span class="step-link">Get involved <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box" data-aos="zoom-in">
+                <div class="newsletter-text">
+                    <h3>Stay in the Loop</h3>
+                    <p>Teachings, prayer bulletins and conference announcements &mdash; delivered weekly. No noise.</p>
+                </div>
+                <form class="newsletter-form" data-demo>
+                    <input type="email" placeholder="Your email address" required aria-label="Email address">
+                    <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="cta-bg">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Be Part of the Kingdom Advancement</h2>
+                <p>Join thousands of believers worldwide who are committed to seeing Thy Kingdom Come on earth as it is in heaven.</p>
+                <div class="cta-buttons">
+                    <a href="/connect" class="btn btn-primary btn-large">Partner With Us</a>
+                    <a href="/connect" class="btn btn-outline btn-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/holy-nation" class="footer-logo">
+                            <img src="logo.png" alt="Holy Nation Global">
+                            <div>
+                                <span class="footer-logo-main">HOLY NATION GLOBAL</span>
+                                <span class="footer-logo-sub">Thy Kingdom Come</span>
+                            </div>
+                        </a>
+                        <p>Raising Apostolic Leaders, Transforming Nations, Establishing the Reign of Christ on Earth.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/1davidabraham" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/1DavidAbraham" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/1davidabraham/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@1davidabraham" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ministries</h4>
+                        <ul>
+                            <li><a href="/apostolic-house">The Apostolic House</a></li>
+                            <li><a href="/global-college">Global College</a></li>
+                            <li><a href="/prayers-mission">Prayers &amp; Mission</a></li>
+                            <li><a href="/networks">Apostolic Networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Operations</h4>
+                        <ul>
+                            <li><a href="/kingdom-operations">Kingdom Operations</a></li>
+                            <li><a href="/compassion">Compassion &amp; Social Security</a></li>
+                            <li><a href="/country-development">Country Development</a></li>
+                            <li><a href="/thykingdomcome">ThyKingdomCome Movement</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#events">Events &amp; Conferences</a></li>
+                            <li><a href="/give">Give Online</a></li>
+                            <li><a href="/connect">Prayer Request</a></li>
+                            <li><a href="/connect">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 The Holy Nation Global. All rights reserved. | Thy Kingdom Come.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
+</html>

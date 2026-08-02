@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Nation Congo | Holy Nation Global</title>
+    <meta name="description" content="Holy Nation Congo — groupes à Kinshasa, Lubumbashi et Goma. La Veille du Repos, formation en français et lingala, et un travail mené par des Congolais.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Holy Nation Global" class="preloader-logo">
+            <p>Holy Nation Global</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-solid">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Holy Nation Global">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Holy Nation Global</span>
+                    <span class="logo-sub">Thy Kingdom Come</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/apostolic-house" class="nav-link">Apostolic House</a>
+                <a href="/global-college" class="nav-link">Global College</a>
+                <a href="/prayers-mission" class="nav-link">Prayers &amp; Mission</a>
+                <a href="/networks" class="nav-link">Networks</a>
+                <a href="/kingdom-operations" class="nav-link">Operations</a>
+                <a href="/compassion" class="nav-link">Compassion</a>
+                <a href="/country-development" class="nav-link">Nation Building</a>
+                <a href="/thykingdomcome" class="nav-link">ThyKingdomCome</a>
+                <a href="/give" class="nav-link nav-give">Give</a>
+                <a href="/connect" class="nav-link nav-cta active">Connect</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search teachings, events, ministries..." id="searchInput">
+            <button class="search-submit" aria-label="Submit search"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1920&q=80');"></div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="/connect">Connect</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="connect.html#nations">Nations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Holy Nation Congo</span>
+            </nav>
+            <span class="page-hero-tag">R&eacute;publique D&eacute;mocratique du Congo</span>
+            <h1>Holy Nation Congo</h1>
+            <p class="page-hero-lead">Trois groupes, deux fuseaux horaires, deux langues de travail &mdash; et la Veille du Repos, tenue chaque nuit sur nos villes. Une communaut&eacute; enti&egrave;rement dirig&eacute;e par des Congolais.</p>
+            <div class="page-hero-actions">
+                <a href="#" class="btn btn-primary js-whatsapp" data-nation="Holy Nation Congo"><i class="fab fa-whatsapp"></i> Rejoindre la communaut&eacute;</a>
+                <a href="#langues" class="btn btn-outline">Fran&ccedil;ais &amp; Lingala</a>
+            </div>
+            <div class="page-hero-facts">
+                <div>
+                    <span class="page-fact-num nation-clock" data-tz="Africa/Kinshasa">--:--</span>
+                    <span class="page-fact-label">Heure de Kinshasa</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="3">0</span>
+                    <span class="page-fact-label">Groupes</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="2">0</span>
+                    <span class="page-fact-label">Fuseaux Horaires</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="2">0</span>
+                    <span class="page-fact-label">Langues de Travail</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Nav -->
+    <div class="page-nav" id="pageNav">
+        <div class="page-nav-inner">
+            <a href="#overview">Overview</a>
+            <a href="#langues">Fran&ccedil;ais &amp; Lingala</a>
+            <a href="#gatherings">Gatherings</a>
+            <a href="#cities">Groupes</a>
+            <a href="#east">The East</a>
+            <a href="#active">What's Active Here</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#connect">Get Connected</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
+
+    <!-- Next gathering strip -->
+    <section class="page-section page-section-light" style="padding-bottom:0;">
+        <div class="container">
+            <div class="next-strip" data-aos="fade-up">
+                <div>
+                    <span class="next-strip-label">Prochaine Assembl&eacute;e Nationale</span>
+                    <h3>Assembl&eacute;e du Dimanche &mdash; Kinshasa &amp; en ligne</h3>
+                    <p>9h00 heure de Kinshasa &middot; 10h00 &agrave; Lubumbashi et Goma</p>
+                </div>
+                <div style="text-align:right;">
+                    <span class="next-countdown" data-countdown data-tz="Africa/Kinshasa" data-day="Sun" data-time="09:00">&mdash;</span>
+                    <span class="next-countdown-label">Avant l'assembl&eacute;e</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="page-section page-section-light" id="overview">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Who We Are</span>
+                    <h2 class="section-title section-title-left">A Congolese House, Led by Congolese</h2>
+                    <p>The Democratic Republic of the Congo is the largest French-speaking country in the world by population, and one of the most Christian countries on earth by number of believers. It is not a place that needs foreigners to explain the Gospel to it.</p>
+                    <p>Holy Nation Congo was started by Congolese believers in Kinshasa, is led entirely by Congolese, and takes its direction from them. What the wider movement supplies is teaching, training and prayer. What it does not supply is instructions.</p>
+
+                    <div class="scripture">
+                        &ldquo;L'&Eacute;ternel est mon berger: je ne manquerai de rien.&rdquo;<br>
+                        <span style="font-size:0.85em;opacity:0.75;">&ldquo;The LORD is my shepherd; I shall not want.&rdquo;</span>
+                        <cite>Psaume 23:1</cite>
+                    </div>
+
+                    <h3>What we are, and what we are not</h3>
+                    <ul>
+                        <li><strong>You keep your church.</strong> Nearly every member belongs to a Congolese congregation already</li>
+                        <li><strong>You get known.</strong> Every member is placed in one of the three groups</li>
+                        <li><strong>You get trained.</strong> Global College materials in French; sessions in French and Lingala</li>
+                        <li><strong>You carry something.</strong> Congo holds Watch 02 on the global roster</li>
+                        <li><strong>You are never asked for money to belong.</strong> Jamais</li>
+                    </ul>
+
+                    <h3>Two time zones, one country</h3>
+                    <p>Kinshasa runs on West Africa Time; Lubumbashi and Goma run an hour ahead on Central Africa Time. Our Sunday assembly is set by Kinshasa, which means the eastern groups join at 10h00 their time. The community group posts both every week, because assuming everyone is on the capital's clock is exactly the sort of small carelessness that makes people feel peripheral.</p>
+
+                    <h3>Our place in the movement</h3>
+                    <p>Congo sits in the Central Africa sub-region of TKC-Africa, in year three of the five-year cycle. Our council is forming with a Congolese chair, and full autonomy is due in year five.</p>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>En Bref</h3>
+                    <dl class="fact-list">
+                        <div><dt>Si&egrave;ge</dt><dd>Kinshasa</dd></div>
+                        <div><dt>Kinshasa</dt><dd><span class="nation-clock" data-tz="Africa/Kinshasa">--:--</span> WAT</dd></div>
+                        <div><dt>Lubumbashi</dt><dd><span class="nation-clock" data-tz="Africa/Lubumbashi">--:--</span> CAT</dd></div>
+                        <div><dt>Assembl&eacute;e</dt><dd>Dimanche, 9h00 (Kinshasa)</dd></div>
+                        <div><dt>Langues</dt><dd>Fran&ccedil;ais, Lingala, Swahili</dd></div>
+                        <div><dt>Veille</dt><dd>Veille 02 &mdash; Repos</dd></div>
+                        <div><dt>TKC</dt><dd>Afrique &middot; Ann&eacute;e 3 sur 5</dd></div>
+                    </dl>
+                    <a href="#connect" class="btn btn-primary btn-sm">Nous Contacter <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Langues -->
+    <section class="page-section page-section-dark" id="langues">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Langue</span>
+                    <h2 class="section-title section-title-left">Fran&ccedil;ais, Lingala, Swahili</h2>
+                    <p>French is the language of administration, education and most written material. Lingala is the language of Kinshasa, of worship, and of how people actually speak to each other. In the east, Swahili carries much of daily life.</p>
+                    <p>A house that operated only in French would be technically correct and pastorally deaf. So teaching is delivered in French, worship and prayer run in Lingala, and the Goma group works substantially in Swahili.</p>
+                    <ul>
+                        <li><strong>Global College materials</strong> are issued in French, translated by Congolese members where needed</li>
+                        <li><strong>Watch guides and prayer bulletins</strong> in French and Lingala</li>
+                        <li><strong>The safeguarding policy</strong> in French, Lingala and Swahili</li>
+                        <li><strong>Questions</strong> are answered in whichever language they are asked</li>
+                    </ul>
+                    <p>Congo is one of two nations in this movement working primarily in French. We share translation work with Holy Nation Canada and the Rwandan team, so nobody rebuilds the same material twice.</p>
+                </div>
+
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>Pour les Francophones</h3>
+                    <ul class="check-list">
+                        <li>Assembl&eacute;e du dimanche: enseignement en fran&ccedil;ais</li>
+                        <li>Louange et pri&egrave;re: lingala</li>
+                        <li>Groupe de Goma: swahili</li>
+                        <li>Cohorte du Coll&egrave;ge Global: en fran&ccedil;ais, le mardi soir</li>
+                        <li>Vous pouvez &eacute;crire au coordinateur en fran&ccedil;ais</li>
+                    </ul>
+                    <p class="side-note">Les demandes en fran&ccedil;ais re&ccedil;oivent une r&eacute;ponse en fran&ccedil;ais, par une personne r&eacute;elle, sous deux jours ouvrables.</p>
+                    <a href="/holy-nation-canada" class="btn btn-primary btn-sm">Holy Nation Canada <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gatherings -->
+    <section class="page-section page-section-cream" id="gatherings">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Rhythm</span>
+                <h2 class="section-title">When We Gather</h2>
+                <p class="section-desc">Times shown Kinshasa (WAT). Lubumbashi and Goma are one hour ahead &mdash; both times are posted weekly.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-day">Dimanche</div>
+                    <h3>National Assembly</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 9h00 Kinshasa</p>
+                    <p class="service-desc">The whole Congolese community, in person in Kinshasa and online elsewhere. Teaching in French, worship in Lingala. Around two hours.</p>
+                    <a href="#connect" class="service-link">Get the link <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-day">Mardi</div>
+                    <h3>Cohorte du Coll&egrave;ge</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 18h00 Kinshasa</p>
+                    <p class="service-desc">Live seminar in French for enrolled students across the Christ and Kingdom Institutes.</p>
+                    <a href="global-college.html#admissions" class="service-link">Admissions <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-day">Jeudi</div>
+                    <h3>Groupe de Ville</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> Local, 18h00</p>
+                    <p class="service-desc">Homes and community rooms &mdash; discussion of Sunday's teaching, prayer for one another, and practical care.</p>
+                    <a href="#cities" class="service-link">Find your city <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card service-card-accent" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-day">Chaque jour</div>
+                    <h3>La Veille du Repos</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 21h00 &ndash; 00h00 Kinshasa</p>
+                    <p class="service-desc">Congo's watch on the global roster. Protection over the city through the night &mdash; a burden this country understands well.</p>
+                    <a href="prayers-mission.html#watches" class="service-link">Take a slot <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div class="prose" data-aos="fade-up">
+                    <h3>Why Congo holds the Watch of Rest</h3>
+                    <p>Watches run in each region's local time, so several nations hold the same watch number in their own zone. Congo holds <strong>Watch 02 &mdash; The Watch of Rest</strong>, 21h00 to midnight, whose standing burden is protection over the city through the night.</p>
+                    <p>We asked for this one. In much of this country a peaceful night is not something anyone takes for granted, and a watch that simply asks God for safety while people sleep is not a small or sentimental assignment here.</p>
+                    <ul>
+                        <li>Une fen&ecirc;tre de trois heures, un jour par semaine &mdash; souvent partag&eacute;e</li>
+                        <li>Se pr&ecirc;te bien &agrave; une veille familiale avant le coucher</li>
+                        <li>Guide de veille et liste de fardeaux fournis en fran&ccedil;ais et lingala</li>
+                    </ul>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>Premi&egrave;re Visite?</h3>
+                    <ul class="check-list">
+                        <li>Le lien du dimanche est publi&eacute; chaque samedi dans le groupe</li>
+                        <li>Venez comme vous &ecirc;tes &mdash; aucune tenue exig&eacute;e</li>
+                        <li>Posez vos questions en fran&ccedil;ais ou en lingala</li>
+                        <li>Les enfants sont les bienvenus</li>
+                        <li>Restez apr&egrave;s pour parler avec un responsable</li>
+                        <li>Aucune offrande ne sera demand&eacute;e aux visiteurs</li>
+                    </ul>
+                    <a href="#connect" class="btn btn-primary btn-sm">Pr&eacute;venez-nous <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Groups -->
+    <section class="page-section page-section-light" id="cities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Pr&egrave;s de Chez Vous</span>
+                <h2 class="section-title">Nos Groupes</h2>
+                <p class="section-desc">Three groups across two time zones. Local times below are live.</p>
+            </div>
+
+            <div data-filter data-aos="fade-up">
+                <div class="filter-bar">
+                    <div class="filter-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" data-filter-input placeholder="Rechercher une ville ou province..." aria-label="Search groups">
+                    </div>
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter-chip="all">Tous</button>
+                        <button class="filter-chip" data-filter-chip="kinshasa">Kinshasa</button>
+                        <button class="filter-chip" data-filter-chip="katanga">Katanga</button>
+                        <button class="filter-chip" data-filter-chip="kivu">Kivu</button>
+                    </div>
+                </div>
+
+                <div class="city-grid">
+                    <article class="city-card" data-filter-item data-tags="kinshasa capitale lingala ouest">
+                        <h3>Kinshasa</h3>
+                        <span class="city-state">Kinshasa &middot; Si&egrave;ge National</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Kinshasa">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Jeudi, 18h00</div>
+                            <div><i class="fas fa-user"></i> Responsable: [Nom]</div>
+                            <div><i class="fas fa-tower-observation"></i> Tour de pri&egrave;re</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Groupe de Kinshasa"><i class="fab fa-whatsapp"></i> Rejoindre</a>
+                            <a href="#connect" class="btn-nation">Visiter <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="katanga lubumbashi haut sud swahili">
+                        <h3>Lubumbashi</h3>
+                        <span class="city-state">Haut-Katanga</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Lubumbashi">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Jeudi, 18h00</div>
+                            <div><i class="fas fa-user"></i> Responsable: [Nom]</div>
+                            <div><i class="fas fa-clock"></i> CAT &mdash; 1h en avance</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Groupe de Lubumbashi"><i class="fab fa-whatsapp"></i> Rejoindre</a>
+                            <a href="#connect" class="btn-nation">Visiter <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="kivu goma nord est swahili">
+                        <h3>Goma</h3>
+                        <span class="city-state">Nord-Kivu</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Lubumbashi">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Jeudi, 18h00</div>
+                            <div><i class="fas fa-user"></i> Responsable: [Nom]</div>
+                            <div><i class="fas fa-language"></i> Swahili</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Groupe de Goma"><i class="fab fa-whatsapp"></i> Rejoindre</a>
+                            <a href="#east" class="btn-nation">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="filter-empty" data-filter-empty>
+                    <i class="fas fa-map-location-dot"></i>
+                    <p>Pas encore de groupe dans cette ville.<br>Nous avons des membres &agrave; Bukavu, Kisangani, Matadi et Mbuji-Mayi qui se r&eacute;unissent en ligne.</p>
+                    <a href="#connect" class="btn btn-primary btn-sm" style="margin-top:1.25rem;">Commencer un groupe <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The East -->
+    <section class="page-section page-section-dark" id="east">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Goma &amp; the East</span>
+                <h2 class="section-title">How We Speak About the East</h2>
+                <p class="section-desc">Eastern Congo has been reported on by outsiders for decades, often carelessly. We are going to be careful.</p>
+            </div>
+
+            <div class="notice-box" data-aos="fade-up">
+                <i class="fas fa-circle-info"></i>
+                <div>
+                    <h4>We do not narrate this region's situation</h4>
+                    <p>We do not publish analysis of the security situation, name armed groups, comment on regional politics, or describe conditions in ways that could put members at risk. Our Goma group decides entirely what is said publicly about their own city &mdash; including the decision to say very little.</p>
+                </div>
+            </div>
+
+            <div class="split-layout mt-4">
+                <div class="prose" data-aos="fade-up">
+                    <h3>What we do</h3>
+                    <ul>
+                        <li>Meet, teach and pray, exactly as in Kinshasa and Lubumbashi</li>
+                        <li>Support members displaced or under strain, quietly and without publicity</li>
+                        <li>Refer to established humanitarian and statutory services rather than duplicating them</li>
+                        <li>Hold the Watch of Rest over the city, every night of the year</li>
+                        <li>Keep the group running through disruption, which is itself the point</li>
+                    </ul>
+                    <h3>What we do not do</h3>
+                    <ul>
+                        <li>Use the east in fundraising appeals, anywhere in the world</li>
+                        <li>Publish names, photographs or locations without informed consent</li>
+                        <li>Send outside visitors to observe, document or report</li>
+                        <li>Claim to be doing more there than we are</li>
+                    </ul>
+                    <p>If you want to help the east, the most useful things are prayer on the watch and giving that is not tied to a story we would have to extract from someone.</p>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>Si Vous &Ecirc;tes &agrave; l'Est</h3>
+                    <ul class="check-list">
+                        <li>Contactez le responsable de Goma ou le coordinateur national</li>
+                        <li>Rien de ce que vous partagez ne sera publi&eacute;</li>
+                        <li>Nous n'exigeons aucune information sur votre situation</li>
+                        <li>Aide pratique discr&egrave;te, sans conditions</li>
+                        <li>En cas de danger imm&eacute;diat, contactez d'abord les services d'urgence</li>
+                    </ul>
+                    <a href="#connect" class="btn btn-primary btn-sm">Nous Contacter <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Active Here -->
+    <section class="page-section page-section-cream" id="active">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Honest Status</span>
+                <h2 class="section-title">What's Actually Running Here</h2>
+                <p class="section-desc">Congo is a young community in a very large country. Here is exactly where each pillar stands.</p>
+            </div>
+
+            <div class="status-grid" data-aos="fade-up">
+                <div class="status-row">
+                    <span class="status-num">01</span>
+                    <div class="status-body">
+                        <h4>The Apostolic House</h4>
+                        <p>National assembly in Kinshasa, three groups across two time zones, Thursday fellowships.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">02</span>
+                    <div class="status-body">
+                        <h4>Global College</h4>
+                        <p>French-language cohort on Tuesday evenings. Lingala study notes produced by Congolese members.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">03</span>
+                    <div class="status-body">
+                        <h4>Prayers &amp; Mission</h4>
+                        <p>Watch 02 held from Congo. One prayer tower, in Kinshasa.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">04</span>
+                    <div class="status-body">
+                        <h4>Networks</h4>
+                        <p>AWF circles running in Kinshasa. IFAM affiliation open. KBLN, SANI and TANI not yet.</p>
+                        <span class="badge badge-forming">Partly running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">05</span>
+                    <div class="status-body">
+                        <h4>Kingdom Operations</h4>
+                        <p>No working groups yet. CIEL savings groups are under discussion in Kinshasa.</p>
+                        <span class="badge badge-soon">Not running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">06</span>
+                    <div class="status-body">
+                        <h4>Compassion</h4>
+                        <p>CES school support in Kinshasa, and quiet practical support for members under strain in the east.</p>
+                        <span class="badge badge-forming">Forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">07</span>
+                    <div class="status-body">
+                        <h4>Country Development</h4>
+                        <p>Not running, and not planned. We do not comment on Congolese politics or run programmes in this space.</p>
+                        <span class="badge badge-soon">Not running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">08</span>
+                    <div class="status-body">
+                        <h4>ThyKingdomCome</h4>
+                        <p>Part of the Central Africa sub-region, year 3 of 5. Council forming with a Congolese chair.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="page-section page-section-light" id="leadership">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Le Conseil</span>
+                <h2 class="section-title">Who Carries This Community</h2>
+                <p class="section-desc">Entirely Congolese, accountable to the Congolese community first and to the global commonwealth second.</p>
+            </div>
+            <div class="leader-grid">
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&q=80" alt="Coordinateur National">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Nom]</h3>
+                        <span class="leader-role">Coordinateur National</span>
+                        <p>Carries the Congolese community, chairs the forming council, and leads the Kinshasa group.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Responsable de l'Est">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Nom]</h3>
+                        <span class="leader-role">Responsable, Goma</span>
+                        <p>Leads the Goma group and decides what is published about the east. Nothing goes out without their agreement.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Formation et Traduction">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Nom]</h3>
+                        <span class="leader-role">Formation &amp; Traduction</span>
+                        <p>Facilitates the French cohort, produces Lingala study notes, and holds the Watch 02 roster.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="notice-box mt-5" data-aos="fade-up">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                    <h4>Accountability, plainly</h4>
+                    <p>Every leader here is under the same annual character and doctrine review as everyone else, and each sits under a mentor outside their own chain of command. Concerns go to <strong>theholynationglobal@gmail.com</strong> and are handled by the same process that applies to any member, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Connected -->
+    <section class="page-section page-section-cream" id="connect">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Nous Rejoindre</span>
+                <h2 class="section-title">Quatre Fa&ccedil;ons de Commencer</h2>
+            </div>
+
+            <div class="steps-grid" data-aos="fade-up">
+                <a href="#" class="step-card js-whatsapp" data-nation="Holy Nation Congo">
+                    <span class="step-num">01</span>
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Rejoindre le Groupe</h3>
+                    <p>Le groupe WhatsApp national, en fran&ccedil;ais et lingala, avec une ligne directe vers le coordinateur.</p>
+                    <span class="step-link">Rejoindre <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#connect" class="step-card">
+                    <span class="step-num">02</span>
+                    <i class="fas fa-people-group"></i>
+                    <h3>Venir Dimanche</h3>
+                    <p>&Agrave; Kinshasa ou en ligne. Aucun engagement, et aucune offrande demand&eacute;e aux visiteurs.</p>
+                    <span class="step-link">Obtenir le lien <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="global-college.html#admissions" class="step-card">
+                    <span class="step-num">03</span>
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Se Former</h3>
+                    <p>La cohorte francophone du Coll&egrave;ge Global, le mardi soir. Bourses disponibles.</p>
+                    <span class="step-link">Admissions <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="prayers-mission.html#watches" class="step-card">
+                    <span class="step-num">04</span>
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Prendre la Veille</h3>
+                    <p>21h00 &agrave; minuit, un jour par semaine. Se pr&ecirc;te bien &agrave; une veille familiale.</p>
+                    <span class="step-link">S'inscrire <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div data-aos="fade-up">
+                    <h3 class="sub-heading">&Eacute;crivez-Nous</h3>
+                    <p class="sub-lead">Le bureau du coordinateur r&eacute;pond sous deux jours ouvrables, en fran&ccedil;ais, et une personne r&eacute;elle vous sera assign&eacute;e.</p>
+                    <form class="form-grid" data-demo>
+                        <div class="form-field">
+                            <label for="cd-name">Nom complet</label>
+                            <input type="text" id="cd-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="cd-email">Email</label>
+                            <input type="email" id="cd-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="cd-city">Ville</label>
+                            <input type="text" id="cd-city" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="cd-lang">Langue pr&eacute;f&eacute;r&eacute;e</label>
+                            <select id="cd-lang">
+                                <option>Fran&ccedil;ais</option>
+                                <option>Lingala</option>
+                                <option>Swahili</option>
+                                <option>English</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="cd-intent">Je souhaite</label>
+                            <select id="cd-intent">
+                                <option>Rejoindre le groupe WhatsApp national</option>
+                                <option>Assister &agrave; l'assembl&eacute;e du dimanche</option>
+                                <option>Rejoindre un groupe de ville</option>
+                                <option>Commencer un groupe dans ma ville</option>
+                                <option>M'inscrire &agrave; la cohorte du Coll&egrave;ge</option>
+                                <option>Prendre une veille de pri&egrave;re</option>
+                                <option>Demander de l'aide</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="cd-message">Votre message</label>
+                            <textarea id="cd-message"></textarea>
+                        </div>
+                        <div class="form-field full">
+                            <button type="submit" class="btn btn-primary">Envoyer <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>Bureau du Congo</h3>
+                    <dl class="fact-list">
+                        <div><dt>Coordinateur</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Si&egrave;ge</dt><dd>Kinshasa</dd></div>
+                        <div><dt>Kinshasa</dt><dd><span class="nation-clock" data-tz="Africa/Kinshasa">--:--</span></dd></div>
+                        <div><dt>Lubumbashi</dt><dd><span class="nation-clock" data-tz="Africa/Lubumbashi">--:--</span></dd></div>
+                        <div><dt>R&eacute;ponse</dt><dd>2 jours ouvrables</dd></div>
+                        <div><dt>Protection</dt><dd>theholynationglobal@gmail.com</dd></div>
+                    </dl>
+                    <p class="side-note">Personne de Holy Nation ne vous &eacute;crira jamais en priv&eacute; pour demander de l'argent, un transfert mobile ou des documents. Si cela arrive, c'est une arnaque &mdash; signalez-le.</p>
+                    <a href="/connect" class="btn btn-primary btn-sm">Toutes les Nations <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="page-section page-section-light" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Questions Fr&eacute;quentes</h2>
+            </div>
+            <div class="accordion faq-accordion" data-aos="fade-up">
+                <div class="accordion-item open">
+                    <div class="accordion-head">Dois-je quitter mon &eacute;glise pour vous rejoindre?</div>
+                    <div class="accordion-body">
+                        <p>Non. Presque tous nos membres appartiennent d&eacute;j&agrave; &agrave; une &eacute;glise congolaise, et nous d&eacute;couragerions quiconque de la quitter. Nous nous pla&ccedil;ons &agrave; c&ocirc;t&eacute; de votre &eacute;glise, pas &agrave; sa place.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">En quelle langue se d&eacute;roulent les r&eacute;unions?</div>
+                    <div class="accordion-body">
+                        <p>L'enseignement est en fran&ccedil;ais, la louange et la pri&egrave;re en lingala, et le groupe de Goma travaille en swahili. Vous pouvez poser vos questions dans la langue de votre choix.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Cette communaut&eacute; est-elle dirig&eacute;e depuis l'&eacute;tranger?</div>
+                    <div class="accordion-body">
+                        <p>Non. Elle a &eacute;t&eacute; fond&eacute;e par des Congolais, elle est dirig&eacute;e par des Congolais, et l'autonomie compl&egrave;te est pr&eacute;vue en ann&eacute;e cinq. Le mouvement mondial fournit l'enseignement, la formation et la pri&egrave;re &mdash; pas des instructions.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Why do you say so little about eastern Congo?</div>
+                    <div class="accordion-body">
+                        <p>Because our Goma members carry the risk of anything published, not us. They decide what is said about their own city, including saying very little. We also refuse to use the east in fundraising material anywhere in the world.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Y a-t-il des frais d'adh&eacute;sion?</div>
+                    <div class="accordion-body">
+                        <p>Aucun. La communaut&eacute;, les assembl&eacute;es, les veilles et le cours de Fondations sont gratuits. Les frais du Coll&egrave;ge Global sont fix&eacute;s r&eacute;gionalement avec paiement &eacute;chelonn&eacute; et bourses; personne n'a jamais &eacute;t&eacute; refus&eacute; faute de moyens.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">&Ecirc;tes-vous affili&eacute;s politiquement?</div>
+                    <div class="accordion-body">
+                        <p>Non. Holy Nation Global ne soutient aucun parti ni aucun candidat, dans aucun pays, et nos groupes n'autorisent aucune campagne. La politique compl&egrave;te est publi&eacute;e sur la page Country Development.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Faut-il &ecirc;tre chr&eacute;tien pour recevoir de l'aide?</div>
+                    <div class="accordion-body">
+                        <p>Non. L'aide est accord&eacute;e sur la base du besoin uniquement. Personne n'est interrog&eacute; sur sa foi, tenu d'assister &agrave; quoi que ce soit, ou trait&eacute; diff&eacute;remment s'il refuse.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Nations -->
+    <section class="page-section page-section-cream">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Ailleurs</span>
+                <h2 class="section-title">Autres Nations</h2>
+            </div>
+            <div class="feature-grid feature-grid-4" data-aos="fade-up">
+                <a href="/holy-nation-rwanda" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation Rwanda</h3>
+                    <p>Kigali, trilingue, et notre voisin &agrave; l'est.</p>
+                </a>
+                <a href="/holy-nation-canada" class="feature-card">
+                    <i class="fas fa-maple-leaf"></i>
+                    <h3>Holy Nation Canada</h3>
+                    <p>Toronto et Montr&eacute;al &mdash; notre partenaire pour la traduction fran&ccedil;aise.</p>
+                </a>
+                <a href="/holy-nation-zambia" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation Zambia</h3>
+                    <p>Lusaka et Kitwe, notre voisin au sud.</p>
+                </a>
+                <a href="connect.html#nations" class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Les Douze Nations</h3>
+                    <p>L'annuaire complet avec les heures locales et les coordinateurs nationaux.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Boyei Malamu. Soyez les Bienvenus.</h2>
+                <p>Venez un dimanche. Restez si vous vous y sentez chez vous. Dans tous les cas, vous serez re&ccedil;u comme la famille re&ccedil;oit la famille.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large js-whatsapp" data-nation="Holy Nation Congo">Rejoindre la Communaut&eacute;</a>
+                    <a href="#connect" class="btn btn-outline btn-large">Obtenir le Lien</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">
+                            <img src="logo.png" alt="Holy Nation Global">
+                            <div>
+                                <span class="footer-logo-main">HOLY NATION CONGO</span>
+                                <span class="footer-logo-sub">Holy Nation Global</span>
+                            </div>
+                        </a>
+                        <p>Former des Leaders Apostoliques, Transformer les Nations, &Eacute;tablir le R&egrave;gne du Christ sur la Terre.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/1davidabraham" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/1DavidAbraham" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/1davidabraham/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@1davidabraham" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Holy Nation Congo</h4>
+                        <ul>
+                            <li><a href="#langues">Fran&ccedil;ais &amp; Lingala</a></li>
+                            <li><a href="#gatherings">Assembl&eacute;es</a></li>
+                            <li><a href="#cities">Nos Groupes</a></li>
+                            <li><a href="#east">Goma &amp; l'Est</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Minist&egrave;res</h4>
+                        <ul>
+                            <li><a href="/apostolic-house">The Apostolic House</a></li>
+                            <li><a href="/global-college">Global College</a></li>
+                            <li><a href="/prayers-mission">Prayers &amp; Mission</a></li>
+                            <li><a href="/networks">Apostolic Networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="connect.html#nations">Toutes les Nations</a></li>
+                            <li><a href="connect.html#prayer">Demande de Pri&egrave;re</a></li>
+                            <li><a href="/give">Donner</a></li>
+                            <li><a href="connect.html#contact">Nous Contacter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Holy Nation Global &mdash; Christhouse Apostolic Fellowship. Tous droits r&eacute;serv&eacute;s. | Thy Kingdom Come.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
+</html>

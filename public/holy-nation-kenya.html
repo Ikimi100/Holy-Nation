@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Nation Kenya | Holy Nation Global</title>
+    <meta name="description" content="Holy Nation Kenya — city groups in Nairobi, Mombasa, Kisumu, Nakuru and Eldoret. The East Africa Training Centre, the Dawn Watch, SANI campus chapters and field compassion work.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Holy Nation Global" class="preloader-logo">
+            <p>Holy Nation Global</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-solid">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Holy Nation Global">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Holy Nation Global</span>
+                    <span class="logo-sub">Thy Kingdom Come</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/apostolic-house" class="nav-link">Apostolic House</a>
+                <a href="/global-college" class="nav-link">Global College</a>
+                <a href="/prayers-mission" class="nav-link">Prayers &amp; Mission</a>
+                <a href="/networks" class="nav-link">Networks</a>
+                <a href="/kingdom-operations" class="nav-link">Operations</a>
+                <a href="/compassion" class="nav-link">Compassion</a>
+                <a href="/country-development" class="nav-link">Nation Building</a>
+                <a href="/thykingdomcome" class="nav-link">ThyKingdomCome</a>
+                <a href="/give" class="nav-link nav-give">Give</a>
+                <a href="/connect" class="nav-link nav-cta active">Connect</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search teachings, events, ministries..." id="searchInput">
+            <button class="search-submit" aria-label="Submit search"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=1920&q=80');"></div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="/connect">Connect</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="connect.html#nations">Nations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Holy Nation Kenya</span>
+            </nav>
+            <span class="page-hero-tag">Kenya</span>
+            <h1>Holy Nation Kenya</h1>
+            <p class="page-hero-lead">Five city groups, the East Africa Training Centre, six campus chapters and the Dawn Watch. The training engine for the whole East African sub-region.</p>
+            <div class="page-hero-actions">
+                <a href="#" class="btn btn-primary js-whatsapp" data-nation="Holy Nation Kenya"><i class="fab fa-whatsapp"></i> Join the WhatsApp Community</a>
+                <a href="#training" class="btn btn-outline">The Training Centre</a>
+            </div>
+            <div class="page-hero-facts">
+                <div>
+                    <span class="page-fact-num nation-clock" data-tz="Africa/Nairobi">--:--</span>
+                    <span class="page-fact-label">Nairobi Time Now</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="5">0</span>
+                    <span class="page-fact-label">City Groups</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="6">0</span>
+                    <span class="page-fact-label">Campus Chapters</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="1">0</span>
+                    <span class="page-fact-label">Training Centre</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Nav -->
+    <div class="page-nav" id="pageNav">
+        <div class="page-nav-inner">
+            <a href="#overview">Overview</a>
+            <a href="#training">Training Centre</a>
+            <a href="#gatherings">Gatherings</a>
+            <a href="#cities">City Groups</a>
+            <a href="#campus">Campus Chapters</a>
+            <a href="#field">Field Work</a>
+            <a href="#active">What's Active Here</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#connect">Get Connected</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
+
+    <!-- Next gathering strip -->
+    <section class="page-section page-section-light" style="padding-bottom:0;">
+        <div class="container">
+            <div class="next-strip" data-aos="fade-up">
+                <div>
+                    <span class="next-strip-label">Next National Gathering</span>
+                    <h3>Sunday Assembly &mdash; Nairobi &amp; Online</h3>
+                    <p>9:00 AM East Africa Time &middot; English &amp; Kiswahili</p>
+                </div>
+                <div style="text-align:right;">
+                    <span class="next-countdown" data-countdown data-tz="Africa/Nairobi" data-day="Sun" data-time="09:00">&mdash;</span>
+                    <span class="next-countdown-label">Until we gather</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="page-section page-section-light" id="overview">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Who We Are</span>
+                    <h2 class="section-title section-title-left">The House That Trains East Africa</h2>
+                    <p>Kenya carries a particular assignment within this movement. It is not simply another national community &mdash; it hosts the <strong>East Africa Training Centre</strong>, the Global College delivery point serving Kenya, Uganda, Rwanda, Tanzania and beyond.</p>
+                    <p>That was a deliberate decision, and it reversed a bad old habit. For generations, the promising young leader from Nakuru or Kigali was sent abroad to be trained, and a significant number never came back. Building the training here means people are formed inside the context they will serve, alongside people who face the same conditions.</p>
+
+                    <div class="scripture">
+                        &ldquo;And the things that you have heard from me among many witnesses, commit these to faithful men who will be able to teach others also.&rdquo;
+                        <cite>2 Timothy 2:2</cite>
+                    </div>
+
+                    <h3>Two languages, one house</h3>
+                    <p>The Sunday assembly runs in English with Kiswahili woven through worship and prayer, and city groups switch freely between the two. Global College materials are issued in both. In Kisumu and Eldoret, sessions frequently run in Dholuo and Kalenjin where that is how people actually pray.</p>
+
+                    <h3>What we are, and what we are not</h3>
+                    <ul>
+                        <li><strong>You keep your church.</strong> Most of our members belong to a Kenyan congregation already</li>
+                        <li><strong>You get known.</strong> Every member is placed in a city group or campus chapter</li>
+                        <li><strong>You get trained.</strong> The full ladder is delivered here, not exported to you</li>
+                        <li><strong>You carry something.</strong> Kenya holds Watch 04 on the global roster</li>
+                        <li><strong>You are never asked for money to belong.</strong> Ever</li>
+                    </ul>
+
+                    <h3>Our place in the movement</h3>
+                    <p>Kenya leads the East Africa sub-region of TKC-Africa, currently in year three of the five-year cycle. Our sub-regional council is forming with an indigenous chair, and full autonomy is due in year five. We work closely with Uganda and Rwanda, who share our training centre and, increasingly, our staff.</p>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>At a Glance</h3>
+                    <dl class="fact-list">
+                        <div><dt>National hub</dt><dd>Nairobi</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Africa/Nairobi">--:--</span> EAT</dd></div>
+                        <div><dt>Main gathering</dt><dd>Sundays, 9:00 AM</dd></div>
+                        <div><dt>Languages</dt><dd>English &amp; Kiswahili</dd></div>
+                        <div><dt>City groups</dt><dd>5</dd></div>
+                        <div><dt>Global watch</dt><dd>Watch 04 &mdash; Dawn</dd></div>
+                        <div><dt>Hosts</dt><dd>East Africa Training Centre</dd></div>
+                        <div><dt>TKC stage</dt><dd>Africa &middot; Year 3 of 5</dd></div>
+                    </dl>
+                    <a href="#connect" class="btn btn-primary btn-sm">Get Connected <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Centre -->
+    <section class="ministry-section ministry-dark" id="training">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="ministry-grid">
+                <div class="ministry-visual" data-aos="fade-right">
+                    <div class="visual-frame">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=900&q=80" alt="Students at the East Africa Training Centre">
+                        <div class="visual-accent"></div>
+                    </div>
+                    <div class="visual-float-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Serving 5 Nations</span>
+                    </div>
+                </div>
+                <div class="ministry-content" data-aos="fade-left">
+                    <span class="ministry-tag">Nairobi</span>
+                    <h2>The East Africa Training Centre</h2>
+                    <p class="ministry-lead">A Global College delivery centre serving Kenya, Uganda, Rwanda, Tanzania and South Sudan &mdash; the same curriculum, the same examinations and the same awards as the Lagos campus, taught here by faculty who live here.</p>
+                    <p class="ministry-lead">Students from across the sub-region attend in person for residential blocks and online for weekly seminars. Nobody has to leave the continent, or their job, to be properly trained.</p>
+                    <div class="ministry-list">
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-book-open"></i></div>
+                            <div class="item-text">
+                                <h4>Christ &amp; Kingdom Institutes</h4>
+                                <p>Both stages delivered in full, weekly seminars plus two residential blocks per term</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-scroll"></i></div>
+                            <div class="item-text">
+                                <h4>Apostolic Institute</h4>
+                                <p>Opening next intake, with the first East African cohort already selected</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-users-line"></i></div>
+                            <div class="item-text">
+                                <h4>Regional Cohorts</h4>
+                                <p>Groups hosted by affiliate churches in Kampala, Kigali, Dar es Salaam and Eldoret</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-chalkboard-user"></i></div>
+                            <div class="item-text">
+                                <h4>Facilitator Training</h4>
+                                <p>Licensed facilitators trained here so that cohorts can run in their own languages</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                            <div class="item-text">
+                                <h4>Bursaries</h4>
+                                <p>Fees set regionally with instalment plans; no student has been turned away for inability to pay</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="global-college.html#admissions" class="btn btn-outline">Admissions <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gatherings -->
+    <section class="page-section page-section-cream" id="gatherings">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Rhythm</span>
+                <h2 class="section-title">When We Gather</h2>
+                <p class="section-desc">All times East Africa Time. Everything is available online, and recordings go out to the community the same week.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-day">Sunday</div>
+                    <h3>National Assembly</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 9:00 AM EAT</p>
+                    <p class="service-desc">The whole Kenyan community, in person in Nairobi and online everywhere else. Worship, apostolic teaching and communion. Runs two hours.</p>
+                    <a href="#connect" class="service-link">Get the link <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-day">Tuesday</div>
+                    <h3>College Seminar</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 6:00 PM EAT</p>
+                    <p class="service-desc">The weekly live seminar from the East Africa Training Centre, open to enrolled students across five nations.</p>
+                    <a href="#training" class="service-link">Training centre <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-day">Thursday</div>
+                    <h3>City Group Night</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> Local, 6:00 PM</p>
+                    <p class="service-desc">Homes and community halls &mdash; discussion of Sunday's teaching, prayer for one another, and practical care within the group.</p>
+                    <a href="#cities" class="service-link">Find your city <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card service-card-accent" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-day">Daily</div>
+                    <h3>The Dawn Watch</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 3:00 &ndash; 6:00 AM EAT</p>
+                    <p class="service-desc">Kenya's watch on the global roster. Breakthrough, new mercies and prophetic release, prayed while most of the world sleeps.</p>
+                    <a href="prayers-mission.html#watches" class="service-link">Take a slot <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div class="prose" data-aos="fade-up">
+                    <h3>Why Kenya holds the Dawn Watch</h3>
+                    <p>Watch 04 runs from 3:00 to 6:00 AM &mdash; the hardest slot on the roster, and the one traditionally associated with breakthrough. East Africa took it because our time zone means that when we are praying at dawn, it is still the middle of the night across most of the movement.</p>
+                    <p>It is not romantic. It is a genuinely difficult discipline that most people can sustain one morning a week and not more. That is exactly how the roster is designed &mdash; one slot, one day, shared with two or three others.</p>
+                    <ul>
+                        <li>Prayed alone, with your household, or in the live audio room</li>
+                        <li>You receive the watch guide, the current burden list and a reporting template</li>
+                        <li>The Nairobi tower gathers physically for the watch on the first Saturday of each month</li>
+                    </ul>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>First Time Joining?</h3>
+                    <ul class="check-list">
+                        <li>The Sunday link is posted in the community group each Saturday</li>
+                        <li>Come as you are &mdash; there is no dress code</li>
+                        <li>Worship runs in English and Kiswahili together</li>
+                        <li>Children are welcome throughout</li>
+                        <li>Stay after for chai and conversation with a leader</li>
+                        <li>You will never be asked to give as a visitor</li>
+                    </ul>
+                    <a href="#connect" class="btn btn-primary btn-sm">Say You're Coming <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Groups -->
+    <section class="page-section page-section-light" id="cities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Near You</span>
+                <h2 class="section-title">City Groups</h2>
+                <p class="section-desc">Five cities, each with a named host and its own WhatsApp thread. All on East Africa Time.</p>
+            </div>
+
+            <div data-filter data-aos="fade-up">
+                <div class="filter-bar">
+                    <div class="filter-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" data-filter-input placeholder="Search city or county..." aria-label="Search city groups">
+                    </div>
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter-chip="all">All</button>
+                        <button class="filter-chip" data-filter-chip="nairobi">Nairobi</button>
+                        <button class="filter-chip" data-filter-chip="coast">Coast</button>
+                        <button class="filter-chip" data-filter-chip="west">Western</button>
+                        <button class="filter-chip" data-filter-chip="rift">Rift Valley</button>
+                    </div>
+                </div>
+
+                <div class="city-grid">
+                    <article class="city-card" data-filter-item data-tags="nairobi capital westlands kasarani">
+                        <h3>Nairobi</h3>
+                        <span class="city-state">Nairobi County &middot; National Hub</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Nairobi">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-graduation-cap"></i> Training centre here</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Nairobi City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="coast mombasa kilifi swahili">
+                        <h3>Mombasa</h3>
+                        <span class="city-state">Coast</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Nairobi">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-language"></i> Kiswahili-led</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Mombasa City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="west kisumu nyanza lake victoria dholuo">
+                        <h3>Kisumu</h3>
+                        <span class="city-state">Nyanza</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Nairobi">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-tower-observation"></i> Prayer tower</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Kisumu City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="rift nakuru valley">
+                        <h3>Nakuru</h3>
+                        <span class="city-state">Rift Valley</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Nairobi">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-users"></i> 20+ members</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Nakuru City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="rift eldoret uasin gishu kalenjin">
+                        <h3>Eldoret</h3>
+                        <span class="city-state">Uasin Gishu</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Nairobi">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-book"></i> Regional cohort</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Eldoret City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="filter-empty" data-filter-empty>
+                    <i class="fas fa-map-location-dot"></i>
+                    <p>No group in that town yet.<br>We have members in Thika, Meru, Machakos, Nyeri and Kakamega meeting online &mdash; several are one host short of a group.</p>
+                    <a href="#connect" class="btn btn-primary btn-sm" style="margin-top:1.25rem;">Start One Where You Are <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Chapters -->
+    <section class="page-section page-section-cream" id="campus">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">SANI Kenya</span>
+                    <h2 class="section-title section-title-left">Six Campus Chapters</h2>
+                    <p>The Students Apostolic Network is the fastest-growing part of Holy Nation Kenya, and by some distance the most demanding. Kenyan campuses produce serious questions, serious debate and students who will not accept an answer simply because an older person gave it.</p>
+                    <p>That is the point. A faith that cannot survive a second-year philosophy seminar was never going to survive a mortgage, a bereavement or a corrupt employer either.</p>
+                    <ul>
+                        <li><strong>Weekly fellowships</strong> on six campuses, student-led with a licensed adult adviser</li>
+                        <li><strong>Apologetics training</strong> that takes the objections seriously rather than caricaturing them</li>
+                        <li><strong>Career and purpose clinics</strong> with KBLN mentors from the relevant field</li>
+                        <li><strong>Identity, purity and digital life</strong> discussed frankly, without moralising</li>
+                        <li><strong>Student-led outreach</strong> on and around their own campuses</li>
+                        <li><strong>A deliberate handover</strong> into a city group at graduation, so nobody drifts away</li>
+                    </ul>
+                    <p>Campus chapters send delegates to the annual SANI Campus Congress, and several Kenyan students now facilitate regional cohorts of the Global College while still studying.</p>
+                </div>
+
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>Campuses With Chapters</h3>
+                    <ul class="check-list">
+                        <li>University of Nairobi</li>
+                        <li>Kenyatta University</li>
+                        <li>Jomo Kenyatta University of Agriculture &amp; Technology</li>
+                        <li>Moi University, Eldoret</li>
+                        <li>Maseno University, Kisumu</li>
+                        <li>Technical University of Mombasa</li>
+                    </ul>
+                    <p class="side-note">Studying somewhere not listed? Three students and a willing adviser is enough to start a chapter. We supply the curriculum, training and safeguarding cover.</p>
+                    <a href="networks.html#sani" class="btn btn-primary btn-sm">About SANI <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Field Work -->
+    <section class="page-section page-section-light" id="field">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Compassion in Kenya</span>
+                <h2 class="section-title">What We Actually Run</h2>
+                <p class="section-desc">Field programmes with named sites, real caseloads and published numbers. Help is offered on the basis of need alone &mdash; no faith test, no attendance requirement.</p>
+            </div>
+
+            <div class="feature-grid feature-grid-4" data-aos="fade-up">
+                <div class="feature-card">
+                    <i class="fas fa-book-open-reader"></i>
+                    <h3>CES &mdash; School Support</h3>
+                    <p>Fees, uniforms and books paid directly to schools for children who would otherwise drop out. Attendance reviewed each term.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bowl-food"></i>
+                    <h3>AFER &mdash; Feeding</h3>
+                    <p>Community kitchens and school feeding in three counties, run by local volunteers using local suppliers.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-truck-medical"></i>
+                    <h3>HACO &mdash; Mobile Clinics</h3>
+                    <p>Screening and clinic days in underserved areas, staffed by qualified clinicians with proper onward referral.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h3>SSF &mdash; Savings Groups</h3>
+                    <p>Member-run savings and lending circles building resilience before crisis, run alongside CIEL skills training.</p>
+                </div>
+            </div>
+
+            <div class="notice-box mt-4" data-aos="fade-up">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                    <h4>Safeguarding on every site</h4>
+                    <p>Every worker with access to children is screened, trained annually and never alone with a minor. Concerns are escalated the same day to the safeguarding lead and to statutory services where the threshold is met &mdash; including concerns about our own people.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Active Here -->
+    <section class="page-section page-section-cream" id="active">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Honest Status</span>
+                <h2 class="section-title">What's Actually Running Here</h2>
+                <p class="section-desc">Kenya runs more of the eight pillars than most regions. Here is exactly where each one stands.</p>
+            </div>
+
+            <div class="status-grid" data-aos="fade-up">
+                <div class="status-row">
+                    <span class="status-num">01</span>
+                    <div class="status-body">
+                        <h4>The Apostolic House</h4>
+                        <p>National assembly in Nairobi, five city groups, Thursday fellowships and pastoral care.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">02</span>
+                    <div class="status-body">
+                        <h4>Global College</h4>
+                        <p>The East Africa Training Centre, serving five nations. Apostolic Institute opens next intake.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">03</span>
+                    <div class="status-body">
+                        <h4>Prayers &amp; Mission</h4>
+                        <p>Watch 04 held from Kenya. Prayer towers in Nairobi, Kisumu and Mombasa.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">04</span>
+                    <div class="status-body">
+                        <h4>Networks</h4>
+                        <p>SANI on six campuses, AWF circles in all five cities, IFAM affiliation open. KBLN and TANI forming.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">05</span>
+                    <div class="status-body">
+                        <h4>Kingdom Operations</h4>
+                        <p>Working groups forming in Education, Agriculture, Health and Business. CIEL skills clinics running in Nairobi.</p>
+                        <span class="badge badge-forming">Forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">06</span>
+                    <div class="status-body">
+                        <h4>Compassion</h4>
+                        <p>CES, AFER, HACO and SSF all operating with named field sites and published numbers.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">07</span>
+                    <div class="status-body">
+                        <h4>Country Development</h4>
+                        <p>A Kenyan team is adapting the Rebuild template. Nothing is announced until there is something real behind it.</p>
+                        <span class="badge badge-forming">Forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">08</span>
+                    <div class="status-body">
+                        <h4>ThyKingdomCome</h4>
+                        <p>Leading the East Africa sub-region, year 3 of 5. Sub-regional council forming with an indigenous chair.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="page-section page-section-light" id="leadership">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Council</span>
+                <h2 class="section-title">Who Carries This Region</h2>
+                <p class="section-desc">A Kenyan council, chaired by a Kenyan, accountable to the Kenyan community first and to the global commonwealth second.</p>
+            </div>
+            <div class="leader-grid">
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="National Coordinator">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">National Coordinator</span>
+                        <p>Carries the Kenyan community, chairs the council, and represents East Africa at the annual assembly.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="Director of the Training Centre">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Director, East Africa Training Centre</span>
+                        <p>Runs the delivery centre, oversees regional cohorts across five nations and trains the facilitators.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Compassion and Field Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Compassion &amp; Field Lead</span>
+                        <p>Oversees the CES, AFER, HACO and SSF programmes and holds the safeguarding standard across every site.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="notice-box mt-5" data-aos="fade-up">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                    <h4>Accountability, plainly</h4>
+                    <p>Every leader here is under the same annual character and doctrine review as everyone else, and each sits under a mentor outside their own chain of command. Concerns go to <strong>theholynationglobal@gmail.com</strong> and are handled by the same process that applies to any member.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Connected -->
+    <section class="page-section page-section-cream" id="connect">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get Connected</span>
+                <h2 class="section-title">Four Ways to Start</h2>
+            </div>
+
+            <div class="steps-grid" data-aos="fade-up">
+                <a href="#" class="step-card js-whatsapp" data-nation="Holy Nation Kenya">
+                    <span class="step-num">01</span>
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Join the Community</h3>
+                    <p>The national WhatsApp group: Sunday links, prayer requests and a direct line to the coordinator.</p>
+                    <span class="step-link">Join <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#connect" class="step-card">
+                    <span class="step-num">02</span>
+                    <i class="fas fa-people-group"></i>
+                    <h3>Come on Sunday</h3>
+                    <p>In person in Nairobi or online anywhere. No commitment of any kind, and no offering asked of visitors.</p>
+                    <span class="step-link">Get the link <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#training" class="step-card">
+                    <span class="step-num">03</span>
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Enrol at the Centre</h3>
+                    <p>The full Global College ladder, delivered in Nairobi for students across East Africa. Bursaries available.</p>
+                    <span class="step-link">Admissions <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="prayers-mission.html#watches" class="step-card">
+                    <span class="step-num">04</span>
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Take the Dawn Watch</h3>
+                    <p>One three-hour window a week, 3:00 to 6:00 AM. The hardest slot on the roster, and the most sought after.</p>
+                    <span class="step-link">Enrol <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div data-aos="fade-up">
+                    <h3 class="sub-heading">Tell Us Where You Are</h3>
+                    <p class="sub-lead">The coordinator's office replies within two working days, and a real person will be assigned to you &mdash; not a mailing list.</p>
+                    <form class="form-grid" data-demo>
+                        <div class="form-field">
+                            <label for="ke-name">Full name</label>
+                            <input type="text" id="ke-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ke-email">Email</label>
+                            <input type="email" id="ke-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ke-city">Town or city</label>
+                            <input type="text" id="ke-city" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ke-county">County</label>
+                            <input type="text" id="ke-county">
+                        </div>
+                        <div class="form-field full">
+                            <label for="ke-intent">I'd like to</label>
+                            <select id="ke-intent">
+                                <option>Join the national WhatsApp community</option>
+                                <option>Attend the Sunday assembly</option>
+                                <option>Join my nearest city group</option>
+                                <option>Start a city group where I live</option>
+                                <option>Enrol at the East Africa Training Centre</option>
+                                <option>Start or join a SANI campus chapter</option>
+                                <option>Take a watch on the prayer roster</option>
+                                <option>Volunteer with the compassion programmes</option>
+                                <option>Apply for assistance</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="ke-message">Anything you'd like us to know</label>
+                            <textarea id="ke-message"></textarea>
+                        </div>
+                        <div class="form-field full">
+                            <button type="submit" class="btn btn-primary">Send <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>Kenya Office</h3>
+                    <dl class="fact-list">
+                        <div><dt>Coordinator</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Training centre</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Hub</dt><dd>Nairobi</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Africa/Nairobi">--:--</span> EAT</dd></div>
+                        <div><dt>Reply target</dt><dd>2 working days</dd></div>
+                        <div><dt>Safeguarding</dt><dd>theholynationglobal@gmail.com</dd></div>
+                    </dl>
+                    <p class="side-note">Nobody from Holy Nation will ever direct-message you asking for money, bank details, M-Pesa transfers or documents. If that happens, it is a scam &mdash; please report it.</p>
+                    <a href="/connect" class="btn btn-primary btn-sm">All Nations <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="page-section page-section-light" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked</h2>
+            </div>
+            <div class="accordion faq-accordion" data-aos="fade-up">
+                <div class="accordion-item open">
+                    <div class="accordion-head">Do I have to leave my church to join Holy Nation Kenya?</div>
+                    <div class="accordion-body">
+                        <p>No. Most of our members belong to a Kenyan congregation already, and we would discourage anyone from leaving. We sit alongside your church &mdash; city groups meet midweek and the training is designed to strengthen you wherever you serve.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">What does training at the Centre cost?</div>
+                    <div class="accordion-body">
+                        <p>Fees are set regionally so they remain proportionate to local income, with instalment plans across each term at no extra cost and bursaries from the Kingdom Builders fund. No student has been turned away for inability to pay, and applying for support carries no weight in the admissions decision.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is the award from Nairobi the same as from Lagos?</div>
+                    <div class="accordion-body">
+                        <p>Identical. Same curriculum, same examinations, same assessment standards, same register, same award. The East Africa Training Centre is a delivery centre of the Global College, not a junior version of it.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Do I have to be a Christian to receive help from your programmes?</div>
+                    <div class="accordion-body">
+                        <p>No. Eligibility is based on need alone. Nobody is asked about their faith, invited to a service as a condition, or treated differently for declining. Charity with conditions attached is not charity.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Can my church host a regional cohort?</div>
+                    <div class="accordion-body">
+                        <p>Yes, subject to IFAM affiliation and a trained, licensed facilitator on site. We supply the syllabus, materials and assessment; your church supplies the venue and pastoral covering. Cohorts currently run in Kampala, Kigali, Dar es Salaam and Eldoret.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Are you politically affiliated?</div>
+                    <div class="accordion-body">
+                        <p>No. Holy Nation Global endorses no party and no candidate in any nation, and our groups do not permit campaigning. The full policy is published on the Country Development page and applies here without exception.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Someone asked me to send money in your name. Is that you?</div>
+                    <div class="accordion-body">
+                        <p>No. Nobody from this movement will ever direct-message you asking for a payment, an M-Pesa transfer, bank details or personal documents. Screenshot it and send it to theholynationglobal@gmail.com so we can warn the community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Nations -->
+    <section class="page-section page-section-cream">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Elsewhere</span>
+                <h2 class="section-title">Other Nations</h2>
+            </div>
+            <div class="feature-grid feature-grid-4" data-aos="fade-up">
+                <a href="/holy-nation-uganda" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation Uganda</h3>
+                    <p>Kampala hub, three city groups, and a regional cohort of the training centre.</p>
+                </a>
+                <a href="/holy-nation-rwanda" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation Rwanda</h3>
+                    <p>Kigali hub, trilingual, and a regional cohort served from Nairobi.</p>
+                </a>
+                <a href="/holy-nation-ghana" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation Ghana</h3>
+                    <p>Accra hub, leading the West Africa sub-region alongside Nigeria.</p>
+                </a>
+                <a href="connect.html#nations" class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>All Twelve Nations</h3>
+                    <p>The full directory with live local times, WhatsApp communities and national coordinators.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Karibu. You Are Welcome Here.</h2>
+                <p>Come to one Sunday. Stay if it is home. Either way you will be received the way family receives family.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large js-whatsapp" data-nation="Holy Nation Kenya">Join the Community</a>
+                    <a href="#training" class="btn btn-outline btn-large">Train With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">
+                            <img src="logo.png" alt="Holy Nation Global">
+                            <div>
+                                <span class="footer-logo-main">HOLY NATION KENYA</span>
+                                <span class="footer-logo-sub">Holy Nation Global</span>
+                            </div>
+                        </a>
+                        <p>Raising Apostolic Leaders, Transforming Nations, Establishing the Reign of Christ on Earth.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/1davidabraham" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/1DavidAbraham" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/1davidabraham/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@1davidabraham" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Holy Nation Kenya</h4>
+                        <ul>
+                            <li><a href="#training">Training Centre</a></li>
+                            <li><a href="#cities">City Groups</a></li>
+                            <li><a href="#campus">Campus Chapters</a></li>
+                            <li><a href="#field">Field Work</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ministries</h4>
+                        <ul>
+                            <li><a href="/apostolic-house">The Apostolic House</a></li>
+                            <li><a href="/global-college">Global College</a></li>
+                            <li><a href="/prayers-mission">Prayers &amp; Mission</a></li>
+                            <li><a href="/networks">Apostolic Networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="connect.html#nations">All Nations</a></li>
+                            <li><a href="connect.html#prayer">Prayer Request</a></li>
+                            <li><a href="/give">Give Online</a></li>
+                            <li><a href="connect.html#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 The Holy Nation Global. All rights reserved. | Thy Kingdom Come.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
+</html>

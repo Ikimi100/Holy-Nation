@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect | Holy Nation Global</title>
+    <meta name="description" content="Find Holy Nation in your country, join your national WhatsApp community, send a prayer request, or contact the global office.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Holy Nation Global" class="preloader-logo">
+            <p>Holy Nation Global</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-solid">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Holy Nation Global">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Holy Nation Global</span>
+                    <span class="logo-sub">Thy Kingdom Come</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/apostolic-house" class="nav-link">Apostolic House</a>
+                <a href="/global-college" class="nav-link">Global College</a>
+                <a href="/prayers-mission" class="nav-link">Prayers &amp; Mission</a>
+                <a href="/networks" class="nav-link">Networks</a>
+                <a href="/kingdom-operations" class="nav-link">Operations</a>
+                <a href="/compassion" class="nav-link">Compassion</a>
+                <a href="/country-development" class="nav-link">Nation Building</a>
+                <a href="/thykingdomcome" class="nav-link">ThyKingdomCome</a>
+                <a href="/give" class="nav-link nav-give">Give</a>
+                <a href="/connect" class="nav-link nav-cta active">Connect</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search teachings, events, ministries..." id="searchInput">
+            <button class="search-submit" aria-label="Submit search"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('/asset/photos/membership-registration.webp');"></div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Connect</span>
+            </nav>
+            <span class="page-hero-tag">Connect</span>
+            <h1>Find Your Nation. Find Your People.</h1>
+            <p class="page-hero-lead">Holy Nation is present in twelve countries and growing. Join your national WhatsApp community, meet the people near you, and find the door that fits where you are right now.</p>
+            <div class="page-hero-actions">
+                <a href="#nations" class="btn btn-primary">Find Your Country <i class="fas fa-arrow-right"></i></a>
+                <a href="#prayer" class="btn btn-outline">Send a Prayer Request</a>
+            </div>
+            <div class="page-hero-facts">
+                <div>
+                    <span class="stat-num page-fact-num" data-count="12">0</span>
+                    <span class="page-fact-label">National Communities</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="4">0</span>
+                    <span class="page-fact-label">Continents</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="24" data-suffix="/7">0</span>
+                    <span class="page-fact-label">Someone Awake</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="48" data-suffix="h">0</span>
+                    <span class="page-fact-label">Reply Target</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Nav -->
+    <div class="page-nav" id="pageNav">
+        <div class="page-nav-inner">
+            <a href="#start">Start Here</a>
+            <a href="#nations">Your Nation</a>
+            <a href="#whatsapp">WhatsApp Communities</a>
+            <a href="#routes">Ways to Reach Us</a>
+            <a href="#prayer">Prayer Request</a>
+            <a href="#contact">Contact Form</a>
+            <a href="#offices">Global Offices</a>
+            <a href="#newnation">Start a Nation</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
+
+    <!-- Start Here -->
+    <section class="page-section page-section-light" id="start">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Start Here</span>
+                <h2 class="section-title">What Are You Looking For?</h2>
+                <p class="section-desc">Four common reasons people arrive on this page. Pick the closest one and skip the rest.</p>
+            </div>
+
+            <div class="steps-grid" data-aos="fade-up">
+                <a href="#nations" class="step-card">
+                    <span class="step-num">01</span>
+                    <i class="fas fa-location-dot"></i>
+                    <h3>I want people near me</h3>
+                    <p>Find your national community, its WhatsApp group, gathering times and local coordinator.</p>
+                    <span class="step-link">Find your nation <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#prayer" class="step-card">
+                    <span class="step-num">02</span>
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>I need prayer</h3>
+                    <p>Send a request that a real person reads and the watch teams pray over by name for thirty days.</p>
+                    <span class="step-link">Send a request <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="global-college.html#admissions" class="step-card">
+                    <span class="step-num">03</span>
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>I want to be trained</h3>
+                    <p>Enrol in the Global College, from the Christ Institute through to licensing at KMTC.</p>
+                    <span class="step-link">See admissions <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#contact" class="step-card">
+                    <span class="step-num">04</span>
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h3>I have something else</h3>
+                    <p>Partnership, media, safeguarding, affiliation or a question that fits none of the boxes above.</p>
+                    <span class="step-link">Contact us <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nations Directory -->
+    <section class="page-section page-section-cream" id="nations">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Directory</span>
+                <h2 class="section-title">Holy Nation Around the World</h2>
+                <p class="section-desc">Twelve national communities, each with its own page, its own WhatsApp group and its own coordinator. Local times below are live &mdash; if it is a reasonable hour there, someone is probably awake.</p>
+            </div>
+
+            <div data-filter data-aos="fade-up">
+                <div class="filter-bar">
+                    <div class="filter-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" data-filter-input placeholder="Search by country or city..." aria-label="Search nations">
+                    </div>
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter-chip="all">All</button>
+                        <button class="filter-chip" data-filter-chip="africa">Africa</button>
+                        <button class="filter-chip" data-filter-chip="americas">Americas</button>
+                        <button class="filter-chip" data-filter-chip="europe">Europe</button>
+                        <button class="filter-chip" data-filter-chip="asiapacific">Asia-Pacific</button>
+                    </div>
+                </div>
+
+                <div class="nation-grid">
+                    <!-- United States -->
+                    <article class="nation-card" data-filter-item data-tags="americas united states usa america houston texas">
+                        <div class="nation-head">
+                            <div class="nation-flag">US</div>
+                            <div>
+                                <h3>Holy Nation US</h3>
+                                <span class="nation-hub">Houston, Texas</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="America/Chicago">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 10:00 AM CST</div>
+                            <div><i class="fas fa-users"></i> 6 city groups</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation US"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-us" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- United Kingdom -->
+                    <article class="nation-card" data-filter-item data-tags="europe united kingdom uk britain england london">
+                        <div class="nation-head">
+                            <div class="nation-flag">UK</div>
+                            <div>
+                                <h3>Holy Nation UK</h3>
+                                <span class="nation-hub">London, England</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="Europe/London">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 11:00 AM GMT</div>
+                            <div><i class="fas fa-users"></i> 4 city groups</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation UK"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-uk" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Kenya -->
+                    <article class="nation-card" data-filter-item data-tags="africa kenya nairobi east">
+                        <div class="nation-head">
+                            <div class="nation-flag">KE</div>
+                            <div>
+                                <h3>Holy Nation Kenya</h3>
+                                <span class="nation-hub">Nairobi</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="Africa/Nairobi">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 9:00 AM EAT</div>
+                            <div><i class="fas fa-users"></i> 5 city groups</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation Kenya"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-kenya" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Australia -->
+                    <article class="nation-card" data-filter-item data-tags="asiapacific australia sydney oceania">
+                        <div class="nation-head">
+                            <div class="nation-flag">AU</div>
+                            <div>
+                                <h3>Holy Nation Australia</h3>
+                                <span class="nation-hub">Sydney, NSW</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="Australia/Sydney">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 10:00 AM AEST</div>
+                            <div><i class="fas fa-users"></i> 3 city groups</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation Australia"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-australia" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Canada -->
+                    <article class="nation-card" data-filter-item data-tags="americas canada toronto ontario">
+                        <div class="nation-head">
+                            <div class="nation-flag">CA</div>
+                            <div>
+                                <h3>Holy Nation Canada</h3>
+                                <span class="nation-hub">Toronto, Ontario</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="America/Toronto">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 10:30 AM EST</div>
+                            <div><i class="fas fa-users"></i> 3 city groups</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation Canada"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-canada" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- South Africa -->
+                    <article class="nation-card" data-filter-item data-tags="africa south africa johannesburg gauteng southern">
+                        <div class="nation-head">
+                            <div class="nation-flag">ZA</div>
+                            <div>
+                                <h3>Holy Nation South Africa</h3>
+                                <span class="nation-hub">Johannesburg</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="Africa/Johannesburg">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 9:30 AM SAST</div>
+                            <div><i class="fas fa-users"></i> 4 city groups</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation South Africa"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-south-africa" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Zambia -->
+                    <article class="nation-card" data-filter-item data-tags="africa zambia lusaka southern">
+                        <div class="nation-head">
+                            <div class="nation-flag">ZM</div>
+                            <div>
+                                <h3>Holy Nation Zambia</h3>
+                                <span class="nation-hub">Lusaka</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="Africa/Lusaka">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 9:00 AM CAT</div>
+                            <div><i class="fas fa-users"></i> 2 city groups</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation Zambia"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-zambia" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Congo -->
+                    <article class="nation-card" data-filter-item data-tags="africa congo drc kinshasa central">
+                        <div class="nation-head">
+                            <div class="nation-flag">CD</div>
+                            <div>
+                                <h3>Holy Nation Congo</h3>
+                                <span class="nation-hub">Kinshasa</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="Africa/Kinshasa">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 9:00 AM WAT</div>
+                            <div><i class="fas fa-language"></i> French &amp; Lingala</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation Congo"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-congo" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Philippines -->
+                    <article class="nation-card" data-filter-item data-tags="asiapacific philippines manila asia">
+                        <div class="nation-head">
+                            <div class="nation-flag">PH</div>
+                            <div>
+                                <h3>Holy Nation Philippines</h3>
+                                <span class="nation-hub">Manila</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="Asia/Manila">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 9:00 AM PHT</div>
+                            <div><i class="fas fa-language"></i> English &amp; Tagalog</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation Philippines"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-philippines" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Uganda -->
+                    <article class="nation-card" data-filter-item data-tags="africa uganda kampala east">
+                        <div class="nation-head">
+                            <div class="nation-flag">UG</div>
+                            <div>
+                                <h3>Holy Nation Uganda</h3>
+                                <span class="nation-hub">Kampala</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="Africa/Kampala">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 9:00 AM EAT</div>
+                            <div><i class="fas fa-users"></i> 3 city groups</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation Uganda"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-uganda" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Rwanda -->
+                    <article class="nation-card" data-filter-item data-tags="africa rwanda kigali east">
+                        <div class="nation-head">
+                            <div class="nation-flag">RW</div>
+                            <div>
+                                <h3>Holy Nation Rwanda</h3>
+                                <span class="nation-hub">Kigali</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="Africa/Kigali">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 9:00 AM CAT</div>
+                            <div><i class="fas fa-language"></i> English, French &amp; Kinyarwanda</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation Rwanda"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-rwanda" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Ghana -->
+                    <article class="nation-card" data-filter-item data-tags="africa ghana accra west">
+                        <div class="nation-head">
+                            <div class="nation-flag">GH</div>
+                            <div>
+                                <h3>Holy Nation Ghana</h3>
+                                <span class="nation-hub">Accra</span>
+                            </div>
+                        </div>
+                        <div class="nation-meta">
+                            <div><i class="far fa-clock"></i> Local time <span class="nation-clock" data-tz="Africa/Accra">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Sundays, 8:30 AM GMT</div>
+                            <div><i class="fas fa-users"></i> 3 city groups</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Holy Nation Ghana"><i class="fab fa-whatsapp"></i> Join WhatsApp</a>
+                            <a href="/holy-nation-ghana" class="btn-nation">Visit page <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="filter-empty" data-filter-empty>
+                    <i class="fas fa-compass"></i>
+                    <p>No nation matches that search yet &mdash; but that does not mean nobody is there.<br>Tell us where you are and we will connect you, or help you start something.</p>
+                    <a href="#newnation" class="btn btn-primary btn-sm" style="margin-top:1.25rem;">Start a Nation <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="notice-box mt-4" data-aos="fade-up">
+                <i class="fas fa-location-crosshairs"></i>
+                <div>
+                    <h4>Not on the list?</h4>
+                    <p>The base house is in Lagos, Nigeria &mdash; see <a href="/apostolic-house">The Apostolic House</a>. If your country is not here, the online house fellowships run across every time zone, and you may be the invitation a new nation has been waiting for.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Communities -->
+    <section class="page-section page-section-light" id="whatsapp">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">The Communities</span>
+                    <h2 class="section-title section-title-left">What the WhatsApp Groups Are For</h2>
+                    <p>Every nation has one main community group, plus city groups where numbers justify them. They exist to make a global movement feel local &mdash; and to make sure nobody who joins us disappears quietly a month later.</p>
+
+                    <h3>What you will get</h3>
+                    <ul>
+                        <li>The daily Morning Altar reminder, in your own time zone</li>
+                        <li>Weekly gathering details for your city and the national online meeting</li>
+                        <li>Prayer requests from your nation, and answers when they come</li>
+                        <li>Teaching links, conference registration and Global College intake notices</li>
+                        <li>A direct line to your national coordinator &mdash; a real person with a name</li>
+                    </ul>
+
+                    <h3>House rules</h3>
+                    <p>Every community is moderated, and the rules are the same everywhere. They are short, and we enforce them.</p>
+                    <ul>
+                        <li>No selling, MLM, fundraising or job adverts &mdash; not even good causes</li>
+                        <li>No party politics, and no campaigning of any kind</li>
+                        <li>No forwarded prophecies, chain messages or unverified alarm</li>
+                        <li>No direct-messaging members you have not met, especially women and minors</li>
+                        <li>Disagree freely; contempt gets you removed</li>
+                        <li>Under-18s belong in the TANI groups, which are separately moderated</li>
+                    </ul>
+                </div>
+
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>Safety &amp; Privacy</h3>
+                    <ul class="check-list">
+                        <li>Group admins are named and accountable to the national coordinator</li>
+                        <li>Your number is visible to other members &mdash; join knowing that</li>
+                        <li>We never ask for money, bank details or personal documents on WhatsApp</li>
+                        <li>Nobody from this movement will ever DM you asking for a payment</li>
+                        <li>Under-18 groups have two cleared adult admins and no private messaging</li>
+                        <li>Report anything uncomfortable to the coordinator or to safeguarding</li>
+                    </ul>
+                    <p class="side-note">If someone contacts you claiming to represent Holy Nation and asks for money, it is a scam. Report it to theholynationglobal@gmail.com.</p>
+                    <a href="compassion.html#concern" class="btn btn-primary btn-sm">Report a Concern <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ways to Reach Us -->
+    <section class="page-section page-section-cream" id="routes">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Direct Lines</span>
+                <h2 class="section-title">Ways to Reach Us</h2>
+                <p class="section-desc">Use the right door and you will get a faster, better answer than the general inbox can give you.</p>
+            </div>
+
+            <div class="route-grid" data-aos="fade-up">
+                <div class="route-card">
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Prayer</h3>
+                    <p>Personal requests, urgent needs, and joining a watch on the 24-hour roster.</p>
+                    <span>theholynationglobal@gmail.com</span>
+                </div>
+                <div class="route-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Admissions</h3>
+                    <p>Global College enrolment, transfer credit, fees and scholarship enquiries.</p>
+                    <span>theholynationglobal@gmail.com</span>
+                </div>
+                <div class="route-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>Networks &amp; Affiliation</h3>
+                    <p>IFAM affiliation, chapter planting, and joining KBLN, SANI, AWF or TANI.</p>
+                    <span>theholynationglobal@gmail.com</span>
+                </div>
+                <div class="route-card">
+                    <i class="fas fa-shield-halved"></i>
+                    <h3>Safeguarding</h3>
+                    <p>Concerns about a child, a vulnerable adult, or the conduct of anyone acting in our name.</p>
+                    <span>theholynationglobal@gmail.com</span>
+                </div>
+                <div class="route-card">
+                    <i class="fas fa-hands-holding-heart"></i>
+                    <h3>Compassion</h3>
+                    <p>Applying for assistance, volunteering, or partnering on a field programme.</p>
+                    <span>theholynationglobal@gmail.com</span>
+                </div>
+                <div class="route-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Missions &amp; TKC</h3>
+                    <p>Joining a mission team, hosting a campaign, or inviting TKC to your nation.</p>
+                    <span>theholynationglobal@gmail.com</span>
+                </div>
+                <div class="route-card">
+                    <i class="fas fa-microphone-lines"></i>
+                    <h3>Media &amp; Press</h3>
+                    <p>Interview requests, speaking invitations, permissions and press enquiries.</p>
+                    <span>theholynationglobal@gmail.com</span>
+                </div>
+                <div class="route-card">
+                    <i class="fas fa-handshake-angle"></i>
+                    <h3>Partnership &amp; Giving</h3>
+                    <p>Friends of God partnership, Kingdom Builders, and questions about how funds are used.</p>
+                    <span>theholynationglobal@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prayer Request -->
+    <section class="page-section page-section-light" id="prayer">
+        <div class="container">
+            <div class="split-layout">
+                <div data-aos="fade-up">
+                    <span class="section-tag section-tag-left">We Will Pray</span>
+                    <h2 class="section-title section-title-left">Send a Prayer Request</h2>
+                    <p class="sub-lead">Read by a person, entered on the watch list under your first name only, and prayed over daily for at least thirty days. Nothing is published, shared or discussed outside the intercession team.</p>
+
+                    <div class="notice-box">
+                        <i class="fas fa-triangle-exclamation"></i>
+                        <div>
+                            <h4>If you are in crisis or danger right now</h4>
+                            <p>Please contact your local emergency services or a crisis line as well. This form is not monitored around the clock. We will pray with you, and we will not pretend that prayer replaces the help you need today.</p>
+                        </div>
+                    </div>
+
+                    <form class="form-grid" data-demo>
+                        <div class="form-field">
+                            <label for="pr-name">Your name</label>
+                            <input type="text" id="pr-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="pr-email">Email</label>
+                            <input type="email" id="pr-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="pr-country">Country</label>
+                            <input type="text" id="pr-country">
+                        </div>
+                        <div class="form-field">
+                            <label for="pr-urgency">Urgency</label>
+                            <select id="pr-urgency">
+                                <option>Standard &mdash; add to the watch list</option>
+                                <option>Urgent &mdash; pass to the current watch</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="pr-request">Tell us what to pray</label>
+                            <textarea id="pr-request" required></textarea>
+                        </div>
+                        <div class="form-field full">
+                            <button type="submit" class="btn btn-primary">Send Request <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>What Happens Next</h3>
+                    <dl class="fact-list">
+                        <div><dt>Read by</dt><dd>The intercession team only</dd></div>
+                        <div><dt>Listed as</dt><dd>Your first name, nothing more</dd></div>
+                        <div><dt>Prayed for</dt><dd>Daily, minimum 30 days</dd></div>
+                        <div><dt>Follow-up</dt><dd>We check in unless you ask us not to</dd></div>
+                        <div><dt>Urgent</dt><dd>Goes to the live watch immediately</dd></div>
+                    </dl>
+                    <a href="prayers-mission.html#watches" class="btn btn-primary btn-sm">Join a Watch <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- General Contact -->
+    <section class="page-section page-section-cream" id="contact">
+        <div class="container">
+            <div class="split-layout">
+                <div data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Anything Else</span>
+                    <h2 class="section-title section-title-left">General Contact</h2>
+                    <p class="sub-lead">One form for everything that does not fit a direct line above. We aim to respond within two working days, and within five at the absolute outside.</p>
+                    <form class="form-grid" data-demo>
+                        <div class="form-field">
+                            <label for="ct-name">Full name</label>
+                            <input type="text" id="ct-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ct-email">Email</label>
+                            <input type="email" id="ct-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ct-country">Country</label>
+                            <input type="text" id="ct-country" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="ct-phone">Phone / WhatsApp (optional)</label>
+                            <input type="tel" id="ct-phone">
+                        </div>
+                        <div class="form-field full">
+                            <label for="ct-subject">This is about</label>
+                            <select id="ct-subject">
+                                <option>Joining my national community</option>
+                                <option>Visiting or joining the Apostolic House</option>
+                                <option>Global College admissions</option>
+                                <option>Network membership or IFAM affiliation</option>
+                                <option>Compassion &mdash; assistance or volunteering</option>
+                                <option>Missions, prayer towers or TKC</option>
+                                <option>Kingdom Operations &mdash; sphere working groups</option>
+                                <option>Country Development &mdash; IGSL or Rebuild</option>
+                                <option>Partnership, giving or finance</option>
+                                <option>Media, press or speaking request</option>
+                                <option>Something else</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="ct-message">Your message</label>
+                            <textarea id="ct-message" required></textarea>
+                        </div>
+                        <div class="form-field full">
+                            <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>Response Times</h3>
+                    <dl class="fact-list">
+                        <div><dt>Safeguarding</dt><dd>Same day</dd></div>
+                        <div><dt>Urgent prayer</dt><dd>Immediately, to the live watch</dd></div>
+                        <div><dt>General enquiry</dt><dd>2 working days</dd></div>
+                        <div><dt>Admissions</dt><dd>5 working days</dd></div>
+                        <div><dt>Affiliation</dt><dd>10 working days</dd></div>
+                        <div><dt>Media</dt><dd>3 working days</dd></div>
+                    </dl>
+                    <p class="side-note">If you have not heard from us inside these windows, write again and say so. It is far more likely we dropped it than that we ignored you.</p>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Offices -->
+    <section class="page-section page-section-dark" id="offices">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Where We Are</span>
+                <h2 class="section-title">Global Offices</h2>
+                <p class="section-desc">Four working offices. Everywhere else is a coordinator, a community and a group of people who meet in real rooms.</p>
+            </div>
+
+            <div class="feature-grid feature-grid-4" data-aos="fade-up">
+                <div class="feature-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Lagos, Nigeria</h3>
+                    <p><strong>Global Base</strong><br>Christhouse Auditorium, the Global College campus and the apostolic council.<br><br>theholynationglobal@gmail.com</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Abuja, Nigeria</h3>
+                    <p><strong>Nation Building</strong><br>Rebuild-Nigeria, IGSL and the Kingdom Congress secretariat.<br><br>theholynationglobal@gmail.com</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-earth-europe"></i>
+                    <h3>London, UK</h3>
+                    <p><strong>Europe Liaison</strong><br>UK community, diaspora networks and European enquiries.<br><br>theholynationglobal@gmail.com</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-earth-americas"></i>
+                    <h3>Houston, USA</h3>
+                    <p><strong>North America</strong><br>US community, KBLN roundtables and the sending desk.<br><br>theholynationglobal@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="scripture scripture-light mt-5" data-aos="fade-up">
+                &ldquo;For where two or three are gathered together in My name, I am there in the midst of them.&rdquo;
+                <cite>Matthew 18:20</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Start a Nation -->
+    <section class="page-section page-section-light" id="newnation">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Not on the Map?</span>
+                    <h2 class="section-title section-title-left">Start Holy Nation in Your Country</h2>
+                    <p>Every one of the twelve communities above began the same way: two or three people in a country with no presence, praying about it and writing to us. Not a strategy meeting in Lagos.</p>
+                    <p>You do not need to be a pastor, own a building, or have a group already. You need to be willing to pray consistently and to be known by name.</p>
+
+                    <h3>What starting looks like</h3>
+                    <ul>
+                        <li><strong>Month 1</strong> &mdash; you write to us; we talk, pray and get to know you</li>
+                        <li><strong>Month 2&ndash;3</strong> &mdash; you join an online house fellowship and begin a watch</li>
+                        <li><strong>Month 4&ndash;6</strong> &mdash; a national WhatsApp community opens with you as first contact</li>
+                        <li><strong>Month 6&ndash;12</strong> &mdash; regular online gathering, Foundations Class, first in-person meeting</li>
+                        <li><strong>Year 2</strong> &mdash; a national page, a coordinator, and the full five-year TKC establishment cycle</li>
+                    </ul>
+                    <p>We will not announce your country on this site until there is something real behind the name. That is a promise about our honesty, not a hurdle for you.</p>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>Tell Us Where You Are</h3>
+                    <form class="form-grid" data-demo style="grid-template-columns:1fr;">
+                        <div class="form-field">
+                            <label for="nn-name">Your name</label>
+                            <input type="text" id="nn-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="nn-email">Email</label>
+                            <input type="email" id="nn-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="nn-country">Country</label>
+                            <input type="text" id="nn-country" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="nn-people">Who is praying with you?</label>
+                            <textarea id="nn-people" placeholder="Even if the answer is 'nobody yet'"></textarea>
+                        </div>
+                        <div class="form-field">
+                            <button type="submit" class="btn btn-primary">Send <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                    <p class="side-note">Messages from countries where this carries personal risk are handled by a restricted team and never published or used in fundraising material.</p>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section" style="padding:0 0 6rem;">
+        <div class="container">
+            <div class="newsletter-box" data-aos="zoom-in">
+                <div class="newsletter-text">
+                    <h3>Stay in the Loop</h3>
+                    <p>Teachings, prayer bulletins and conference announcements &mdash; delivered weekly. No noise, and one click to leave.</p>
+                </div>
+                <form class="newsletter-form" data-demo>
+                    <input type="email" placeholder="Your email address" required aria-label="Email address">
+                    <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="page-section page-section-cream" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked</h2>
+            </div>
+            <div class="accordion faq-accordion" data-aos="fade-up">
+                <div class="accordion-item open">
+                    <div class="accordion-head">My country isn't listed. Can I still be part of this?</div>
+                    <div class="accordion-body">
+                        <p>Yes. The online house fellowships run across every time zone and the Morning Altar is live daily. Write to us and we will place you in the nearest community &mdash; and if you want to, help you begin something where you are.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is there a cost to join a national community?</div>
+                    <div class="accordion-body">
+                        <p>None. Communities, chapters, prayer watches and the Foundations Class are all free. Conferences carry a delegate fee to cover venue and catering, with bursaries for anyone who cannot meet it.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Will joining a WhatsApp group mean constant messages?</div>
+                    <div class="accordion-body">
+                        <p>No. Groups are moderated and mostly quiet: a daily altar reminder, weekly gathering details and prayer requests. Forwards, selling and chain messages are removed, and repeat offenders are removed with them.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Do I have to leave my current church?</div>
+                    <div class="accordion-body">
+                        <p>No, and we would discourage it. Most people in these communities belong to local churches with no formal relationship to Holy Nation Global. We are built to sit alongside your congregation, not to replace it.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Someone messaged me asking for money in your name. Is that you?</div>
+                    <div class="accordion-body">
+                        <p>No. Nobody from this movement will ever direct-message you asking for a payment, bank details or personal documents. If it happens, it is a scam &mdash; screenshot it and send it to theholynationglobal@gmail.com so we can warn the community.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Can my teenager join a community group?</div>
+                    <div class="accordion-body">
+                        <p>Under-18s belong in the TANI groups, which are separately moderated with two cleared adult admins and no private messaging. A parent or guardian should make the first contact. See the Networks pillar for the full safeguarding position.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">How do I give, and how do I know where it goes?</div>
+                    <div class="accordion-body">
+                        <p>Payment integration is being finalised. When it is live, every arm publishes annual income and expenditure, partners receive a report on what their giving funded, and administrative costs are disclosed as a percentage rather than buried.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>You Do Not Have to Do This Alone</h2>
+                <p>Somewhere on the list above there are people in your time zone praying at the same hour you are.</p>
+                <div class="cta-buttons">
+                    <a href="#nations" class="btn btn-primary btn-large">Find Your Nation</a>
+                    <a href="#prayer" class="btn btn-outline btn-large">Send a Prayer Request</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">
+                            <img src="logo.png" alt="Holy Nation Global">
+                            <div>
+                                <span class="footer-logo-main">HOLY NATION GLOBAL</span>
+                                <span class="footer-logo-sub">Thy Kingdom Come</span>
+                            </div>
+                        </a>
+                        <p>Raising Apostolic Leaders, Transforming Nations, Establishing the Reign of Christ on Earth.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/1davidabraham" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/1DavidAbraham" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/1davidabraham/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@1davidabraham" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ministries</h4>
+                        <ul>
+                            <li><a href="/apostolic-house">The Apostolic House</a></li>
+                            <li><a href="/global-college">Global College</a></li>
+                            <li><a href="/prayers-mission">Prayers &amp; Mission</a></li>
+                            <li><a href="/networks">Apostolic Networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Nations</h4>
+                        <ul>
+                            <li><a href="/holy-nation-us">Holy Nation US</a></li>
+                            <li><a href="/holy-nation-uk">Holy Nation UK</a></li>
+                            <li><a href="/holy-nation-kenya">Holy Nation Kenya</a></li>
+                            <li><a href="#nations">All twelve nations</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#prayer">Prayer Request</a></li>
+                            <li><a href="/give">Give Online</a></li>
+                            <li><a href="#newnation">Start a Nation</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 The Holy Nation Global. All rights reserved. | Thy Kingdom Come.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
+</html>

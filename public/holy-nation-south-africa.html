@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Nation South Africa | Holy Nation Global</title>
+    <meta name="description" content="Holy Nation South Africa — city groups in Johannesburg, Pretoria, Cape Town and Durban. The Marketplace Watch, KBLN roundtables, skills work and a house of many nations.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Holy Nation Global" class="preloader-logo">
+            <p>Holy Nation Global</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-solid">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Holy Nation Global">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Holy Nation Global</span>
+                    <span class="logo-sub">Thy Kingdom Come</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/apostolic-house" class="nav-link">Apostolic House</a>
+                <a href="/global-college" class="nav-link">Global College</a>
+                <a href="/prayers-mission" class="nav-link">Prayers &amp; Mission</a>
+                <a href="/networks" class="nav-link">Networks</a>
+                <a href="/kingdom-operations" class="nav-link">Operations</a>
+                <a href="/compassion" class="nav-link">Compassion</a>
+                <a href="/country-development" class="nav-link">Nation Building</a>
+                <a href="/thykingdomcome" class="nav-link">ThyKingdomCome</a>
+                <a href="/give" class="nav-link nav-give">Give</a>
+                <a href="/connect" class="nav-link nav-cta active">Connect</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search teachings, events, ministries..." id="searchInput">
+            <button class="search-submit" aria-label="Submit search"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1577948000111-9c970dfe3743?w=1920&q=80');"></div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="/connect">Connect</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="connect.html#nations">Nations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Holy Nation South Africa</span>
+            </nav>
+            <span class="page-hero-tag">South Africa</span>
+            <h1>Holy Nation South Africa</h1>
+            <p class="page-hero-lead">Four city groups, the Marketplace Watch, and a congregation drawn from a dozen nationalities in a country that has thought longer and harder about reconciliation than almost any other.</p>
+            <div class="page-hero-actions">
+                <a href="#" class="btn btn-primary js-whatsapp" data-nation="Holy Nation South Africa"><i class="fab fa-whatsapp"></i> Join the WhatsApp Community</a>
+                <a href="#manynations" class="btn btn-outline">A House of Many Nations</a>
+            </div>
+            <div class="page-hero-facts">
+                <div>
+                    <span class="page-fact-num nation-clock" data-tz="Africa/Johannesburg">--:--</span>
+                    <span class="page-fact-label">Joburg Time Now</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="4">0</span>
+                    <span class="page-fact-label">City Groups</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="12">0</span>
+                    <span class="page-fact-label">Nationalities</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="3">0</span>
+                    <span class="page-fact-label">KBLN Roundtables</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Nav -->
+    <div class="page-nav" id="pageNav">
+        <div class="page-nav-inner">
+            <a href="#overview">Overview</a>
+            <a href="#manynations">Many Nations</a>
+            <a href="#gatherings">Gatherings</a>
+            <a href="#cities">City Groups</a>
+            <a href="#work">Work &amp; Enterprise</a>
+            <a href="#active">What's Active Here</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#connect">Get Connected</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
+
+    <!-- Next gathering strip -->
+    <section class="page-section page-section-light" style="padding-bottom:0;">
+        <div class="container">
+            <div class="next-strip" data-aos="fade-up">
+                <div>
+                    <span class="next-strip-label">Next National Gathering</span>
+                    <h3>Sunday Assembly &mdash; Johannesburg &amp; Online</h3>
+                    <p>9:30 AM SAST &middot; English, with isiZulu and Sesotho in worship</p>
+                </div>
+                <div style="text-align:right;">
+                    <span class="next-countdown" data-countdown data-tz="Africa/Johannesburg" data-day="Sun" data-time="09:30">&mdash;</span>
+                    <span class="next-countdown-label">Until we gather</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="page-section page-section-light" id="overview">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Who We Are</span>
+                    <h2 class="section-title section-title-left">A House in the Continent's Crossroads</h2>
+                    <p>South Africa is where the rest of Africa comes to work. Our Johannesburg gathering on any given Sunday holds South Africans alongside Zimbabweans, Malawians, Mozambicans, Nigerians, Congolese, Zambians and more &mdash; not as guests, but as members.</p>
+                    <p>That is an ordinary fact of life here, and it is also a responsibility. A house made of many nationalities in a country where that mix has sometimes turned violent cannot be vague about what it believes on the subject.</p>
+
+                    <div class="scripture">
+                        &ldquo;There is neither Jew nor Greek, there is neither slave nor free, there is neither male nor female; for you are all one in Christ Jesus.&rdquo;
+                        <cite>Galatians 3:28</cite>
+                    </div>
+
+                    <h3>What we are, and what we are not</h3>
+                    <ul>
+                        <li><strong>You keep your church.</strong> Most of our members belong to a South African congregation already</li>
+                        <li><strong>You get known.</strong> Every member is placed in a city group</li>
+                        <li><strong>You get trained.</strong> Global College cohorts run on South African evenings</li>
+                        <li><strong>You carry something.</strong> South Africa holds Watch 06 on the global roster, in SAST</li>
+                        <li><strong>You are never asked for money to belong.</strong> Ever</li>
+                    </ul>
+
+                    <h3>On languages</h3>
+                    <p>Teaching is in English, which is what the whole room shares. Worship and prayer move freely between isiZulu, Sesotho, Afrikaans, Shona and whatever else is in the room that morning. Nobody is corrected for praying in their own language.</p>
+
+                    <h3>Our place in the movement</h3>
+                    <p>South Africa leads the Southern Africa sub-region of TKC-Africa alongside Zambia, in year three of the five-year cycle. Our council is forming with a South African chair, and full autonomy is due in year five.</p>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>At a Glance</h3>
+                    <dl class="fact-list">
+                        <div><dt>National hub</dt><dd>Johannesburg</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Africa/Johannesburg">--:--</span> SAST</dd></div>
+                        <div><dt>Main gathering</dt><dd>Sundays, 9:30 AM</dd></div>
+                        <div><dt>City groups</dt><dd>4</dd></div>
+                        <div><dt>Global watch</dt><dd>Watch 06 &mdash; Marketplace</dd></div>
+                        <div><dt>KBLN</dt><dd>3 roundtables</dd></div>
+                        <div><dt>TKC stage</dt><dd>Africa &middot; Year 3 of 5</dd></div>
+                    </dl>
+                    <a href="#connect" class="btn btn-primary btn-sm">Get Connected <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Many Nations -->
+    <section class="page-section page-section-dark" id="manynations">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Where We Stand</span>
+                <h2 class="section-title">A House of Many Nations</h2>
+                <p class="section-desc">South Africa has seen periods of violence directed at people born elsewhere on this continent. A church whose own members are on both sides of that has to say something clear.</p>
+            </div>
+
+            <div class="notice-box" data-aos="fade-up">
+                <i class="fas fa-hand-holding-heart"></i>
+                <div>
+                    <h4>Our position is not complicated</h4>
+                    <p>Every person in this house belongs equally, regardless of where they were born or what documents they hold. We do not ask about immigration status, we do not rank members by nationality, and we will not tolerate contempt for the foreigner in any group, meeting or message thread we run.</p>
+                </div>
+            </div>
+
+            <div class="split-layout mt-4">
+                <div class="prose" data-aos="fade-up">
+                    <h3>What we understand</h3>
+                    <p>We are not naive about why tension exists. Unemployment here is severe, competition for scarce work is real, and communities under sustained economic pressure look for someone to blame. Pretending those pressures are imaginary helps nobody.</p>
+                    <p>But the honest response to scarcity is to make more &mdash; more skills, more enterprise, more employment &mdash; not to drive out the neighbour. That is why our CIEL and KBLN work here is not a side project. It is the practical form of the same conviction.</p>
+                    <ul>
+                        <li>Skills training and enterprise support offered to South Africans and migrants alike</li>
+                        <li>KBLN members who employ people are asked to hire on merit and pay properly</li>
+                        <li>Practical help for members facing documentation problems &mdash; through licensed advisers, not us</li>
+                        <li>Immediate pastoral response when any member is threatened or displaced</li>
+                    </ul>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>If You Are Under Threat</h3>
+                    <ul class="check-list">
+                        <li>Contact your city group host or the coordinator directly, at any hour</li>
+                        <li>We will help with immediate safety, shelter and transport</li>
+                        <li>We do not ask about your papers before helping you</li>
+                        <li>We refer to licensed legal advisers, never give legal advice ourselves</li>
+                        <li>Nothing you tell us goes further than the person helping you</li>
+                    </ul>
+                    <p class="side-note">If you are in immediate danger, please contact emergency services first. We will come alongside you, and we will not pretend to be a substitute for them.</p>
+                    <a href="#connect" class="btn btn-primary btn-sm">Reach the Coordinator <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gatherings -->
+    <section class="page-section page-section-cream" id="gatherings">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Rhythm</span>
+                <h2 class="section-title">When We Gather</h2>
+                <p class="section-desc">All times SAST. Everything is available online, and recordings go out to the community the same week.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-day">Sunday</div>
+                    <h3>National Assembly</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 9:30 AM SAST</p>
+                    <p class="service-desc">The whole South African community, in person in Johannesburg and online everywhere else. Worship, apostolic teaching and communion. Runs 90 minutes.</p>
+                    <a href="#connect" class="service-link">Get the link <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-day">Tuesday</div>
+                    <h3>Global College Cohort</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 7:00 PM SAST</p>
+                    <p class="service-desc">Live seminar for enrolled students across the Christ and Kingdom Institutes, run on South African evenings.</p>
+                    <a href="global-college.html#admissions" class="service-link">Admissions <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-day">Thursday</div>
+                    <h3>City Group Night</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> Local, 6:30 PM</p>
+                    <p class="service-desc">Homes and hired rooms &mdash; discussion of Sunday's teaching, prayer for one another, and practical care within the group.</p>
+                    <a href="#cities" class="service-link">Find your city <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card service-card-accent" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-day">Daily</div>
+                    <h3>The Marketplace Watch</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 9:00 AM &ndash; 12:00 PM SAST</p>
+                    <p class="service-desc">South Africa's watch on the global roster. Work, commerce, enterprise and the economy &mdash; prayed during actual working hours.</p>
+                    <a href="prayers-mission.html#watches" class="service-link">Take a slot <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div class="prose" data-aos="fade-up">
+                    <h3>Why South Africa holds the Marketplace Watch</h3>
+                    <p>Watches run in each region's local time, which means several nations hold the same watch number in their own zone &mdash; that is precisely how the global altar stays unbroken. South Africa holds <strong>Watch 06 &mdash; The Marketplace Watch</strong>, 9:00 AM to noon SAST.</p>
+                    <p>Its standing burden is work, commerce, enterprise and the economy. In a country where unemployment is among the highest in the world, praying for work is not an abstraction. Several of our intercessors pray it from their desks between tasks.</p>
+                    <ul>
+                        <li>One three-hour window, one day a week &mdash; most people share a slot</li>
+                        <li>Works well for anyone employed or working from home</li>
+                        <li>You receive the watch guide, the burden list and a reporting template</li>
+                    </ul>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>First Time Joining?</h3>
+                    <ul class="check-list">
+                        <li>The Sunday link is posted in the community group each Saturday</li>
+                        <li>Come as you are &mdash; there is no dress code</li>
+                        <li>Pray in whichever language you prefer</li>
+                        <li>Children are welcome throughout</li>
+                        <li>Stay after for tea and conversation with a leader</li>
+                        <li>You will never be asked to give as a visitor</li>
+                    </ul>
+                    <a href="#connect" class="btn btn-primary btn-sm">Say You're Coming <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Groups -->
+    <section class="page-section page-section-light" id="cities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Near You</span>
+                <h2 class="section-title">City Groups</h2>
+                <p class="section-desc">Four cities, each with a named host and its own WhatsApp thread. All on SAST.</p>
+            </div>
+
+            <div data-filter data-aos="fade-up">
+                <div class="filter-bar">
+                    <div class="filter-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" data-filter-input placeholder="Search city or province..." aria-label="Search city groups">
+                    </div>
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter-chip="all">All</button>
+                        <button class="filter-chip" data-filter-chip="gauteng">Gauteng</button>
+                        <button class="filter-chip" data-filter-chip="cape">Western Cape</button>
+                        <button class="filter-chip" data-filter-chip="kzn">KwaZulu-Natal</button>
+                    </div>
+                </div>
+
+                <div class="city-grid">
+                    <article class="city-card" data-filter-item data-tags="gauteng johannesburg joburg jhb sandton soweto">
+                        <h3>Johannesburg</h3>
+                        <span class="city-state">Gauteng &middot; National Hub</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Johannesburg">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:30 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-briefcase"></i> 2 KBLN roundtables</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Johannesburg City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="gauteng pretoria tshwane">
+                        <h3>Pretoria</h3>
+                        <span class="city-state">Gauteng</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Johannesburg">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:30 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-users"></i> 20+ members</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Pretoria City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="cape town western capetown">
+                        <h3>Cape Town</h3>
+                        <span class="city-state">Western Cape</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Johannesburg">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:30 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-tower-observation"></i> Prayer tower</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Cape Town City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="kzn durban ethekwini natal zulu">
+                        <h3>Durban</h3>
+                        <span class="city-state">KwaZulu-Natal</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Johannesburg">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:30 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-language"></i> isiZulu-led</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Durban City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="filter-empty" data-filter-empty>
+                    <i class="fas fa-map-location-dot"></i>
+                    <p>No group in that city yet.<br>We have members in Port Elizabeth, Bloemfontein, Polokwane and Nelspruit meeting online &mdash; several are one host short of a group.</p>
+                    <a href="#connect" class="btn btn-primary btn-sm" style="margin-top:1.25rem;">Start One Where You Are <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work & Enterprise -->
+    <section class="ministry-section ministry-light" id="work">
+        <div class="container">
+            <div class="ministry-grid ministry-grid-reverse">
+                <div class="ministry-content" data-aos="fade-right">
+                    <span class="ministry-tag">KBLN &amp; CIEL</span>
+                    <h2>Work, Skills &amp; Enterprise</h2>
+                    <p class="ministry-lead">South Africa has one of the highest unemployment rates in the world, concentrated brutally among the young. Any house here that only preaches and never addresses work has decided to ignore the largest single fact about the people in front of it.</p>
+                    <p class="ministry-lead">So this is a substantial part of what we do, run jointly by KBLN members who employ people and CIEL trainers who prepare people to be employed &mdash; or to employ themselves.</p>
+                    <div class="ministry-list">
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-users-rectangle"></i></div>
+                            <div class="item-text">
+                                <h4>Three KBLN Roundtables</h4>
+                                <p>Two in Johannesburg, one in Cape Town &mdash; founders and executives working real decisions</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-file-lines"></i></div>
+                            <div class="item-text">
+                                <h4>Work Readiness</h4>
+                                <p>CV writing, interview practice, and the unglamorous mechanics of actually getting hired</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                            <div class="item-text">
+                                <h4>Skills &amp; Trades</h4>
+                                <p>Practical training with local providers, plus digital skills for remote and freelance work</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-store"></i></div>
+                            <div class="item-text">
+                                <h4>Enterprise Clinics</h4>
+                                <p>Registration, pricing, tax and hiring for members starting something of their own</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-scale-unbalanced"></i></div>
+                            <div class="item-text">
+                                <h4>Hiring Ethics</h4>
+                                <p>KBLN members commit to hiring on merit, paying properly and treating documentation lawfully</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="networks.html#kbln" class="btn btn-primary">About KBLN <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="ministry-visual" data-aos="fade-left">
+                    <div class="visual-frame">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=900&q=80" alt="Business leaders in roundtable">
+                        <div class="visual-accent"></div>
+                    </div>
+                    <div class="visual-float-card">
+                        <i class="fas fa-briefcase"></i>
+                        <span>3 Roundtables</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Active Here -->
+    <section class="page-section page-section-cream" id="active">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Honest Status</span>
+                <h2 class="section-title">What's Actually Running Here</h2>
+                <p class="section-desc">All eight pillars exist globally. Here is exactly where each one stands in South Africa.</p>
+            </div>
+
+            <div class="status-grid" data-aos="fade-up">
+                <div class="status-row">
+                    <span class="status-num">01</span>
+                    <div class="status-body">
+                        <h4>The Apostolic House</h4>
+                        <p>National assembly in Johannesburg, four city groups, Thursday fellowships and pastoral care.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">02</span>
+                    <div class="status-body">
+                        <h4>Global College</h4>
+                        <p>Christ and Kingdom Institutes on South African evening cohorts. A Southern Africa delivery centre is under discussion.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">03</span>
+                    <div class="status-body">
+                        <h4>Prayers &amp; Mission</h4>
+                        <p>Watch 06 held from South Africa. Prayer towers in Johannesburg and Cape Town.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">04</span>
+                    <div class="status-body">
+                        <h4>Networks</h4>
+                        <p>KBLN is our strongest network here with three roundtables. AWF running; IFAM open; SANI forming; TANI not yet.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">05</span>
+                    <div class="status-body">
+                        <h4>Kingdom Operations</h4>
+                        <p>CIEL work readiness and enterprise clinics running. Sphere groups forming in Business, Education and Media.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">06</span>
+                    <div class="status-body">
+                        <h4>Compassion</h4>
+                        <p>City groups partner with existing local agencies rather than duplicating them. CVSW visitation and emergency support for members under threat.</p>
+                        <span class="badge badge-forming">Forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">07</span>
+                    <div class="status-body">
+                        <h4>Country Development</h4>
+                        <p>Not running. South Africa has mature civil society and reconciliation institutions of its own, and we are not going to duplicate them.</p>
+                        <span class="badge badge-soon">Not running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">08</span>
+                    <div class="status-body">
+                        <h4>ThyKingdomCome</h4>
+                        <p>Leading the Southern Africa sub-region with Zambia, year 3 of 5. Council forming with a South African chair.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="page-section page-section-light" id="leadership">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Council</span>
+                <h2 class="section-title">Who Carries This Region</h2>
+                <p class="section-desc">A South African council, accountable to the South African community first and to the global commonwealth second.</p>
+            </div>
+            <div class="leader-grid">
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=600&q=80" alt="National Coordinator">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">National Coordinator</span>
+                        <p>Carries the South African community, chairs the council, and is the first point of contact for anyone joining.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="KBLN and CIEL Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">KBLN &amp; CIEL Lead</span>
+                        <p>Runs the three roundtables, the work readiness programme and the enterprise clinics.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Pastoral and Care Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Pastoral &amp; Care Lead</span>
+                        <p>Oversees CVSW visitation, the emergency response for members under threat, and the safeguarding standard.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="notice-box mt-5" data-aos="fade-up">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                    <h4>Accountability, plainly</h4>
+                    <p>Every leader here is under the same annual character and doctrine review as everyone else, and each sits under a mentor outside their own chain of command. Concerns go to <strong>theholynationglobal@gmail.com</strong> and are handled by the same process that applies to any member.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Connected -->
+    <section class="page-section page-section-cream" id="connect">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get Connected</span>
+                <h2 class="section-title">Four Ways to Start</h2>
+            </div>
+
+            <div class="steps-grid" data-aos="fade-up">
+                <a href="#" class="step-card js-whatsapp" data-nation="Holy Nation South Africa">
+                    <span class="step-num">01</span>
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Join the Community</h3>
+                    <p>The national WhatsApp group: Sunday links, prayer requests and a direct line to the coordinator.</p>
+                    <span class="step-link">Join <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#connect" class="step-card">
+                    <span class="step-num">02</span>
+                    <i class="fas fa-people-group"></i>
+                    <h3>Come on Sunday</h3>
+                    <p>In person in Johannesburg or online anywhere. No commitment, and no offering asked of visitors.</p>
+                    <span class="step-link">Get the link <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#work" class="step-card">
+                    <span class="step-num">03</span>
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Work &amp; Skills</h3>
+                    <p>Work readiness, skills training, enterprise clinics and KBLN roundtables. Open to members and non-members.</p>
+                    <span class="step-link">Find out more <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="prayers-mission.html#watches" class="step-card">
+                    <span class="step-num">04</span>
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Take the Marketplace Watch</h3>
+                    <p>Three morning hours a week praying for work, commerce and the economy. Many pray it from their desk.</p>
+                    <span class="step-link">Enrol <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div data-aos="fade-up">
+                    <h3 class="sub-heading">Tell Us Where You Are</h3>
+                    <p class="sub-lead">The coordinator's office replies within two working days, and a real person will be assigned to you &mdash; not a mailing list.</p>
+                    <form class="form-grid" data-demo>
+                        <div class="form-field">
+                            <label for="za-name">Full name</label>
+                            <input type="text" id="za-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="za-email">Email</label>
+                            <input type="email" id="za-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="za-city">Town or city</label>
+                            <input type="text" id="za-city" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="za-province">Province</label>
+                            <input type="text" id="za-province">
+                        </div>
+                        <div class="form-field full">
+                            <label for="za-intent">I'd like to</label>
+                            <select id="za-intent">
+                                <option>Join the national WhatsApp community</option>
+                                <option>Attend the Sunday assembly</option>
+                                <option>Join my nearest city group</option>
+                                <option>Start a city group where I live</option>
+                                <option>Join a KBLN roundtable</option>
+                                <option>Access work readiness or skills training</option>
+                                <option>Enrol in the Global College</option>
+                                <option>Take a watch on the prayer roster</option>
+                                <option>I need help urgently</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="za-message">Anything you'd like us to know</label>
+                            <textarea id="za-message"></textarea>
+                        </div>
+                        <div class="form-field full">
+                            <button type="submit" class="btn btn-primary">Send <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>South Africa Office</h3>
+                    <dl class="fact-list">
+                        <div><dt>Coordinator</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>KBLN &amp; skills</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Hub</dt><dd>Johannesburg, Gauteng</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Africa/Johannesburg">--:--</span> SAST</dd></div>
+                        <div><dt>Reply target</dt><dd>2 working days</dd></div>
+                        <div><dt>Safeguarding</dt><dd>theholynationglobal@gmail.com</dd></div>
+                    </dl>
+                    <p class="side-note">Nobody from Holy Nation will ever direct-message you asking for money, bank details or documents. If that happens, it is a scam &mdash; please report it.</p>
+                    <a href="/connect" class="btn btn-primary btn-sm">All Nations <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="page-section page-section-light" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked</h2>
+            </div>
+            <div class="accordion faq-accordion" data-aos="fade-up">
+                <div class="accordion-item open">
+                    <div class="accordion-head">Do I have to leave my church to join Holy Nation South Africa?</div>
+                    <div class="accordion-body">
+                        <p>No. Most of our members belong to a South African congregation already, and we would discourage anyone from leaving. City groups meet midweek and the training is designed to strengthen you wherever you serve.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">I'm not South African. Am I welcome?</div>
+                    <div class="accordion-body">
+                        <p>Fully and without qualification. Members of this house come from around a dozen nationalities. We do not ask about immigration status, we do not rank members by nationality, and contempt for the foreigner gets a person removed from our groups.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Do you help with documentation or immigration matters?</div>
+                    <div class="accordion-body">
+                        <p>We help you reach licensed advisers, and we will sit with you through the process. We do not give immigration advice ourselves &mdash; doing so unlicensed causes real harm, and we have seen it happen.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is the work readiness programme only for members?</div>
+                    <div class="accordion-body">
+                        <p>No. Work readiness, skills training and enterprise clinics are open to anyone who needs them, on the basis of need alone, with no faith test and no requirement to attend anything.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Why isn't Country Development running here?</div>
+                    <div class="accordion-body">
+                        <p>Because South Africa already has mature civil society, legal and reconciliation institutions built over decades. Importing a framework designed for a different context would be arrogant and unhelpful. Where our members work in those spheres, they do it through existing South African institutions.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Are you politically affiliated?</div>
+                    <div class="accordion-body">
+                        <p>No. Holy Nation Global endorses no party and no candidate in any nation, and our groups do not permit campaigning. The full policy is published on the Country Development page and applies here without exception.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is there a membership fee?</div>
+                    <div class="accordion-body">
+                        <p>None. Community, gatherings, watches and the Foundations Class are free. Global College tuition is set regionally with instalment plans and bursaries, and nobody has been turned away for inability to pay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Nations -->
+    <section class="page-section page-section-cream">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Elsewhere</span>
+                <h2 class="section-title">Other Nations</h2>
+            </div>
+            <div class="feature-grid feature-grid-4" data-aos="fade-up">
+                <a href="/holy-nation-zambia" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation Zambia</h3>
+                    <p>Lusaka hub, our partner in the Southern Africa sub-region.</p>
+                </a>
+                <a href="/holy-nation-kenya" class="feature-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Holy Nation Kenya</h3>
+                    <p>Nairobi hub and the East Africa Training Centre, serving five nations.</p>
+                </a>
+                <a href="/holy-nation-uk" class="feature-card">
+                    <i class="fas fa-earth-europe"></i>
+                    <h3>Holy Nation UK</h3>
+                    <p>London hub, four city groups, and a large southern African diaspora community.</p>
+                </a>
+                <a href="connect.html#nations" class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>All Twelve Nations</h3>
+                    <p>The full directory with live local times, WhatsApp communities and national coordinators.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Wherever You Were Born, You Belong Here</h2>
+                <p>Come to one Sunday. Stay if it is home. Either way you will be received the way family receives family.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large js-whatsapp" data-nation="Holy Nation South Africa">Join the Community</a>
+                    <a href="#connect" class="btn btn-outline btn-large">Get the Sunday Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">
+                            <img src="logo.png" alt="Holy Nation Global">
+                            <div>
+                                <span class="footer-logo-main">HOLY NATION SOUTH AFRICA</span>
+                                <span class="footer-logo-sub">Holy Nation Global</span>
+                            </div>
+                        </a>
+                        <p>Raising Apostolic Leaders, Transforming Nations, Establishing the Reign of Christ on Earth.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/1davidabraham" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/1DavidAbraham" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/1davidabraham/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@1davidabraham" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Holy Nation South Africa</h4>
+                        <ul>
+                            <li><a href="#manynations">Many Nations</a></li>
+                            <li><a href="#gatherings">Gatherings</a></li>
+                            <li><a href="#cities">City Groups</a></li>
+                            <li><a href="#work">Work &amp; Enterprise</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ministries</h4>
+                        <ul>
+                            <li><a href="/apostolic-house">The Apostolic House</a></li>
+                            <li><a href="/global-college">Global College</a></li>
+                            <li><a href="/prayers-mission">Prayers &amp; Mission</a></li>
+                            <li><a href="/networks">Apostolic Networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="connect.html#nations">All Nations</a></li>
+                            <li><a href="connect.html#prayer">Prayer Request</a></li>
+                            <li><a href="/give">Give Online</a></li>
+                            <li><a href="connect.html#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 The Holy Nation Global. All rights reserved. | Thy Kingdom Come.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
+</html>

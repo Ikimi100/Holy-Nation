@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Nation Zambia | Holy Nation Global</title>
+    <meta name="description" content="Holy Nation Zambia — city groups in Lusaka and Kitwe. The Morning Altar watch, discipleship beyond declaration, and compassion work on the Copperbelt.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Holy Nation Global" class="preloader-logo">
+            <p>Holy Nation Global</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-solid">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Holy Nation Global">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Holy Nation Global</span>
+                    <span class="logo-sub">Thy Kingdom Come</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/apostolic-house" class="nav-link">Apostolic House</a>
+                <a href="/global-college" class="nav-link">Global College</a>
+                <a href="/prayers-mission" class="nav-link">Prayers &amp; Mission</a>
+                <a href="/networks" class="nav-link">Networks</a>
+                <a href="/kingdom-operations" class="nav-link">Operations</a>
+                <a href="/compassion" class="nav-link">Compassion</a>
+                <a href="/country-development" class="nav-link">Nation Building</a>
+                <a href="/thykingdomcome" class="nav-link">ThyKingdomCome</a>
+                <a href="/give" class="nav-link nav-give">Give</a>
+                <a href="/connect" class="nav-link nav-cta active">Connect</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search teachings, events, ministries..." id="searchInput">
+            <button class="search-submit" aria-label="Submit search"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1920&q=80');"></div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="/connect">Connect</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="connect.html#nations">Nations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Holy Nation Zambia</span>
+            </nav>
+            <span class="page-hero-tag">Zambia</span>
+            <h1>Holy Nation Zambia</h1>
+            <p class="page-hero-lead">Two city groups, the Morning Altar watch, and a house built around one uncomfortable question: what does a Christian nation actually look like on a Tuesday?</p>
+            <div class="page-hero-actions">
+                <a href="#" class="btn btn-primary js-whatsapp" data-nation="Holy Nation Zambia"><i class="fab fa-whatsapp"></i> Join the WhatsApp Community</a>
+                <a href="#declaration" class="btn btn-outline">Beyond Declaration</a>
+            </div>
+            <div class="page-hero-facts">
+                <div>
+                    <span class="page-fact-num nation-clock" data-tz="Africa/Lusaka">--:--</span>
+                    <span class="page-fact-label">Lusaka Time Now</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="2">0</span>
+                    <span class="page-fact-label">City Groups</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="1">0</span>
+                    <span class="page-fact-label">Prayer Tower</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="3">0</span>
+                    <span class="page-fact-label">Years Established</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Nav -->
+    <div class="page-nav" id="pageNav">
+        <div class="page-nav-inner">
+            <a href="#overview">Overview</a>
+            <a href="#declaration">Beyond Declaration</a>
+            <a href="#gatherings">Gatherings</a>
+            <a href="#cities">City Groups</a>
+            <a href="#copperbelt">The Copperbelt</a>
+            <a href="#active">What's Active Here</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#connect">Get Connected</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
+
+    <!-- Next gathering strip -->
+    <section class="page-section page-section-light" style="padding-bottom:0;">
+        <div class="container">
+            <div class="next-strip" data-aos="fade-up">
+                <div>
+                    <span class="next-strip-label">Next National Gathering</span>
+                    <h3>Sunday Assembly &mdash; Lusaka &amp; Online</h3>
+                    <p>9:00 AM Central Africa Time &middot; English, with Bemba and Nyanja in worship</p>
+                </div>
+                <div style="text-align:right;">
+                    <span class="next-countdown" data-countdown data-tz="Africa/Lusaka" data-day="Sun" data-time="09:00">&mdash;</span>
+                    <span class="next-countdown-label">Until we gather</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="page-section page-section-light" id="overview">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Who We Are</span>
+                    <h2 class="section-title section-title-left">A Small House Asking a Large Question</h2>
+                    <p>Holy Nation Zambia is one of our smallest communities &mdash; two city groups, one prayer tower, and a few dozen committed members. We are not going to inflate that.</p>
+                    <p>What we do have is an unusually clear sense of purpose, and it comes from the particular position Zambia occupies. This is a country whose constitution names it a Christian nation. Church attendance is high. Public life is saturated with Christian language. And yet Zambians will tell you plainly that declaration and discipleship are not the same thing.</p>
+
+                    <div class="scripture">
+                        &ldquo;These people draw near to Me with their mouth, and honour Me with their lips, but their heart is far from Me.&rdquo;
+                        <cite>Matthew 15:8</cite>
+                    </div>
+
+                    <h3>What we are, and what we are not</h3>
+                    <ul>
+                        <li><strong>You keep your church.</strong> Nearly every member here belongs to a Zambian congregation already</li>
+                        <li><strong>You get known.</strong> With a community this size, that is not a promise &mdash; it is unavoidable</li>
+                        <li><strong>You get trained.</strong> Global College cohorts run on Zambian evenings</li>
+                        <li><strong>You carry something.</strong> Zambia holds Watch 05 on the global roster, in CAT</li>
+                        <li><strong>You are never asked for money to belong.</strong> Ever</li>
+                    </ul>
+
+                    <h3>Our place in the movement</h3>
+                    <p>Zambia sits in the Southern Africa sub-region of TKC-Africa alongside South Africa, in year three of the five-year cycle. Our council is forming with a Zambian chair, and full autonomy is due in year five.</p>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>At a Glance</h3>
+                    <dl class="fact-list">
+                        <div><dt>National hub</dt><dd>Lusaka</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Africa/Lusaka">--:--</span> CAT</dd></div>
+                        <div><dt>Main gathering</dt><dd>Sundays, 9:00 AM</dd></div>
+                        <div><dt>Languages</dt><dd>English, Bemba, Nyanja</dd></div>
+                        <div><dt>City groups</dt><dd>2</dd></div>
+                        <div><dt>Global watch</dt><dd>Watch 05 &mdash; Morning Altar</dd></div>
+                        <div><dt>TKC stage</dt><dd>Africa &middot; Year 3 of 5</dd></div>
+                    </dl>
+                    <a href="#connect" class="btn btn-primary btn-sm">Get Connected <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beyond Declaration -->
+    <section class="page-section page-section-dark" id="declaration">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Why We Are Here</span>
+                <h2 class="section-title">Beyond Declaration</h2>
+                <p class="section-desc">A nation can be named Christian in a document and still be discipled only shallowly in practice. Zambians say this about Zambia far more freely than outsiders do &mdash; and they are right to.</p>
+            </div>
+
+            <div class="split-layout mt-4">
+                <div class="prose" data-aos="fade-up">
+                    <h3>The gap we work in</h3>
+                    <p>Nobody in this country needs to be persuaded that Christianity is respectable. It is the water everyone swims in. That is a genuine advantage, and it also creates a specific problem: when faith is universal and assumed, it very easily becomes cultural rather than personal, and inherited rather than examined.</p>
+                    <p>So our work here is deliberately narrow and deep rather than broad. We are not trying to reach the unreached in a country where almost everyone already identifies as Christian. We are trying to help a smaller number of people move from assent to formation.</p>
+                    <ul>
+                        <li><strong>Foundations before enthusiasm</strong> &mdash; the doctrine of Christ taught in order, examined properly</li>
+                        <li><strong>Personal, not inherited</strong> &mdash; every member works through what they actually believe and why</li>
+                        <li><strong>Character under review</strong> &mdash; the quarterly review applies to everyone, without exception</li>
+                        <li><strong>Integrity in ordinary life</strong> &mdash; the Citizen's Charter taken personally, in workplaces and homes</li>
+                        <li><strong>Small and honest</strong> &mdash; we would rather be forty formed people than four hundred attending</li>
+                    </ul>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>What We Are Careful About</h3>
+                    <ul class="check-list">
+                        <li>We do not comment on Zambian politics or national policy</li>
+                        <li>We do not tell Zambians what their constitution should say</li>
+                        <li>We do not disparage other churches or their members</li>
+                        <li>We do not recruit from existing congregations</li>
+                        <li>We do not claim to have found something Zambians had missed</li>
+                    </ul>
+                    <p class="side-note">This is a Zambian community making a Zambian critique of Zambian church culture. It is not an outside verdict, and we would not have standing to give one.</p>
+                    <a href="country-development.html#charter" class="btn btn-primary btn-sm">The Citizen's Charter <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gatherings -->
+    <section class="page-section page-section-cream" id="gatherings">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Rhythm</span>
+                <h2 class="section-title">When We Gather</h2>
+                <p class="section-desc">All times Central Africa Time. Everything is available online, and recordings go out to the community the same week.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-day">Sunday</div>
+                    <h3>National Assembly</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 9:00 AM CAT</p>
+                    <p class="service-desc">The whole Zambian community, in person in Lusaka and online elsewhere. Deliberately early so members can attend their own church afterwards.</p>
+                    <a href="#connect" class="service-link">Get the link <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-day">Tuesday</div>
+                    <h3>Global College Cohort</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 6:30 PM CAT</p>
+                    <p class="service-desc">Live seminar for enrolled students across the Christ and Kingdom Institutes, run on Zambian evenings.</p>
+                    <a href="global-college.html#admissions" class="service-link">Admissions <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-day">Thursday</div>
+                    <h3>City Group Night</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> Local, 6:00 PM</p>
+                    <p class="service-desc">Homes and community rooms &mdash; discussion of Sunday's teaching, honest questions, and practical care within the group.</p>
+                    <a href="#cities" class="service-link">Find your city <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card service-card-accent" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-day">Daily</div>
+                    <h3>The Morning Altar</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 6:00 &ndash; 9:00 AM CAT</p>
+                    <p class="service-desc">Zambia's watch on the global roster. The house, its leaders and the day's assignments &mdash; prayed as the country starts work.</p>
+                    <a href="prayers-mission.html#watches" class="service-link">Take a slot <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div class="prose" data-aos="fade-up">
+                    <h3>Why Zambia holds the Morning Altar</h3>
+                    <p>Watches run in each region's local time, so several nations hold the same watch number in their own zone &mdash; that is precisely how the global altar stays unbroken across the day. Zambia holds <strong>Watch 05 &mdash; The Morning Altar</strong>, 6:00 to 9:00 AM CAT.</p>
+                    <p>Its standing burden is the house itself, its leaders and the day's assignments. For a community this size, praying for the movement's leadership every single morning is a way of being genuinely useful to a global work while remaining small.</p>
+                    <ul>
+                        <li>One three-hour window, one day a week &mdash; most people share a slot</li>
+                        <li>Works well before the working day begins</li>
+                        <li>You receive the watch guide, the burden list and a reporting template</li>
+                    </ul>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>First Time Joining?</h3>
+                    <ul class="check-list">
+                        <li>The Sunday link is posted in the community group each Saturday</li>
+                        <li>The 9:00 start is deliberate &mdash; go to your own church afterwards</li>
+                        <li>Come as you are &mdash; there is no dress code</li>
+                        <li>Hard questions are welcome, including awkward ones</li>
+                        <li>Children are welcome throughout</li>
+                        <li>You will never be asked to give as a visitor</li>
+                    </ul>
+                    <a href="#connect" class="btn btn-primary btn-sm">Say You're Coming <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Groups -->
+    <section class="page-section page-section-light" id="cities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Near You</span>
+                <h2 class="section-title">City Groups</h2>
+                <p class="section-desc">Two cities, each with a named host and its own WhatsApp thread. Both on Central Africa Time.</p>
+            </div>
+
+            <div data-filter data-aos="fade-up">
+                <div class="filter-bar">
+                    <div class="filter-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" data-filter-input placeholder="Search city or province..." aria-label="Search city groups">
+                    </div>
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter-chip="all">All</button>
+                        <button class="filter-chip" data-filter-chip="lusaka">Lusaka</button>
+                        <button class="filter-chip" data-filter-chip="copperbelt">Copperbelt</button>
+                    </div>
+                </div>
+
+                <div class="city-grid">
+                    <article class="city-card" data-filter-item data-tags="lusaka capital nyanja">
+                        <h3>Lusaka</h3>
+                        <span class="city-state">Lusaka Province &middot; National Hub</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Lusaka">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-tower-observation"></i> Prayer tower</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Lusaka City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="copperbelt kitwe ndola mining bemba">
+                        <h3>Kitwe</h3>
+                        <span class="city-state">Copperbelt Province</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Lusaka">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Thursdays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-language"></i> Bemba-led</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Kitwe City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#copperbelt" class="btn-nation">Read more <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="filter-empty" data-filter-empty>
+                    <i class="fas fa-map-location-dot"></i>
+                    <p>No group in that town yet.<br>We have members in Ndola, Livingstone, Kabwe and Chipata meeting online &mdash; a couple are one host short of a group.</p>
+                    <a href="#connect" class="btn btn-primary btn-sm" style="margin-top:1.25rem;">Start One Where You Are <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Copperbelt -->
+    <section class="ministry-section ministry-dark" id="copperbelt">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="ministry-grid">
+                <div class="ministry-visual" data-aos="fade-right">
+                    <div class="visual-frame">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80" alt="Copperbelt community">
+                        <div class="visual-accent"></div>
+                    </div>
+                    <div class="visual-float-card">
+                        <i class="fas fa-hard-hat"></i>
+                        <span>Kitwe &amp; the Copperbelt</span>
+                    </div>
+                </div>
+                <div class="ministry-content" data-aos="fade-left">
+                    <span class="ministry-tag">Kitwe</span>
+                    <h2>Work on the Copperbelt</h2>
+                    <p class="ministry-lead">The Copperbelt's fortunes rise and fall with a commodity price set on the other side of the world. Families here have lived through boom and retrenchment more than once, and both do damage.</p>
+                    <p class="ministry-lead">Our Kitwe group is small and its work is correspondingly modest, but it is aimed squarely at that cycle: helping households build something that does not depend entirely on one employer or one metal.</p>
+                    <div class="ministry-list">
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-users-line"></i></div>
+                            <div class="item-text">
+                                <h4>Savings Groups</h4>
+                                <p>Member-run savings circles with written rules, building reserves before the next downturn</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                            <div class="item-text">
+                                <h4>Second Skills</h4>
+                                <p>Practical training so a household is not dependent on a single wage from a single industry</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-book-open-reader"></i></div>
+                            <div class="item-text">
+                                <h4>CES School Support</h4>
+                                <p>Fees and materials for children whose schooling is threatened when a parent loses work</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-heart"></i></div>
+                            <div class="item-text">
+                                <h4>CVSW Visitation</h4>
+                                <p>Regular visits to widows, seniors and the chronically ill by trained, paired volunteers</p>
+                            </div>
+                        </div>
+                        <div class="ministry-item">
+                            <div class="item-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                            <div class="item-text">
+                                <h4>Emergency Grants</h4>
+                                <p>Small, rapid, assessed grants after a sudden loss of income &mdash; deliberately time-limited</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/compassion" class="btn btn-outline">The Compassion Pillar <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Active Here -->
+    <section class="page-section page-section-light" id="active">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Honest Status</span>
+                <h2 class="section-title">What's Actually Running Here</h2>
+                <p class="section-desc">Zambia is a small community and runs few pillars. Showing you that plainly is more useful than implying otherwise.</p>
+            </div>
+
+            <div class="status-grid" data-aos="fade-up">
+                <div class="status-row">
+                    <span class="status-num">01</span>
+                    <div class="status-body">
+                        <h4>The Apostolic House</h4>
+                        <p>National assembly in Lusaka, two city groups and Thursday fellowships.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">02</span>
+                    <div class="status-body">
+                        <h4>Global College</h4>
+                        <p>Christ and Kingdom Institutes on Zambian evening cohorts, served online.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">03</span>
+                    <div class="status-body">
+                        <h4>Prayers &amp; Mission</h4>
+                        <p>Watch 05 held from Zambia. One prayer tower, in Lusaka.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">04</span>
+                    <div class="status-body">
+                        <h4>Networks</h4>
+                        <p>AWF circles running in both cities. IFAM affiliation open. KBLN, SANI and TANI not yet.</p>
+                        <span class="badge badge-forming">Partly running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">05</span>
+                    <div class="status-body">
+                        <h4>Kingdom Operations</h4>
+                        <p>CIEL savings groups and second-skills training on the Copperbelt. No sphere working groups yet.</p>
+                        <span class="badge badge-forming">Forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">06</span>
+                    <div class="status-body">
+                        <h4>Compassion</h4>
+                        <p>CES school support, CVSW visitation and small emergency grants, concentrated in Kitwe.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">07</span>
+                    <div class="status-body">
+                        <h4>Country Development</h4>
+                        <p>Not running. Members take the Citizen's Charter personally, but we run no national programme and comment on no national policy.</p>
+                        <span class="badge badge-soon">Not running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">08</span>
+                    <div class="status-body">
+                        <h4>ThyKingdomCome</h4>
+                        <p>Part of the Southern Africa sub-region with South Africa, year 3 of 5. Council forming with a Zambian chair.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="table-note" data-aos="fade-up">Two city groups is a real number, not a starting point we are embarrassed about. We would rather forty formed people than four hundred attending.</p>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="page-section page-section-cream" id="leadership">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Council</span>
+                <h2 class="section-title">Who Carries This Community</h2>
+                <p class="section-desc">Zambian-led, accountable to the Zambian community first and to the global commonwealth second.</p>
+            </div>
+            <div class="leader-grid">
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="National Coordinator">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">National Coordinator</span>
+                        <p>Carries the Zambian community, chairs the forming council, and leads the Lusaka group.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Copperbelt Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Copperbelt Lead, Kitwe</span>
+                        <p>Leads the Kitwe group and runs the savings groups, second-skills training and CES support.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Training and Prayer Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Training &amp; Prayer Lead</span>
+                        <p>Facilitates the Global College cohort and holds the Watch 05 roster and the Lusaka prayer tower.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="notice-box mt-5" data-aos="fade-up">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                    <h4>Accountability, plainly</h4>
+                    <p>Every leader here is under the same annual character and doctrine review as everyone else, and each sits under a mentor outside their own chain of command. Concerns go to <strong>theholynationglobal@gmail.com</strong> and are handled by the same process that applies to any member.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Connected -->
+    <section class="page-section page-section-light" id="connect">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get Connected</span>
+                <h2 class="section-title">Four Ways to Start</h2>
+            </div>
+
+            <div class="steps-grid" data-aos="fade-up">
+                <a href="#" class="step-card js-whatsapp" data-nation="Holy Nation Zambia">
+                    <span class="step-num">01</span>
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Join the Community</h3>
+                    <p>The national WhatsApp group: Sunday links, prayer requests and a direct line to the coordinator.</p>
+                    <span class="step-link">Join <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#connect" class="step-card">
+                    <span class="step-num">02</span>
+                    <i class="fas fa-people-group"></i>
+                    <h3>Come on Sunday</h3>
+                    <p>In person in Lusaka or online. Early enough that you can still attend your own church afterwards.</p>
+                    <span class="step-link">Get the link <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="global-college.html#admissions" class="step-card">
+                    <span class="step-num">03</span>
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Do the Foundations</h3>
+                    <p>Four sessions on the doctrine of Christ, then the Christ Institute if you want to go further.</p>
+                    <span class="step-link">Admissions <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="prayers-mission.html#watches" class="step-card">
+                    <span class="step-num">04</span>
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Take the Morning Altar</h3>
+                    <p>Three hours a week before the working day, praying for the house and its leaders worldwide.</p>
+                    <span class="step-link">Enrol <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div data-aos="fade-up">
+                    <h3 class="sub-heading">Tell Us Where You Are</h3>
+                    <p class="sub-lead">With a community this size, the coordinator usually replies personally &mdash; and usually within a day.</p>
+                    <form class="form-grid" data-demo>
+                        <div class="form-field">
+                            <label for="zm-name">Full name</label>
+                            <input type="text" id="zm-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="zm-email">Email</label>
+                            <input type="email" id="zm-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="zm-city">Town or city</label>
+                            <input type="text" id="zm-city" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="zm-province">Province</label>
+                            <input type="text" id="zm-province">
+                        </div>
+                        <div class="form-field full">
+                            <label for="zm-intent">I'd like to</label>
+                            <select id="zm-intent">
+                                <option>Join the national WhatsApp community</option>
+                                <option>Attend the Sunday assembly</option>
+                                <option>Join the Lusaka or Kitwe group</option>
+                                <option>Start a group where I live</option>
+                                <option>Do the Foundations Class</option>
+                                <option>Enrol in the Global College</option>
+                                <option>Take a watch on the prayer roster</option>
+                                <option>Join a savings group or skills training</option>
+                                <option>Apply for assistance</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="zm-message">Anything you'd like us to know</label>
+                            <textarea id="zm-message"></textarea>
+                        </div>
+                        <div class="form-field full">
+                            <button type="submit" class="btn btn-primary">Send <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>Zambia Office</h3>
+                    <dl class="fact-list">
+                        <div><dt>Coordinator</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Hub</dt><dd>Lusaka</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Africa/Lusaka">--:--</span> CAT</dd></div>
+                        <div><dt>Reply target</dt><dd>Usually within a day</dd></div>
+                        <div><dt>Safeguarding</dt><dd>theholynationglobal@gmail.com</dd></div>
+                    </dl>
+                    <p class="side-note">Nobody from Holy Nation will ever direct-message you asking for money, mobile money transfers, bank details or documents. If that happens, it is a scam &mdash; please report it.</p>
+                    <a href="/connect" class="btn btn-primary btn-sm">All Nations <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="page-section page-section-cream" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked</h2>
+            </div>
+            <div class="accordion faq-accordion" data-aos="fade-up">
+                <div class="accordion-item open">
+                    <div class="accordion-head">Are you saying Zambian Christianity isn't real?</div>
+                    <div class="accordion-body">
+                        <p>No, and we would have no standing to say it. This is a Zambian community making a Zambian observation about Zambian church culture &mdash; one you will hear from pastors across this country. The point is not that faith here is false; it is that where faith is universal and assumed, formation matters more, not less.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Do I have to leave my church to join?</div>
+                    <div class="accordion-body">
+                        <p>No, and we actively discourage it. Nearly every member belongs to a Zambian congregation already. The 9:00 AM start exists precisely so you can come here and still make your own service. We do not recruit from other churches.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Do you have a view on Zambia's constitutional declaration?</div>
+                    <div class="accordion-body">
+                        <p>We do not comment on Zambian politics or constitutional matters. What a nation puts in its founding documents is for its citizens to decide. Our concern is discipleship, which is a different question entirely.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Only two city groups. Is this worth joining?</div>
+                    <div class="accordion-body">
+                        <p>That is a fair question. What you get here is a small community where you will genuinely be known, the full Global College ladder online, a watch on a global roster, and a share in a movement across four continents. What you will not get is a crowd.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Do I have to be a Christian to receive help?</div>
+                    <div class="accordion-body">
+                        <p>No. Eligibility is based on need alone. Nobody is asked about their faith, required to attend anything, or treated differently for declining. Charity with conditions attached is not charity.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is there a membership fee?</div>
+                    <div class="accordion-body">
+                        <p>None. Community, gatherings, watches and the Foundations Class are free. Global College tuition is set regionally with instalment plans and bursaries, and nobody has been turned away for inability to pay.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Are you politically affiliated?</div>
+                    <div class="accordion-body">
+                        <p>No. Holy Nation Global endorses no party and no candidate in any nation, and our groups do not permit campaigning. The full policy is published on the Country Development page and applies here without exception.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Nations -->
+    <section class="page-section page-section-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Elsewhere</span>
+                <h2 class="section-title">Other Nations</h2>
+            </div>
+            <div class="feature-grid feature-grid-4" data-aos="fade-up">
+                <a href="/holy-nation-south-africa" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation South Africa</h3>
+                    <p>Johannesburg hub, our partner in the Southern Africa sub-region.</p>
+                </a>
+                <a href="/holy-nation-congo" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation Congo</h3>
+                    <p>Kinshasa hub, French and Lingala, and our neighbour to the north.</p>
+                </a>
+                <a href="/holy-nation-kenya" class="feature-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Holy Nation Kenya</h3>
+                    <p>Nairobi hub and the East Africa Training Centre, serving five nations.</p>
+                </a>
+                <a href="connect.html#nations" class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>All Twelve Nations</h3>
+                    <p>The full directory with live local times, WhatsApp communities and national coordinators.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Mwaiseni. You Are Welcome Here.</h2>
+                <p>Come to one Sunday. Stay if it is home. Either way you will be received the way family receives family.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large js-whatsapp" data-nation="Holy Nation Zambia">Join the Community</a>
+                    <a href="#connect" class="btn btn-outline btn-large">Get the Sunday Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">
+                            <img src="logo.png" alt="Holy Nation Global">
+                            <div>
+                                <span class="footer-logo-main">HOLY NATION ZAMBIA</span>
+                                <span class="footer-logo-sub">Holy Nation Global</span>
+                            </div>
+                        </a>
+                        <p>Raising Apostolic Leaders, Transforming Nations, Establishing the Reign of Christ on Earth.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/1davidabraham" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/1DavidAbraham" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/1davidabraham/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@1davidabraham" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Holy Nation Zambia</h4>
+                        <ul>
+                            <li><a href="#declaration">Beyond Declaration</a></li>
+                            <li><a href="#gatherings">Gatherings</a></li>
+                            <li><a href="#cities">City Groups</a></li>
+                            <li><a href="#copperbelt">The Copperbelt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ministries</h4>
+                        <ul>
+                            <li><a href="/apostolic-house">The Apostolic House</a></li>
+                            <li><a href="/global-college">Global College</a></li>
+                            <li><a href="/prayers-mission">Prayers &amp; Mission</a></li>
+                            <li><a href="/networks">Apostolic Networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="connect.html#nations">All Nations</a></li>
+                            <li><a href="connect.html#prayer">Prayer Request</a></li>
+                            <li><a href="/give">Give Online</a></li>
+                            <li><a href="connect.html#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 The Holy Nation Global. All rights reserved. | Thy Kingdom Come.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
+</html>

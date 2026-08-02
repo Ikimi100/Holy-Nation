@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Nation Rwanda | Holy Nation Global</title>
+    <meta name="description" content="Holy Nation Rwanda — city groups in Kigali, Huye and Musanze. Trilingual gatherings, the Watch of Rest, and a regional cohort of the East Africa Training Centre.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="logo.png" alt="Holy Nation Global" class="preloader-logo">
+            <p>Holy Nation Global</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="nav-solid">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="Holy Nation Global">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Holy Nation Global</span>
+                    <span class="logo-sub">Thy Kingdom Come</span>
+                </div>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/apostolic-house" class="nav-link">Apostolic House</a>
+                <a href="/global-college" class="nav-link">Global College</a>
+                <a href="/prayers-mission" class="nav-link">Prayers &amp; Mission</a>
+                <a href="/networks" class="nav-link">Networks</a>
+                <a href="/kingdom-operations" class="nav-link">Operations</a>
+                <a href="/compassion" class="nav-link">Compassion</a>
+                <a href="/country-development" class="nav-link">Nation Building</a>
+                <a href="/thykingdomcome" class="nav-link">ThyKingdomCome</a>
+                <a href="/give" class="nav-link nav-give">Give</a>
+                <a href="/connect" class="nav-link nav-cta active">Connect</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+            <button class="search-close" id="searchClose" aria-label="Close search"><i class="fas fa-times"></i></button>
+            <input type="text" placeholder="Search teachings, events, ministries..." id="searchInput">
+            <button class="search-submit" aria-label="Submit search"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=1920&q=80');"></div>
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="/">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="/connect">Connect</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="connect.html#nations">Nations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Holy Nation Rwanda</span>
+            </nav>
+            <span class="page-hero-tag">Rwanda</span>
+            <h1>Holy Nation Rwanda</h1>
+            <p class="page-hero-lead">Three city groups, three languages, and the Watch of Rest &mdash; a small, careful, Rwandan-led community in a country that has thought harder about unity than almost anywhere on earth.</p>
+            <div class="page-hero-actions">
+                <a href="#" class="btn btn-primary js-whatsapp" data-nation="Holy Nation Rwanda"><i class="fab fa-whatsapp"></i> Join the WhatsApp Community</a>
+                <a href="#languages" class="btn btn-outline">Three Languages</a>
+            </div>
+            <div class="page-hero-facts">
+                <div>
+                    <span class="page-fact-num nation-clock" data-tz="Africa/Kigali">--:--</span>
+                    <span class="page-fact-label">Kigali Time Now</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="3">0</span>
+                    <span class="page-fact-label">City Groups</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="3">0</span>
+                    <span class="page-fact-label">Languages</span>
+                </div>
+                <div>
+                    <span class="stat-num page-fact-num" data-count="1">0</span>
+                    <span class="page-fact-label">Regional Cohort</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sticky In-Page Nav -->
+    <div class="page-nav" id="pageNav">
+        <div class="page-nav-inner">
+            <a href="#overview">Overview</a>
+            <a href="#posture">How We Work Here</a>
+            <a href="#languages">Three Languages</a>
+            <a href="#gatherings">Gatherings</a>
+            <a href="#cities">City Groups</a>
+            <a href="#active">What's Active Here</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#connect">Get Connected</a>
+            <a href="#faq">FAQ</a>
+        </div>
+    </div>
+
+    <!-- Next gathering strip -->
+    <section class="page-section page-section-light" style="padding-bottom:0;">
+        <div class="container">
+            <div class="next-strip" data-aos="fade-up">
+                <div>
+                    <span class="next-strip-label">Next National Gathering</span>
+                    <h3>Sunday Assembly &mdash; Kigali &amp; Online</h3>
+                    <p>9:00 AM Central Africa Time &middot; Kinyarwanda, English &amp; French</p>
+                </div>
+                <div style="text-align:right;">
+                    <span class="next-countdown" data-countdown data-tz="Africa/Kigali" data-day="Sun" data-time="09:00">&mdash;</span>
+                    <span class="next-countdown-label">Until we gather</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="page-section page-section-light" id="overview">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Who We Are</span>
+                    <h2 class="section-title section-title-left">Small, Careful, and Rwandan-Led</h2>
+                    <p>Holy Nation Rwanda is one of our smaller communities and, by deliberate choice, one of our slowest-growing. Rwanda is a country where trust was catastrophically broken within living memory and has been rebuilt through decades of sustained national effort. Anyone arriving here with a hurry and a programme has misread the room.</p>
+                    <p>So this community was started by Rwandans, is led entirely by Rwandans, and moves at the pace they set. Our role from outside is to supply teaching, training and prayer &mdash; not direction.</p>
+
+                    <div class="scripture">
+                        &ldquo;Behold, how good and how pleasant it is for brethren to dwell together in unity!&rdquo;
+                        <cite>Psalm 133:1</cite>
+                    </div>
+
+                    <h3>What we are, and what we are not</h3>
+                    <ul>
+                        <li><strong>You keep your church.</strong> Most of our members belong to a Rwandan congregation already</li>
+                        <li><strong>You get known.</strong> Every member is placed in a city group</li>
+                        <li><strong>You get trained.</strong> A regional cohort in Kigali, served from Nairobi</li>
+                        <li><strong>You carry something.</strong> Rwanda holds Watch 02 on the global roster</li>
+                        <li><strong>You are never asked for money to belong.</strong> Ever</li>
+                    </ul>
+
+                    <h3>Our place in the movement</h3>
+                    <p>Rwanda sits in the East Africa sub-region of TKC-Africa, in year three of the five-year cycle, served by the East Africa Training Centre in Nairobi. Our council is forming with a Rwandan chair and full autonomy is due in year five &mdash; after which the community governs itself entirely, with the standing right to disagree with any other region including the founding one.</p>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>At a Glance</h3>
+                    <dl class="fact-list">
+                        <div><dt>National hub</dt><dd>Kigali</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Africa/Kigali">--:--</span> CAT</dd></div>
+                        <div><dt>Main gathering</dt><dd>Sundays, 9:00 AM</dd></div>
+                        <div><dt>Languages</dt><dd>Kinyarwanda, English, French</dd></div>
+                        <div><dt>City groups</dt><dd>3</dd></div>
+                        <div><dt>Global watch</dt><dd>Watch 02 &mdash; Rest</dd></div>
+                        <div><dt>Training</dt><dd>Regional cohort, Kigali</dd></div>
+                        <div><dt>TKC stage</dt><dd>Africa &middot; Year 3 of 5</dd></div>
+                    </dl>
+                    <a href="#connect" class="btn btn-primary btn-sm">Get Connected <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Here -->
+    <section class="page-section page-section-dark" id="posture">
+        <div class="ministry-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Be Clear</span>
+                <h2 class="section-title">How We Work in Rwanda</h2>
+                <p class="section-desc">Foreign organisations have not always behaved well here. We would rather state our limits in public than be asked about them later.</p>
+            </div>
+
+            <div class="notice-box" data-aos="fade-up">
+                <i class="fas fa-circle-info"></i>
+                <div>
+                    <h4>We follow Rwandan leadership and Rwandan law</h4>
+                    <p>Reconciliation and unity work in this country is led by Rwandans through national institutions and long-established local processes. We do not run parallel programmes, we do not convene our own truth or reconciliation processes here, and we take our direction from local leaders and the national framework.</p>
+                </div>
+            </div>
+
+            <div class="split-layout mt-4">
+                <div class="prose" data-aos="fade-up">
+                    <h3>What we do</h3>
+                    <ul>
+                        <li>Teach Scripture, train leaders and pray &mdash; the same as in every other nation</li>
+                        <li>Serve alongside existing local churches rather than competing with them</li>
+                        <li>Take part in <em>Umuganda</em> community service alongside our neighbours</li>
+                        <li>Support members practically through the compassion arms where there is need</li>
+                        <li>Register properly, pay what is owed, and operate within the law</li>
+                        <li>Let Rwandan members decide what is published about their own community</li>
+                    </ul>
+                </div>
+                <div class="prose" data-aos="fade-up" data-aos-delay="100">
+                    <h3>What we do not do</h3>
+                    <ul>
+                        <li>Speak publicly on Rwandan history, politics or national policy</li>
+                        <li>Convene reconciliation processes of our own design</li>
+                        <li>Use this country's past in fundraising material, anywhere in the world</li>
+                        <li>Publish names, photographs or stories without informed, freely given consent</li>
+                        <li>Bring in outside personnel to lead what Rwandans are already leading</li>
+                        <li>Host visitor trips whose real purpose is the visitor's experience</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="scripture scripture-light mt-5" data-aos="fade-up">
+                &ldquo;If it is possible, as much as depends on you, live peaceably with all men.&rdquo;
+                <cite>Romans 12:18</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Languages -->
+    <section class="page-section page-section-light" id="languages">
+        <div class="container">
+            <div class="split-layout">
+                <div class="prose" data-aos="fade-up">
+                    <span class="section-tag section-tag-left">Ururimi &middot; Language</span>
+                    <h2 class="section-title section-title-left">Three Languages, One House</h2>
+                    <p>Rwanda is genuinely trilingual, and a community that only functions in one language quietly excludes people while insisting it welcomes everyone. So we run in all three, properly rather than tokenistically.</p>
+                    <ul>
+                        <li><strong>Kinyarwanda</strong> leads worship and prayer. It is the language most members think and grieve and rejoice in</li>
+                        <li><strong>English</strong> carries most teaching, since Global College materials arrive in it first</li>
+                        <li><strong>French</strong> is used in Huye and among older members, with materials issued in translation</li>
+                    </ul>
+                    <p>Teaching is delivered with live interpretation, and questions are answered in whatever language they are asked in. Our facilitators are trained specifically to work across all three rather than defaulting to the one they find easiest.</p>
+                    <p>This costs us time in every meeting. We consider it non-negotiable.</p>
+                </div>
+
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>Materials Available In</h3>
+                    <ul class="check-list">
+                        <li>Foundations Class &mdash; all three languages</li>
+                        <li>Christ Institute &mdash; English and French; Kinyarwanda in progress</li>
+                        <li>Kingdom Institute &mdash; English and French</li>
+                        <li>Watch guides and prayer bulletins &mdash; all three</li>
+                        <li>Safeguarding policy &mdash; all three</li>
+                    </ul>
+                    <p class="side-note">Translation into Kinyarwanda is done by Rwandan members, not by software. It is slower and it is worth it.</p>
+                    <a href="/global-college" class="btn btn-primary btn-sm">The College <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gatherings -->
+    <section class="page-section page-section-cream" id="gatherings">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Rhythm</span>
+                <h2 class="section-title">When We Gather</h2>
+                <p class="section-desc">All times Central Africa Time. Everything is available online, and recordings go out to the community the same week.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-day">Sunday</div>
+                    <h3>National Assembly</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 9:00 AM CAT</p>
+                    <p class="service-desc">The whole Rwandan community, in person in Kigali and online elsewhere. Trilingual, with live interpretation. Runs around two hours.</p>
+                    <a href="#connect" class="service-link">Get the link <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-day">Wednesday</div>
+                    <h3>Kigali Cohort</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 6:00 PM CAT</p>
+                    <p class="service-desc">The regional cohort of the East Africa Training Centre, hosted locally and led by a licensed Rwandan facilitator.</p>
+                    <a href="holy-nation-kenya.html#training" class="service-link">Training centre <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-day">Friday</div>
+                    <h3>City Group Night</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> Local, 6:00 PM</p>
+                    <p class="service-desc">Homes and community rooms &mdash; discussion of Sunday's teaching, prayer for one another, and practical care within the group.</p>
+                    <a href="#cities" class="service-link">Find your city <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card service-card-accent" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-day">Daily</div>
+                    <h3>The Watch of Rest</h3>
+                    <p class="service-time"><i class="far fa-clock"></i> 9:00 PM &ndash; 12:00 AM CAT</p>
+                    <p class="service-desc">Rwanda's watch on the global roster. Protection over the city through the night &mdash; prayed as the country goes quiet.</p>
+                    <a href="prayers-mission.html#watches" class="service-link">Take a slot <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div class="prose" data-aos="fade-up">
+                    <h3>Why Rwanda holds the Watch of Rest</h3>
+                    <p>Watch 02 runs from 9:00 PM to midnight, and its standing burden is protection over the city through the night. It is the gentlest watch on the roster and it was chosen on purpose.</p>
+                    <p>A community that has learned what it costs when safety disappears does not treat ordinary, uneventful nights as unremarkable. Praying for a quiet night over a quiet city is not a small assignment here.</p>
+                    <ul>
+                        <li>One three-hour window, one day a week &mdash; most people share a slot</li>
+                        <li>Works well as a household watch, prayed together before sleep</li>
+                        <li>You receive the watch guide in your language, plus the burden list</li>
+                    </ul>
+                </div>
+                <aside class="side-panel side-panel-dark" data-aos="fade-left">
+                    <h3>First Time Joining?</h3>
+                    <ul class="check-list">
+                        <li>The Sunday link is posted in the community group each Saturday</li>
+                        <li>Come as you are &mdash; there is no dress code</li>
+                        <li>Ask your question in whichever language you prefer</li>
+                        <li>Children are welcome throughout</li>
+                        <li>Stay after for tea and conversation with a leader</li>
+                        <li>You will never be asked to give as a visitor</li>
+                    </ul>
+                    <a href="#connect" class="btn btn-primary btn-sm">Say You're Coming <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- City Groups -->
+    <section class="page-section page-section-light" id="cities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Near You</span>
+                <h2 class="section-title">City Groups</h2>
+                <p class="section-desc">Three cities, each with a named host and its own WhatsApp thread. All on Central Africa Time.</p>
+            </div>
+
+            <div data-filter data-aos="fade-up">
+                <div class="filter-bar">
+                    <div class="filter-search">
+                        <i class="fas fa-search"></i>
+                        <input type="text" data-filter-input placeholder="Search city or province..." aria-label="Search city groups">
+                    </div>
+                    <div class="filter-chips">
+                        <button class="filter-chip active" data-filter-chip="all">All</button>
+                        <button class="filter-chip" data-filter-chip="kigali">Kigali</button>
+                        <button class="filter-chip" data-filter-chip="south">Southern</button>
+                        <button class="filter-chip" data-filter-chip="north">Northern</button>
+                    </div>
+                </div>
+
+                <div class="city-grid">
+                    <article class="city-card" data-filter-item data-tags="kigali capital city">
+                        <h3>Kigali</h3>
+                        <span class="city-state">Kigali City &middot; National Hub</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Kigali">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Fridays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-book"></i> Regional cohort here</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Kigali City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="south huye butare southern university francais">
+                        <h3>Huye</h3>
+                        <span class="city-state">Southern Province</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Kigali">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Fridays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-language"></i> French-led</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Huye City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="city-card" data-filter-item data-tags="north musanze ruhengeri northern">
+                        <h3>Musanze</h3>
+                        <span class="city-state">Northern Province</span>
+                        <div class="city-meta">
+                            <div><i class="far fa-clock"></i> Local <span class="nation-clock" data-tz="Africa/Kigali">--:--</span></div>
+                            <div><i class="fas fa-calendar-day"></i> Fridays, 6:00 PM</div>
+                            <div><i class="fas fa-user"></i> Host: [Name]</div>
+                            <div><i class="fas fa-language"></i> Kinyarwanda-led</div>
+                        </div>
+                        <div class="nation-actions">
+                            <a href="#" class="btn-whatsapp js-whatsapp" data-nation="Musanze City Group"><i class="fab fa-whatsapp"></i> Join</a>
+                            <a href="#connect" class="btn-nation">Visit <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="filter-empty" data-filter-empty>
+                    <i class="fas fa-map-location-dot"></i>
+                    <p>No group in that town yet.<br>We have members in Rubavu, Nyagatare and Rusizi meeting online &mdash; a couple are one host short of a group.</p>
+                    <a href="#connect" class="btn btn-primary btn-sm" style="margin-top:1.25rem;">Start One Where You Are <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Active Here -->
+    <section class="page-section page-section-cream" id="active">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Honest Status</span>
+                <h2 class="section-title">What's Actually Running Here</h2>
+                <p class="section-desc">Rwanda is one of our smaller communities and runs fewer pillars than most. We would rather show you that plainly than imply otherwise.</p>
+            </div>
+
+            <div class="status-grid" data-aos="fade-up">
+                <div class="status-row">
+                    <span class="status-num">01</span>
+                    <div class="status-body">
+                        <h4>The Apostolic House</h4>
+                        <p>Trilingual national assembly in Kigali, three city groups and Friday fellowships.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">02</span>
+                    <div class="status-body">
+                        <h4>Global College</h4>
+                        <p>A regional cohort in Kigali served from Nairobi. Kinyarwanda translation of the Christ Institute is in progress.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">03</span>
+                    <div class="status-body">
+                        <h4>Prayers &amp; Mission</h4>
+                        <p>Watch 02 held from Rwanda. One prayer tower in Kigali.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">04</span>
+                    <div class="status-body">
+                        <h4>Networks</h4>
+                        <p>AWF circles running in Kigali and Huye. IFAM affiliation open. SANI, TANI and KBLN not yet.</p>
+                        <span class="badge badge-forming">Partly running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">05</span>
+                    <div class="status-body">
+                        <h4>Kingdom Operations</h4>
+                        <p>No working groups yet. Members participate in <em>Umuganda</em> alongside their neighbours as ordinary citizens.</p>
+                        <span class="badge badge-soon">Not running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">06</span>
+                    <div class="status-body">
+                        <h4>Compassion</h4>
+                        <p>CES school support and CVSW visitation, small in scale and run entirely by local members.</p>
+                        <span class="badge badge-forming">Forming</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">07</span>
+                    <div class="status-body">
+                        <h4>Country Development</h4>
+                        <p>Not running, and not planned. Reconciliation and national development here are led by Rwandan institutions, and we do not run parallel programmes.</p>
+                        <span class="badge badge-soon">Not running</span>
+                    </div>
+                </div>
+                <div class="status-row">
+                    <span class="status-num">08</span>
+                    <div class="status-body">
+                        <h4>ThyKingdomCome</h4>
+                        <p>Part of the East Africa sub-region, year 3 of 5. Council forming with a Rwandan chair.</p>
+                        <span class="badge badge-live">Running</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="table-note" data-aos="fade-up">Growing slowly here is a decision, not a failure. A community built carefully in five years will outlast one assembled quickly in one.</p>
+        </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="page-section page-section-light" id="leadership">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">The Council</span>
+                <h2 class="section-title">Who Carries This Community</h2>
+                <p class="section-desc">Entirely Rwandan, accountable to the Rwandan community first and to the global commonwealth second.</p>
+            </div>
+            <div class="leader-grid">
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="National Coordinator">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">National Coordinator</span>
+                        <p>Carries the Rwandan community, chairs the forming council, and is the first point of contact for anyone joining.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=600&q=80" alt="Training and Translation Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Training &amp; Translation Lead</span>
+                        <p>Facilitates the Kigali cohort and leads the Kinyarwanda translation of the College curriculum.</p>
+                    </div>
+                </article>
+                <article class="leader-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leader-photo">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="Prayer and Care Lead">
+                    </div>
+                    <div class="leader-body">
+                        <h3>[Name]</h3>
+                        <span class="leader-role">Prayer &amp; Care Lead</span>
+                        <p>Holds the Watch 02 roster and the Kigali prayer tower, and oversees the CES and CVSW work.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="notice-box mt-5" data-aos="fade-up">
+                <i class="fas fa-shield-halved"></i>
+                <div>
+                    <h4>Accountability, plainly</h4>
+                    <p>Every leader here is under the same annual character and doctrine review as everyone else in the movement, and each sits under a mentor outside their own chain of command. Concerns go to <strong>theholynationglobal@gmail.com</strong> and are handled by the same process that applies to any member, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Connected -->
+    <section class="page-section page-section-cream" id="connect">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get Connected</span>
+                <h2 class="section-title">Four Ways to Start</h2>
+            </div>
+
+            <div class="steps-grid" data-aos="fade-up">
+                <a href="#" class="step-card js-whatsapp" data-nation="Holy Nation Rwanda">
+                    <span class="step-num">01</span>
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Join the Community</h3>
+                    <p>The national WhatsApp group, moderated in all three languages, with a direct line to the coordinator.</p>
+                    <span class="step-link">Join <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="#connect" class="step-card">
+                    <span class="step-num">02</span>
+                    <i class="fas fa-people-group"></i>
+                    <h3>Come on Sunday</h3>
+                    <p>In person in Kigali or online anywhere. Ask your questions in whichever language you prefer.</p>
+                    <span class="step-link">Get the link <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="holy-nation-kenya.html#training" class="step-card">
+                    <span class="step-num">03</span>
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Join the Cohort</h3>
+                    <p>The Kigali regional cohort of the East Africa Training Centre. Same curriculum, same award as Lagos.</p>
+                    <span class="step-link">Admissions <i class="fas fa-arrow-right"></i></span>
+                </a>
+                <a href="prayers-mission.html#watches" class="step-card">
+                    <span class="step-num">04</span>
+                    <i class="fas fa-hands-praying"></i>
+                    <h3>Take the Watch of Rest</h3>
+                    <p>9:00 PM to midnight, one day a week. Works well as a household watch before sleep.</p>
+                    <span class="step-link">Enrol <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+
+            <div class="split-layout mt-5">
+                <div data-aos="fade-up">
+                    <h3 class="sub-heading">Tell Us Where You Are</h3>
+                    <p class="sub-lead">The coordinator's office replies within two working days, in your language, and a real person will be assigned to you.</p>
+                    <form class="form-grid" data-demo>
+                        <div class="form-field">
+                            <label for="rw-name">Full name</label>
+                            <input type="text" id="rw-name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="rw-email">Email</label>
+                            <input type="email" id="rw-email" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="rw-city">Town or city</label>
+                            <input type="text" id="rw-city" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="rw-lang">Preferred language</label>
+                            <select id="rw-lang">
+                                <option>Kinyarwanda</option>
+                                <option>English</option>
+                                <option>Fran&ccedil;ais</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="rw-intent">I'd like to</label>
+                            <select id="rw-intent">
+                                <option>Join the national WhatsApp community</option>
+                                <option>Attend the Sunday assembly</option>
+                                <option>Join my nearest city group</option>
+                                <option>Start a city group where I live</option>
+                                <option>Join the Kigali training cohort</option>
+                                <option>Help with Kinyarwanda translation</option>
+                                <option>Take a watch on the prayer roster</option>
+                                <option>Ask a question</option>
+                            </select>
+                        </div>
+                        <div class="form-field full">
+                            <label for="rw-message">Anything you'd like us to know</label>
+                            <textarea id="rw-message"></textarea>
+                        </div>
+                        <div class="form-field full">
+                            <button type="submit" class="btn btn-primary">Send <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="side-panel" data-aos="fade-left">
+                    <h3>Rwanda Office</h3>
+                    <dl class="fact-list">
+                        <div><dt>Coordinator</dt><dd>theholynationglobal@gmail.com</dd></div>
+                        <div><dt>Hub</dt><dd>Kigali</dd></div>
+                        <div><dt>Local time</dt><dd><span class="nation-clock" data-tz="Africa/Kigali">--:--</span> CAT</dd></div>
+                        <div><dt>Languages</dt><dd>Kinyarwanda, English, French</dd></div>
+                        <div><dt>Reply target</dt><dd>2 working days</dd></div>
+                        <div><dt>Safeguarding</dt><dd>theholynationglobal@gmail.com</dd></div>
+                    </dl>
+                    <p class="side-note">Nobody from Holy Nation will ever direct-message you asking for money, mobile money transfers, bank details or documents. If that happens, it is a scam &mdash; please report it.</p>
+                    <a href="/connect" class="btn btn-primary btn-sm">All Nations <i class="fas fa-arrow-right"></i></a>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="page-section page-section-light" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Questions</span>
+                <h2 class="section-title">Frequently Asked</h2>
+            </div>
+            <div class="accordion faq-accordion" data-aos="fade-up">
+                <div class="accordion-item open">
+                    <div class="accordion-head">Do I have to leave my church to join Holy Nation Rwanda?</div>
+                    <div class="accordion-body">
+                        <p>No. Most of our members belong to a Rwandan congregation already, and we would discourage anyone from leaving. City groups meet on Friday evenings and the training is designed to strengthen you wherever you serve.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Which language will the meeting be in?</div>
+                    <div class="accordion-body">
+                        <p>All three. Worship and prayer lead in Kinyarwanda, most teaching is in English with live interpretation, and Huye operates primarily in French. You may ask a question in whichever language you prefer and it will be answered in that language.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Do you run reconciliation programmes here?</div>
+                    <div class="accordion-body">
+                        <p>No. Reconciliation and unity work in Rwanda is led by Rwandans through national institutions and established local processes. We do not run parallel programmes or convene processes of our own design. Our members participate as ordinary citizens, under local leadership.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Why is this community so small?</div>
+                    <div class="accordion-body">
+                        <p>By choice. Rwanda has good reason to be careful about foreign organisations arriving with programmes and urgency. We would rather build something modest that lasts and is genuinely Rwandan-led than something large that is neither.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Can visitors come and serve?</div>
+                    <div class="accordion-body">
+                        <p>With notice, and under local leadership. We do not host trips whose real purpose is the visitor's experience, and we do not permit photography of identifiable people without informed, freely given consent. Rwandan members decide what is published about their own community.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is the award from the Kigali cohort the same as from Lagos?</div>
+                    <div class="accordion-body">
+                        <p>Identical. Same curriculum, same examinations, same assessment standards, same register, same award. The Kigali cohort is served by the East Africa Training Centre in Nairobi and led by a licensed Rwandan facilitator.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-head">Is there a membership fee?</div>
+                    <div class="accordion-body">
+                        <p>None. Community, gatherings, watches and the Foundations Class are free. Global College tuition is set regionally with instalment plans and bursaries, and nobody has been turned away for inability to pay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Nations -->
+    <section class="page-section page-section-cream">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Elsewhere</span>
+                <h2 class="section-title">Other Nations</h2>
+            </div>
+            <div class="feature-grid feature-grid-4" data-aos="fade-up">
+                <a href="/holy-nation-kenya" class="feature-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Holy Nation Kenya</h3>
+                    <p>Nairobi hub and the East Africa Training Centre, which serves our Kigali cohort.</p>
+                </a>
+                <a href="/holy-nation-uganda" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation Uganda</h3>
+                    <p>Kampala hub, teen and campus work, and reconciliation work in the north.</p>
+                </a>
+                <a href="/holy-nation-congo" class="feature-card">
+                    <i class="fas fa-earth-africa"></i>
+                    <h3>Holy Nation Congo</h3>
+                    <p>Kinshasa hub, French and Lingala, and our neighbour to the west.</p>
+                </a>
+                <a href="connect.html#nations" class="feature-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>All Twelve Nations</h3>
+                    <p>The full directory with live local times, WhatsApp communities and national coordinators.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Murakaza Neza. You Are Welcome Here.</h2>
+                <p>Come to one Sunday. Stay if it is home. Either way you will be received the way family receives family.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large js-whatsapp" data-nation="Holy Nation Rwanda">Join the Community</a>
+                    <a href="#connect" class="btn btn-outline btn-large">Get the Sunday Link</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="/" class="footer-logo">
+                            <img src="logo.png" alt="Holy Nation Global">
+                            <div>
+                                <span class="footer-logo-main">HOLY NATION RWANDA</span>
+                                <span class="footer-logo-sub">Holy Nation Global</span>
+                            </div>
+                        </a>
+                        <p>Raising Apostolic Leaders, Transforming Nations, Establishing the Reign of Christ on Earth.</p>
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/1davidabraham" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/1DavidAbraham" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/1davidabraham/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/@1davidabraham" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Holy Nation Rwanda</h4>
+                        <ul>
+                            <li><a href="#posture">How We Work Here</a></li>
+                            <li><a href="#languages">Three Languages</a></li>
+                            <li><a href="#gatherings">Gatherings</a></li>
+                            <li><a href="#cities">City Groups</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Ministries</h4>
+                        <ul>
+                            <li><a href="/apostolic-house">The Apostolic House</a></li>
+                            <li><a href="/global-college">Global College</a></li>
+                            <li><a href="/prayers-mission">Prayers &amp; Mission</a></li>
+                            <li><a href="/networks">Apostolic Networks</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="connect.html#nations">All Nations</a></li>
+                            <li><a href="connect.html#prayer">Prayer Request</a></li>
+                            <li><a href="/give">Give Online</a></li>
+                            <li><a href="connect.html#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 The Holy Nation Global. All rights reserved. | Thy Kingdom Come.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/script.js"></script>
+</body>
+</html>
