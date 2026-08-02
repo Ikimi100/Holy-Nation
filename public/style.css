@@ -1381,6 +1381,16 @@ img { max-width: 100%; display: block; }
    MOBILE POLISH (phones)
    ============================================ */
 
+/* Grid items must be allowed to shrink below their content's minimum width —
+   otherwise a min-width:560px data table blows its column out and the whole
+   page scrolls sideways on phones. */
+.split-layout > *, .ministry-grid > *, .welcome-grid > *, .reach-grid > *,
+.newsletter-box > *, .event-card-feature > *, .form-grid > * { min-width: 0; }
+
+/* Selects size themselves to their longest option and won't shrink — force
+   every form control to respect its column on narrow screens. */
+.form-field input, .form-field select, .form-field textarea { width: 100%; min-width: 0; }
+
 /* Long unbreakable strings (emails, URLs) must never widen the page. */
 .fact-list dd, .pay-detail dd, .prose p, .prose li, .nation-meta div,
 .side-panel, .breadcrumb, .footer-col ul li a { overflow-wrap: anywhere; }
