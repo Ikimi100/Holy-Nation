@@ -43,21 +43,75 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    /* ===== MOBILE MENU TOGGLE ===== */
+    /* ===== MOBILE MENU (slide-in drawer) =====
+       The drawer chrome — brand header, NAVIGATE label, icon/subtitle cards,
+       backdrop — is built here from the plain nav links, so all 24 pages get
+       it without touching their markup. Desktop CSS hides the extras. */
     const mobileToggle = document.getElementById('mobileToggle');
     const navLinks = document.getElementById('navLinks');
     if (mobileToggle && navLinks) {
-        mobileToggle.addEventListener('click', () => {
-            mobileToggle.classList.toggle('active');
-            navLinks.classList.toggle('active');
-            document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+        const MENU_META = {
+            '/':                   ['fa-house',              'Back to the gateway'],
+            '/holy-nation':        ['fa-house',              'Welcome to Holy Nation'],
+            '/about':              ['fa-book-open',          'Our story & the pillars'],
+            '/apostolic-house':    ['fa-place-of-worship',   'The house & ecclesia'],
+            '/global-college':     ['fa-graduation-cap',     'Apostolic studies'],
+            '/prayers-mission':    ['fa-hands-praying',      'Intercession & missions'],
+            '/networks':           ['fa-circle-nodes',       'Kingdom professionals'],
+            '/kingdom-operations': ['fa-gears',              'How the nation runs'],
+            '/compassion':         ['fa-hand-holding-heart', 'Care & social security'],
+            '/country-development':['fa-flag',               'Kingdom country development'],
+            '/thykingdomcome':     ['fa-crown',              'The movement'],
+            '/give':               ['fa-gift',               'Support the work'],
+            '/connect':            ['fa-handshake',          'Find your nation']
+        };
+
+        /* Card-ify each link: icon tile + title/subtitle + chevron. */
+        navLinks.querySelectorAll('.nav-link').forEach(link => {
+            const href = link.getAttribute('href') || '';
+            const meta = MENU_META[href === '/' ? '/' : href.replace(/\/$/, '')] || ['fa-circle', ''];
+            const title = link.textContent.trim();
+            link.innerHTML =
+                '<span class="mm-ico"><i class="fa-solid ' + meta[0] + '"></i></span>' +
+                '<span class="mm-txt"><strong>' + title + '</strong>' +
+                (meta[1] ? '<small>' + meta[1] + '</small>' : '') + '</span>' +
+                '<i class="fa-solid fa-chevron-right mm-chev"></i>';
         });
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileToggle.classList.remove('active');
-                navLinks.classList.remove('active');
-                document.body.style.overflow = '';
-            });
+
+        /* Brand header with close button. */
+        const head = document.createElement('div');
+        head.className = 'mm-head';
+        head.innerHTML =
+            '<img src="logo.png" alt="Holy Nation Global">' +
+            '<span class="mm-head-txt"><span class="mm-head-title">Holy Nation Global</span>' +
+            '<span class="mm-head-sub">Thy Kingdom Come</span></span>' +
+            '<button type="button" class="mm-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>';
+        navLinks.prepend(head);
+
+        /* Section label under the header. */
+        const label = document.createElement('span');
+        label.className = 'mm-label';
+        label.textContent = 'Navigate';
+        head.after(label);
+
+        /* Dimmed backdrop behind the drawer. */
+        const backdrop = document.createElement('div');
+        backdrop.className = 'mm-backdrop';
+        document.body.appendChild(backdrop);
+
+        const setMenu = (open) => {
+            mobileToggle.classList.toggle('active', open);
+            navLinks.classList.toggle('active', open);
+            backdrop.classList.toggle('active', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        };
+
+        mobileToggle.addEventListener('click', () => setMenu(!navLinks.classList.contains('active')));
+        head.querySelector('.mm-close').addEventListener('click', () => setMenu(false));
+        backdrop.addEventListener('click', () => setMenu(false));
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+        navLinks.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => setMenu(false));
         });
     }
 
