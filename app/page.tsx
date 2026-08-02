@@ -36,6 +36,10 @@ interface LogoItem {
   leftPercent: number;
   widthPercent: number;
   heightPercent: number;
+  /** Phone layout (≤768px): % offsets within the badge field, width in % of field width. */
+  mTopPercent: number;
+  mLeftPercent: number;
+  mWidthPercent: number;
   delay: number;
   /** Parallax depth in px — larger badges read as "nearer" and travel further. */
   depth: number;
@@ -45,6 +49,9 @@ interface LogoItem {
 const logoItems: LogoItem[] = [
 {
   id: 0,
+  mTopPercent: 52,
+  mLeftPercent: 2,
+  mWidthPercent: 26,
   label: 'The Apostolic House & Ecclesia',
   short: 'Apostolic House',
   href: ROUTES.apostolicHouse,
@@ -59,6 +66,9 @@ const logoItems: LogoItem[] = [
 },
 {
   id: 1,
+  mTopPercent: 38,
+  mLeftPercent: 16,
+  mWidthPercent: 22,
   label: 'Global College of Apostolic Studies',
   short: 'Global College',
   href: ROUTES.globalCollege,
@@ -73,6 +83,9 @@ const logoItems: LogoItem[] = [
 },
 {
   id: 2,
+  mTopPercent: 22,
+  mLeftPercent: 3,
+  mWidthPercent: 24,
   label: 'Apostolic Prayers & Mission',
   short: 'Prayers & Mission',
   href: ROUTES.prayers,
@@ -87,6 +100,9 @@ const logoItems: LogoItem[] = [
 },
 {
   id: 3,
+  mTopPercent: 3,
+  mLeftPercent: 2,
+  mWidthPercent: 22,
   label: 'Apostolic Networks',
   short: 'Networks',
   href: ROUTES.networks,
@@ -101,6 +117,9 @@ const logoItems: LogoItem[] = [
 },
 {
   id: 4,
+  mTopPercent: 52,
+  mLeftPercent: 74,
+  mWidthPercent: 24,
   label: 'Kingdom Operations',
   short: 'Operations',
   href: ROUTES.operations,
@@ -115,6 +134,9 @@ const logoItems: LogoItem[] = [
 },
 {
   id: 5,
+  mTopPercent: 0,
+  mLeftPercent: 56,
+  mWidthPercent: 19,
   label: 'Kingdom Compassion & Social Security',
   short: 'Compassion',
   href: ROUTES.compassion,
@@ -129,6 +151,9 @@ const logoItems: LogoItem[] = [
 },
 {
   id: 6,
+  mTopPercent: 31,
+  mLeftPercent: 64,
+  mWidthPercent: 26,
   label: 'Kingdom Country Development',
   short: 'Nation Building',
   href: ROUTES.nationBuilding,
@@ -143,6 +168,9 @@ const logoItems: LogoItem[] = [
 },
 {
   id: 7,
+  mTopPercent: 11,
+  mLeftPercent: 68,
+  mWidthPercent: 30,
   label: 'ThyKingdomCome Movement',
   short: 'ThyKingdomCome',
   href: ROUTES.thyKingdomCome,
@@ -157,6 +185,9 @@ const logoItems: LogoItem[] = [
 },
 {
   id: 8,
+  mTopPercent: 1,
+  mLeftPercent: 25,
+  mWidthPercent: 30,
   label: 'The Holy Nation',
   short: 'Holy Nation',
   href: ROUTES.holyNation,
@@ -171,6 +202,9 @@ const logoItems: LogoItem[] = [
 },
 {
   id: 9,
+  mTopPercent: 67,
+  mLeftPercent: 16,
+  mWidthPercent: 20,
   label: 'Give',
   short: 'Give',
   href: ROUTES.give,
@@ -185,6 +219,9 @@ const logoItems: LogoItem[] = [
 },
 {
   id: 10,
+  mTopPercent: 67,
+  mLeftPercent: 64,
+  mWidthPercent: 20,
   label: 'Connect',
   short: 'Connect',
   href: ROUTES.connect,
@@ -1149,63 +1186,44 @@ export default function HomePage() {
         }
 
         /* ===== PHONES =====
-           The scattered constellation is positioned in % of a 2.25:1 desktop
-           canvas. On a ~0.5:1 phone those percentages collapse the badges to
-           ~55px and pile 8 of 11 onto the portrait. So below 768px the whole
-           field stops being absolutely positioned and becomes a normal grid. */
+           The desktop constellation is tuned for a ~2.25:1 canvas. Below 768px
+           each badge switches to its own phone coordinates (--mt/--ml/--mw,
+           set inline from the data) so the field re-composes for a tall
+           screen: same scattered look, badges large, portrait anchoring the
+           bottom — the T.D. Jakes treatment. */
         @media (max-width: 768px) {
           .hero-section {
-            height: auto;
-            min-height: 0;
-            padding-bottom: 56px;
+            height: 100svh;
+            min-height: 620px;
           }
 
-          /* Portrait becomes the hero, in normal flow. */
-          .pastor-container {
-            position: relative;
-            bottom: auto;
-            left: auto;
-            transform: none !important;
-            width: 78%;
-            max-width: 340px;
-            min-width: 0;
-            margin: 8px auto 4px;
-          }
-
-          .pastor-container img {
-            transform: none;
-          }
-
-          /* Field reflows: no absolute positioning, no perspective. */
           .logos-section {
-            position: static;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 14px;
-            padding: 4px 16px 24px;
+            top: 2%;
+            left: 2%;
+            right: 2%;
+            bottom: 64px;
             perspective: none;
           }
 
           .logo-item {
-            position: static !important;
-            width: auto !important;
+            top: var(--mt) !important;
+            left: var(--ml) !important;
+            width: var(--mw) !important;
+            max-width: 150px;
             height: auto !important;
             aspect-ratio: 1 / 1;
-            transform: none !important;
-            z-index: auto !important;
           }
 
-          /* The crest spans both columns as the lead item. */
-          .logo-item:nth-child(9) {
-            grid-column: 1 / -1;
-            justify-self: center;
-            width: 62% !important;
+          /* Portrait anchors the bottom centre; badges render above it. */
+          .pastor-container {
+            width: 78%;
+            max-width: 380px;
+            min-width: 0;
+            bottom: 60px;
           }
 
-          /* Idle float and 3D tilt are desktop affordances — off on touch. */
-          .logo-float { animation: none !important; }
+          /* 3D tilt is a desktop affordance — off on touch. */
           .logo-link { transform: none !important; scale: 1 !important; }
-          .logo-arc { animation: none !important; opacity: 0.6; }
 
           .gold-line { display: none; }
 
@@ -1231,26 +1249,12 @@ export default function HomePage() {
           :root, .hn-page {
             --nav-h: 56px;
           }
-          .logos-section {
-            gap: 12px;
-            padding: 4px 12px 20px;
-          }
           .pastor-container {
             width: 84%;
           }
           .mm-link {
             font-size: 14px;
             min-height: 50px;
-          }
-        }
-
-        /* Very narrow phones — one badge per row so the wordmarks stay legible. */
-        @media (max-width: 340px) {
-          .logos-section {
-            grid-template-columns: 1fr;
-          }
-          .logo-item:nth-child(9) {
-            width: 100% !important;
           }
         }
       `}</style>
@@ -1285,8 +1289,11 @@ export default function HomePage() {
                   left: `${logo.leftPercent}%`,
                   width: `${logo.widthPercent}%`,
                   height: `${logo.heightPercent}%`,
+                  '--mt': `${logo.mTopPercent}%`,
+                  '--ml': `${logo.mLeftPercent}%`,
+                  '--mw': `${logo.mWidthPercent}%`,
                   zIndex: hoveredLogo === logo.id ? 50 : 15
-                }}
+                } as React.CSSProperties}
                 onMouseEnter={() => setHoveredLogo(logo.id)}
                 onMouseLeave={() => setHoveredLogo(null)}>
 
